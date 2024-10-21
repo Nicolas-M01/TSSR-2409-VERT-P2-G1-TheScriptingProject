@@ -1,6 +1,6 @@
 # TSSR-2409-VERT-P2-G1-TheScriptingProject
 
-- On doit avoir dans cette documentation :
+On doit avoir dans cette documentation :
 - Présentation du projet, objectifs finaux
 - Introduction : mise en contexte
 - Membres du groupe de projet (rôles par sprint)
