@@ -15,9 +15,9 @@ On doit avoir dans cette documentation :
   
 |   | Sprint S1 | Sprint S2 |  Sprint S3 | Sprint S4 |  
 | :--: | :-------: | :-------: | :-------: | :-------: |  
-| SCRUM MASTER | xxx | xxx | xxx | xxx |  
-| PRODUCT OWNER | xxx | xxx | xxx | xxx |  
-| TECHNICIANS | xxx & xxx | xxx & xxx | xxx & xxx | xxx & xxx |  
+| SCRUM MASTER | Martin | xxx | xxx | xxx |  
+| PRODUCT OWNER | Igor | xxx | xxx | xxx |  
+| TECHNICIANS | Elsa & Nicolas | xxx & xxx | xxx & xxx | xxx & xxx |  
 
 
 - Choix techniques : quel OS, quelle version, etc.
