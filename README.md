@@ -12,6 +12,14 @@ On doit avoir dans cette documentation :
 
 - Introduction : mise en contexte
 - Membres du groupe de projet (rôles par sprint)
+  
+|   | Sprint S1 | Sprint S2 |  Sprint S3 | Sprint S4 |  
+| :--: | :-------: | :-------: | :-------: | :-------: |  
+| SCRUM MASTER | xxx | xxx | xxx | xxx |  
+| PRODUCT OWNER | xxx | xxx | xxx | xxx |  
+| TECHNICIANS | xxx & xxx | xxx & xxx | xxx & xxx | xxx & xxx |  
+
+
 - Choix techniques : quel OS, quelle version, etc.
     - 2 CLIENTS
       - Client Windows 10 : 
