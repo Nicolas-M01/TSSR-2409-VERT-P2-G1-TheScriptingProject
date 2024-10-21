@@ -13,6 +13,19 @@ On doit avoir dans cette documentation :
 - Introduction : mise en contexte
 - Membres du groupe de projet (rôles par sprint)
 - Choix techniques : quel OS, quelle version, etc.
+    - 2 CLIENTS
+      - Client Windows 10 : 
+          - Nom : CLIWIN01
+          - Compte utilisateur : wilder (dans le groupe des admins locaux)
+          - Mot de passe : Azerty1*
+          - Adresse IP fixe : 172.16.10.20/24
+
+      - Client Ubuntu 22.04/24.04 LTS :
+          - Nom : CLILIN01
+          - Compte utilisateur : wilder (dans le groupe sudo)
+          - Mot de passe : Azerty1*
+          - Adresse IP fixe : 172.16.10.30/24
+
 - Difficultés rencontrées : problèmes techniques rencontrés
 - Solutions trouvées : Solutions et alternatives trouvées
 - Améliorations possibles : suggestions d’améliorations futures
