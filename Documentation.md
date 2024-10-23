@@ -10,3 +10,4 @@ https://www.it-connect.fr/installer-et-configurer-openssh-server-sur-windows-ser
 * #### Open ssh Debian
 https://www.it-connect.fr/chapitres/installation-dun-serveur-ssh-et-premiere-connexion/
 * #### Récap commande Bash
+https://doc.ubuntu-fr.org/tutoriel/script_shell
