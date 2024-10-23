@@ -55,7 +55,7 @@
 
 * ### **Semaine 3 :**
   * ##### Réalisation du script PowerShell.
-  * ##### Anticipé la journalisation
+  * ##### Anticiper la journalisation
 
 * ### **Semaine 4 :**
   * ##### Finir les script PowerShell et bash?? En fonction de l'avancement
