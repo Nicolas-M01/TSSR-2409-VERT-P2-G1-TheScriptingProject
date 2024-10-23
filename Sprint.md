@@ -87,7 +87,7 @@ _______________________
 _________________________
 #### **Remarque :** (ce sont des idées, modifiés, changés, rajoutés)
 * ##### Au vu de l'énoncé je pense que la journalisation doit être intégrer en parallèle( à vérrifier)
-* ##### Le code doit être hiérarchiser ( intendation etc) il serait préférable de le réaliser dans [VSC](https://code.visualstudio.com/)
+* ##### Le code doit être hiérarchiser ( intendation etc) il serait préférable de le réaliser dans [VSC](https://code.visualstudio.com/)?????
 * ##### Pour la rédaction des livrable, on pourrait mettre en place des régles de rédaction ( taille de police, façon de rédiger les différents point, la manière de traiter le code), en vu d'unifier la rédaction, étant donné qu'on va tous faire le role de PO et que l'on va travailler le projet en fractionné ( si cette idée vous conviens évidement) 
 
 
