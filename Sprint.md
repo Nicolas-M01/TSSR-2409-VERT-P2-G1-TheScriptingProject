@@ -6,10 +6,10 @@ _________________________________
   * ##### Squelette pseudo code du projet (en liens avec le fichier Algo Pojet 2 de Nico.)
   * ##### Configurer le SSH sur les clients et serveurs   
   * ##### Préparation et découpe du pseudo code: 	
-* ##### Regarder si la journalisation doit être anticipée en amont du script ou si elle peux être gérée après.
+  * ##### Regarder si la journalisation doit être anticipée en amont du script ou si elle peux être gérée après.
 
-* ##### J'ai fait un découpage par blocs, ce de couleur présent dans le fichier exel, et j'ai essayé de gardé les thèmes de chaque bloc( il n'y à que Igor qui à un mix client/serveur)
- ##### Cela peux être amené à bouger.
+  * ##### J'ai fait un découpage par blocs, ce de couleur présent dans le fichier exel, et j'ai essayé de gardé les thèmes de chaque bloc( il n'y à que Igor qui à un mix client/serveur)
+  ##### Cela peux être amené à bouger.
 
 * ### **Nico** : 
 
