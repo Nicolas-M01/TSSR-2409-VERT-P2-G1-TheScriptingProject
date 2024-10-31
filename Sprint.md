@@ -70,6 +70,15 @@ __________________________________
 
 * ## **Semaine 2** :
   * ##### Réalisation du script bash
+1) SSH : Non terminé S1, Terminé S2
+2) Partie "Actions" quasiment terminée en Bash
+3) Partie "Informations" en Bash commencée :
+   * Structure tableau interactif avec choix multiple : Opérationnel
+   * Gestion affichage "si mono choix" + enregistrement ou si multi choix simple enregistrement : opérationnel
+   * Gestion enregistrement dans fichier info_<cible>_<Date>.txt dans dossier Documents au format demandé : opérationnel
+  
+
+
   * ##### Anticiper la journalisation
 ______________________________________________
 ______________________________________________
