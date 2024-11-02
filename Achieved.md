@@ -1,3 +1,5 @@
+Liste des fonctionnalités pour chaque script (A intégrer dans les "cases")
+
 ### BASH
 
 |Type|Cible|Tâche|Etat|
@@ -24,26 +26,26 @@
 |Action|Ordinateur client|Exécution de script sur la machine distante||
 
 
-Date de dernière connexion d’un utilisateur|Fait nico|
-Date de dernière modification du mot de passe
-Liste des sessions ouvertes par l'utilisateur
-Groupe d’appartenance d’un utilisateur
-Historique des commandes exécutées par l'utilisateur
-Droits/permissions de l’utilisateur sur un dossier
-Droits/permissions de l’utilisateur sur un fichier
-Version de l'OS
-Nombre de disque
-Partition (nombre, nom, FS, taille) par disque
-Espace disque restant par partition/volume
-Nom et espace disque d'un dossier (nom de dossier demandé)
-Liste des lecteurs monté (disque, CD, etc.)
-Liste des applications/paquets installées
-Liste des services en cours d'execution
-Liste des utilisateurs locaux
-Mémoire RAM totale
-Utilisation de la RAM
-Recherche des evenements dans le fichier log_evt.log pour un utilisateur
-Recherche des evenements dans le fichier log_evt.log pour un ordinateur
+|Information|Utilisateur|Date de dernière connexion d’un utilisateur|Fait Nico|
+|Information|Utilisateur|Date de dernière modification du mot de passe|Fait nico|
+|Information|Utilisateur|Liste des sessions ouvertes par l'utilisateur|Fait Nico|
+|Information|Utilisateur|Groupe d’appartenance d’un utilisateur|Fait Nico|
+|Information|Utilisateur|Historique des commandes exécutées par l'utilisateur|Fait Nico|
+|Information|Utilisateur|Droits/permissions de l’utilisateur sur un dossier|En cours Nico|
+|Information|Utilisateur|Droits/permissions de l’utilisateur sur un fichier|En cours Nico|
+|Information|Ordinateur client|Version de l'OS||
+|Information|Ordinateur client|Nombre de disque||
+|Information|Ordinateur client|Partition (nombre, nom, FS, taille) par disque||
+|Information|Ordinateur client|Espace disque restant par partition/volume||
+|Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé)||
+|Information|Ordinateur client|Liste des lecteurs monté (disque, CD, etc.)||
+|Information|Ordinateur client|Liste des applications/paquets installées||
+|Information|Ordinateur client|Liste des services en cours d'execution||
+|Information|Ordinateur client|Liste des utilisateurs locaux||
+|Information|Ordinateur client|Mémoire RAM totale||
+|Information|Ordinateur client|Utilisation de la RAM||
+|Information|Script|Recherche des evenements dans le fichier log_evt.log pour un utilisateur||
+|Information|Script|Recherche des evenements dans le fichier log_evt.log pour un ordinateur||
 
 
 
