@@ -8,17 +8,17 @@ Liste des fonctionnalités pour chaque script (A intégrer dans les "cases")
 |Action|Utilisateur|Changement de mot de passe|Fait Nico|
 |Action|Utilisateur|Suppression de compte utilisateur local|Fait Nico|
 |Action|Utilisateur|Désactivation de compte utilisateur local|Fait Nico|
-|Action|Utilisateur|Ajout à un groupe d'administration||
-|Action|Utilisateur|Ajout à un groupe local||
-|Action|Utilisateur|Sortie d’un groupe local||
-|Action|Ordinateur client|Arrêt||
-|Action|Ordinateur client|Redémarrage||
-|Action|Ordinateur client|Verrouillage||
-|Action|Ordinateur client|Mise-à-jour du système||
-|Action|Ordinateur client|Création de répertoire||
-|Action|Ordinateur client|Modification de répertoire||
-|Action|Ordinateur client|Suppression de répertoire||
-|Action|Ordinateur client|Prise de main à distance (CLI)||
+|Action|Utilisateur|Ajout à un groupe d'administration|Fait Igor|
+|Action|Utilisateur|Ajout à un groupe local|Fait Igor|
+|Action|Utilisateur|Sortie d’un groupe local|Fait Igor|
+|Action|Ordinateur client|Arrêt|Fait Igor|
+|Action|Ordinateur client|Redémarrage|Fait Igor|
+|Action|Ordinateur client|Verrouillage|Fait Igor|
+|Action|Ordinateur client|Mise-à-jour du système|Fait Igor|
+|Action|Ordinateur client|Création de répertoire|Fait Igor|
+|Action|Ordinateur client|Modification de répertoire|Fait Igor|
+|Action|Ordinateur client|Suppression de répertoire|Fait Igor|
+|Action|Ordinateur client|Prise de main à distance (CLI)|à revoir|
 |Action|Ordinateur client|Activation du pare-feu||
 |Action|Ordinateur client|Désactivation du pare-feu||
 |Action|Ordinateur client|Installation de logiciel||
