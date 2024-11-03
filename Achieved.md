@@ -19,11 +19,11 @@ Liste des fonctionnalités pour chaque script (A intégrer dans les "cases")
 |Action|Ordinateur client|Modification de répertoire|Fait Igor|
 |Action|Ordinateur client|Suppression de répertoire|Fait Igor|
 |Action|Ordinateur client|Prise de main à distance (CLI)|à revoir|
-|Action|Ordinateur client|Activation du pare-feu||
-|Action|Ordinateur client|Désactivation du pare-feu||
-|Action|Ordinateur client|Installation de logiciel||
-|Action|Ordinateur client|Désinstallation de logiciel||
-|Action|Ordinateur client|Exécution de script sur la machine distante||
+|Action|Ordinateur client|Activation du pare-feu|Fait Martin|
+|Action|Ordinateur client|Désactivation du pare-feu|Fait Martin|
+|Action|Ordinateur client|Installation de logiciel|Fait Martin|
+|Action|Ordinateur client|Désinstallation de logiciel|Fait Martin|
+|Action|Ordinateur client|Exécution de script sur la machine distante|En cours Martin|
 |Information|Utilisateur|Date de dernière connexion d’un utilisateur|Fait Nico|
 |Information|Utilisateur|Date de dernière modification du mot de passe|Fait nico|
 |Information|Utilisateur|Liste des sessions ouvertes par l'utilisateur|Fait Nico|
