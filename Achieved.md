@@ -29,8 +29,8 @@ Liste des fonctionnalités pour chaque script (A intégrer dans les "cases")
 |Information|Utilisateur|Liste des sessions ouvertes par l'utilisateur|Fait Nico|
 |Information|Utilisateur|Groupe d’appartenance d’un utilisateur|Fait Nico|
 |Information|Utilisateur|Historique des commandes exécutées par l'utilisateur|Fait Nico|
-|Information|Utilisateur|Droits/permissions de l’utilisateur sur un dossier|En cours Nico|
-|Information|Utilisateur|Droits/permissions de l’utilisateur sur un fichier|En cours Nico|
+|Information|Utilisateur|Droits/permissions de l’utilisateur sur un dossier|Fait Nico|
+|Information|Utilisateur|Droits/permissions de l’utilisateur sur un fichier|Fait Nico|
 |Information|Ordinateur client|Version de l'OS||
 |Information|Ordinateur client|Nombre de disque||
 |Information|Ordinateur client|Partition (nombre, nom, FS, taille) par disque||
