@@ -23,7 +23,7 @@ Liste des fonctionnalités pour chaque script (A intégrer dans les "cases")
 |Action|Ordinateur client|Désactivation du pare-feu|Fait Martin|
 |Action|Ordinateur client|Installation de logiciel|Fait Martin|
 |Action|Ordinateur client|Désinstallation de logiciel|Fait Martin|
-|Action|Ordinateur client|Exécution de script sur la machine distante|En cours Martin|
+|Action|Ordinateur client|Exécution de script sur la machine distante|fait Martin|
 |Information|Utilisateur|Date de dernière connexion d’un utilisateur|Fait Nico|
 |Information|Utilisateur|Date de dernière modification du mot de passe|Fait nico|
 |Information|Utilisateur|Liste des sessions ouvertes par l'utilisateur|Fait Nico|
