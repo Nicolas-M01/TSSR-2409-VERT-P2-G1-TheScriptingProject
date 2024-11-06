@@ -5,6 +5,7 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 NC='\033[0m' # Aucune couleur
+Continue="yes"
 
 FORMATTED_DATE=$(date +'%Y%m%d') # Formatage de la date en YYYYMMDD
 FORMATTED_TIME=$(date +'%T') # Formatage de l'heure en HH:MM:SS
@@ -395,10 +396,14 @@ menu()
         esac
     done
 }
-menu
 
 
-
+# Tant que l'utilisateur tape yes, le programme continue
+while [[ $Continue = "yes" || $Continue = "YES" ]]
+do
+    menu
+    read -p "Tapez [yes] pour continuer : " Continue
+done
 
 
 # On enregistre la fin du script dans le fichier log
