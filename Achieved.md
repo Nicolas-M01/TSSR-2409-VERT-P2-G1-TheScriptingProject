@@ -34,9 +34,9 @@ Liste des fonctionnalités pour chaque script (A intégrer dans les "cases")
 |Information|Ordinateur client|Version de l'OS|Fait Martin|
 |Information|Ordinateur client|Nombre de disque|Fait Martin|
 |Information|Ordinateur client|Partition (nombre, nom, FS, taille) par disque|Fait Martin|
-|Information|Ordinateur client|Espace disque restant par partition/volume|En cours Martin|
-|Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé)|En cours Martin|
-|Information|Ordinateur client|Liste des lecteurs monté (disque, CD, etc.)|En cours Martin|
+|Information|Ordinateur client|Espace disque restant par partition/volume|^Fait Martin|
+|Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé)|Fait Martin|
+|Information|Ordinateur client|Liste des lecteurs monté (disque, CD, etc.)|Fait Martin|
 |Information|Ordinateur client|Liste des applications/paquets installées||
 |Information|Ordinateur client|Liste des services en cours d'execution||
 |Information|Ordinateur client|Liste des utilisateurs locaux||
