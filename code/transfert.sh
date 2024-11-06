@@ -27,7 +27,8 @@ function is_valid_ip() {
 				
 				scp logiciel.ch "$user@$ip:/computer/tmp
 				ssh "$user@$ip"
-				
+				ssh "$user@$ip" chmod 744 NOMDUSCRIPT
+    				ssh "$user@$ip" ./NOMDUSCRIPT
 
 			fi
 		fi
