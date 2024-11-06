@@ -1,17 +1,38 @@
 #!/bin/bash
 
+# Définir les couleurs dans les variables
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+NC='\033[0m' # Aucune couleur
+
 FORMATTED_DATE=$(date +'%Y%m%d') # Formatage de la date en YYYYMMDD
+FORMATTED_TIME=$(date +'%T') # Formatage de l'heure en HH:MM:SS
 choice=0
 target="" # Cible pour les informations. Elle peut être un utilisateur ou un ordinateur
+
+
+# Lancement du script, on envoie l'information dans le fichier log
+echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-********StartScript********" >> /var/log/log_evt.log
+
 
 
 menu()
 {
     # Menu selection multiple
     echo -e "\n"
-    echo -e "1) Date de dernière connexion de l'utilisateur "
+    echo -e "1) Date de dernière connexion de l'utilisateur"
     echo -e "2) Date de dernière modification du mot de passe"
     echo -e "3) Liste des sessions ouvertes par l'utilisateur"
+    echo -e "4) Groupe d'appartenance d'un utilisateur"
+    echo -e "5) Historique des commandes exécutées par l'utilisateur"
+    echo -e "6) Droits/permissions de l’utilisateur sur un dossier"
+    echo -e "7) Droits/permissions de l’utilisateur sur un fichier"
+    echo -e "8) Version de l'OS"
+    echo -e "14) Liste des applications/paquets installés"
+    echo -e "15) Liste des services en cours d'execution"
+    echo -e "16) Liste des utilisateurs locaux"
+
 
     # Lecture à choix multiple
     echo -e "\nRentrez votre choix et tapez [Entrée]\nOu un choix multiple en espaçant chaque choix (Ex: [1 2 4 9]) et tapez [Entrée]\n"
@@ -24,16 +45,21 @@ menu()
     do
          
         case $i in
+            # Date de dernière connexion de l'utilisateur
             1)
-                echo "1) Date de dernière connexion de l'utilisateur "
+                echo -e "\n1) Date de dernière connexion de l'utilisateur "
                 echo "Pour quel utilisateur voudriez vous connaître la dernière connexion ? "
                 read target
+
+                # On copie dans fichier log
+                echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-1) Date de dernière connexion de l'utilisateur" >> /var/log/log_evt.log
+
 
                 # On vérifie que la cible existe bien
                 cat /etc/passwd | grep -q "^$target:"
                 # Si elle existe on execute le script  
 
-                 
+                
                 if [ $? -eq 0 ]
                 then                
                     # On compte le nombre d'éléments dans le tableau
@@ -42,9 +68,11 @@ menu()
                     then
                     # On affiche le résultat de la commande à l'écran.
                     # Les backticks servent à executer la commande, pendant que les "" l'affichent.
-                    echo "`last $target`"
+                    echo -e "\n* Date de dernière connexion de $target :\n`last $target`"
                     fi
-                    last $target >> ~/Documents/"info_<$target>_<$FORMATTED_DATE>.txt"
+                # On copie dans le fichier info
+                echo -e "\n* 1) Date de dernière connexion de l'utilisateur $target\n`last $target`" >> ~/Documents/"info_"$target"_"$FORMATTED_DATE".txt"
+
 
                 # Si elle n'existe pas on avertit et on quitte le programme
                 else
@@ -52,45 +80,327 @@ menu()
                     exit 1
                 fi
                 ;;
-
+            
+            # Date de dernière modification du mot de passe
             2)
-                echo "2) Date de dernière modification du mot de passe"
+                echo -e "\n2) Date de dernière modification du mot de passe"
                 echo "Pour quel utilisateur voudriez vous connaître la date de dernière modification de mot de passe ? "
                 read target
+
+                # On copie dans fichier log
+                echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-2) Date de dernière modification du mot de passe" >> /var/log/log_evt.log
 
                 # On vérifie que la cible existe bien
                 cat /etc/passwd | grep -q "^$target:"
                 # Si elle existe on execute le script
                 if [ $? -eq 0 ]
                 then  
+                    
+                    # On rentre la date de dernière modification du MDP que l'on retravaille avec grep pour n'avoir que la date format MM/DD/YYYY
+                    PassWordDate=$(sudo passwd -S $target | grep -o "[0-9]*/[0-9]*/[0-9]*")
 
                     # On compte le nombre d'éléments dans le tableau
                     # Si il n'y en a qu'un on l'affiche
                     if [ ${#choice[@]} -eq 1 ]
                     then
-                    
                     # On affiche le résultat de la commande à l'écran.
-                    PassWordDate=$(sudo passwd -S $target | grep -o "[0-9]*/[0-9]*/[0-9]*")
-                    echo "La date de dernière modification du mot de passe de $target était le $PassWordDate "
+                    echo -e "\n* La date de dernière modification du mot de passe de $target était le $PassWordDate\n"
                     fi
-                    echo "La date de dernière modification du mot de passe de $target était le $PassWordDate " >> ~/Documents/"info_<$target>_<$FORMATTED_DATE>.txt"
+                    echo -e "\n* 2) La date de dernière modification du mot de passe de $target était le $PassWordDate\n" >> ~/Documents/"info_"$target"_"$FORMATTED_DATE".txt"
 
-                # Si la cilbe n'existe pas, on prévient et on ferme
+
+                # Si la cible n'existe pas, on prévient et on ferme
                 else
-                    echo "La cible n'existe pas le programme va s'arrêter"
+                    echo "La cible n'existe pas, le programme va s'arrêter"
                     exit 1
                                 
                 fi
                 ;;
 
+            # Liste des sessions ouvertes par l'utilisateur
             3)
-                echo "choix 3";;
+                echo -e "\n3) Liste des sessions ouvertes par l'utilisateur"
 
+                # On copie dans fichier log
+                echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-3) Liste des sessions ouvertes par l'utilisateur" >> /var/log/log_evt.log
+                target=$(whoami)
+                    # On compte le nombre d'éléments dans le tableau
+                    # Si il n'y en a qu'un on l'affiche
+                    if [ ${#choice[@]} -eq 1 ]
+                    then
+                    # Affichage commande "w"
+                    echo -e "\n* Liste des sessions ouvertes par $target :\n`w`"
+                    fi
+                # Si plusieurs choix dans le tableau, on enregistre directement
+                
+                echo -e "\n* 3) Liste des sessions ouvertes par l'utilisateur $target :\n`w`" >> ~/Documents/"info_"$target"_"$FORMATTED_DATE".txt"
+
+                ;;
+
+            # Groupe d'appartenance d'un utilisateur
+            4)
+                echo -e "\n4) Groupe d'appartenance d'un utilisateur"
+                echo "Pour quel utilisateur voudriez vous connaître le groupe ? "
+                read target
+
+                # On copie dans le log
+                echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-4) Groupe d'appartenance d'un utilisateur" >> /var/log/log_evt.log
+
+                # On vérifie que la cible existe bien
+                cat /etc/passwd | grep -q "^$target:"
+                # Si elle existe on execute le script  
+
+                if [ $? -eq 0 ]
+                then                
+                    
+                    # On compte le nombre d'éléments dans le tableau
+                    # Si il n'y en a qu'un on l'affiche
+                    if [ ${#choice[@]} -eq 1 ]
+                    then
+                    # On affiche le résultat de la commande à l'écran.
+                    # Les backticks servent à executer la commande, pendant que les "" l'affichent.
+                    echo -e "\n${YELLOW}* Voici les groupes d'appartenance de${NC} `groups $target`\n" 
+                    fi
+                # On copie dans fichier info    
+                echo -e "\n${YELLOW}* 4) Voici les groupes d'appartenance de${NC} `groups $target`\n" >> ~/Documents/"info_"$target"_"$FORMATTED_DATE".txt"
+                # Si elle n'existe pas on avertit et on quitte le programme
+                else
+                    echo -e "${RED}La cible n'existe pas le programme va s'arrêter${NC}"
+                    exit 1
+                fi
+                ;;
+
+            # Historique des commandes exécutées par l'utilisateur
+            5)
+                echo -e "5) Historique des commandes exécutées par l'utilisateur"
+
+                # On copie dans le log
+                echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-5) Historique des commandes exécutées par l'utilisateur" >> /var/log/log_evt.log
+
+                # On redéfinit la cible pour pouvoir l'afficher dans le résultat avec plus de clarté
+                target=$(whoami)
+
+                # On compte le nombre d'éléments dans le tableau
+                # Si il n'y en a qu'un on l'affiche
+                    if [ ${#choice[@]} -eq 1 ]
+                    then
+                    # On affiche les 10 dernières commandes de l'utilisateur courant
+                    HISTFILE=~/.bash_history
+                    set -o history
+                    echo -e "\n${YELLOW}* Historique des 10 dernières commandes exécutées par $target :${NC}\n`history 10`"
+                    
+                    fi
+                # On copie dans fichier info
+                echo -e "\n${YELLOW}* 5) Historique des 10 dernières commandes exécutées par l'utilisateur $target :${NC}\n`history 10`" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+                
+                
+                ;;
+
+
+            # Droits/permissions de l’utilisateur sur un dossier
+            6)
+                echo -e "\n6) Droits/permissions de l’utilisateur sur un dossier"
+                echo "Pour quel dossier voudriez vous connaître les droits ? "
+                read directory
+                echo "Indiquez le chemin du dossier que vous recherchez :"
+                read path
+
+                # On copie dans le log
+                echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-6) Droits/permissions de l’utilisateur sur un dossier" >> /var/log/log_evt.log
+
+                    # On execute la commande find pour les dossiers et on renvoie avec un -ls.
+                    # On stock dans une variable et on envoie le résultat en sauvegarde.
+                    DirectoryRight=$(find $path -type d -name "$directory" -ls)
+                    
+                    # Si il trouve le dossier ou si le dossier n'existe pas il renvoie 0 mais la commande fonctionne
+                    if [ $? -eq 0 ]
+                    then
+                    # On envoie le résultat dans le fichier
+                    echo -e "\n${YELLOW}* 6) Voici les droits de `whoami` pour le dossier $directory :\n${NC} $DirectoryRight" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+
+                    # Si un seul choix dans le menu, on affiche le résultat
+                        if [ ${#choice[@]} -eq 1 ]
+                        then
+                        echo -e "\n${YELLOW}* Droits/permissions de `whoami` pour le dossier $directory :\n${NC} $DirectoryRight"
+                            if [ -z "$DirectoryRight" ]
+                            then
+                            echo -e "${RED}Il n'y a pas de dossier de ce nom${NC}"
+                            fi
+                        fi
+
+                        # On vérifie si la commande n'a rien renvoyé et on informe qu'il n'y a rien (pour éviter un espace vide)
+                        # On affiche en console et on enregistre dans le fichier.
+                        if [ -z "$DirectoryRight" ]
+                        then
+                        echo -e "${RED}Il n'y a pas de dossier de ce nom${NC}" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+                        fi    
+
+                    else
+                        # Si le chemin n'existe pas le programme fermer
+                        echo -e "${RED}Erreur le programme va fermer${NC}"
+                    fi
+                    ;;
+
+                        
+            # Droits/permissions de l’utilisateur sur un fichier
+            7)
+                echo -e "\n7) Droits/permissions de l’utilisateur sur un fichier"
+                echo "Pour quel fichier voudriez vous connaître les droits ? "
+                read file
+                echo "Indiquez le chemin du fichier que vous recherchez :"
+                read path
+
+                # On copie dans le log
+                echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-7) Droits/permissions de l’utilisateur sur un fichier" >> /var/log/log_evt.log
+
+
+                    # On execute la commande find pour les fichiers et on renvoie avec un -ls.
+                    # On stock dans une variable et on envoie le résultat en sauvegarde dans "Fileright"
+                    FileRight=$(find $path -type f -name "$file" -ls)
+
+
+                    # Si il trouve le fichier ou si le fichier n'existe pas il renvoie 0 mais la commande fonctionne
+                    if [ $? -eq 0 ]
+                    then
+                    # On envoie le résultat dans le fichier
+                    echo -e "\n${YELLOW}* 7) Droits/permissions de `whoami` pour le fichier $file :\n${NC} $FileRight" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+                       
+                        # Si un seul choix dans le menu on affiche le résultat
+                        if [ ${#choice[@]} -eq 1 ]
+                        then
+                        echo -e "\n${YELLOW}* Voici les droits de `whoami` pour le fichier $file :\n${NC} $FileRight" 
+                            if [ -z "$FileRight" ]
+                            then
+                            echo "Il n'y a pas de fichier de ce nom"
+                            fi
+                        
+                        fi
+
+                        # On vérifie si la commande n'a rien renvoyé et on informe qu'il n'y a rien (pour éviter un espace vide)
+                        # On affiche en console et on enregistre dans le fichier.
+                        if [ -z "$FileRight" ]
+                        then
+                        echo "Il n'y a pas de fichier de ce nom" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+                        fi    
+                    
+                    else
+                        # Si le chemin n'existe pas le programme fermer
+                        echo -e "${RED}Erreur le programme va fermer${NC}"
+                        exit 1
+                    fi
+                    ;;
+            # Version de l'OS
+            8)
+                if [ ${#choice[@]} -eq 1 ]
+                    then
+                    # On affiche le résultat de la commande à l'écran.
+                    echo -e "\nLa version de cet OS est : $(cat /etc/os-release | grep -v "NAME" | grep -v "PRETTY_NAME" | grep -v "ID" | grep -v "ID_LIKE" | grep -v "HOME_URL" | grep -v "SUPPORT_URL" | grep -v "BUG_REPORT_URL" | grep -v "PRIVACY_POLICY_URL" | grep -v "UBUNTU_CODENAME")"
+                    fi
+                
+                echo -e "\nLa version de cet OS est : $(cat /etc/os-release | grep -v "NAME" | grep -v "PRETTY_NAME" | grep -v "ID" | grep -v "ID_LIKE" | grep -v "HOME_URL" | grep -v "SUPPORT_URL" | grep -v "BUG_REPORT_URL" | grep -v "PRIVACY_POLICY_URL" | grep -v "UBUNTU_CODENAME")" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
+                echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-Version de l'OS" >> /var/log/log_evt.log
+                ;;
+
+            # Liste des applications/paquets installées
+            14)
+                echo -e "\n14) Liste des applications paquets/installés"
+
+                # On copie dans fichier log
+                echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-14) Liste des applications/paquets installées" >> /var/log/log_evt.log
+
+                # Fonction qui va mettre dans une liste les applications/paquets installées
+                function list() {
+                apt list --installed
+                }
+
+                
+                if [ $? -eq 0 ]
+                then                
+                    # On compte le nombre d'éléments dans le tableau
+                    # Si il n'y en a qu'un on l'affiche
+                    if [ ${#choice[@]} -eq 1 ]
+                    then
+                    # On affiche le résultat de la commande à l'écran.
+                    echo -e "Voici les applications/paquets installées :"
+                    list
+                    fi
+                echo -e "\n* 14) Voici les applications/paquets installés :\n `list`" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+
+                fi
+                ;;
+            # Liste des services en cours d'execution
+            15)
+                echo -e "\n15) Liste des services en cours d'execution"
+
+                # On copie dans fichier log
+                echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-15) Liste des services en cours d'execution" >> /var/log/log_evt.log
+
+                # Fonction qui va mettre dans une liste les services en cours d'execution
+                function list() {
+                systemctl --type=service --state=running --no-pager --quiet
+
+                }
+
+                
+                if [ $? -eq 0 ]
+                then                
+                    # On compte le nombre d'éléments dans le tableau
+                    # Si il n'y en a qu'un on l'affiche
+                    if [ ${#choice[@]} -eq 1 ]
+                    then
+                    # On affiche le résultat de la commande à l'écran.
+                    echo -e "Voici les services en cours d'execution :"
+                    list
+
+                    fi
+                    echo -e "\n* 15) Services en cours d'execution :\n `list`" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+
+                fi
+                ;;
+            # Liste des utilisateurs locaux
+            16)
+                echo -e "\n16) Liste des utilisateurs locaux"
+
+                # On copie dans fichier log
+                echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-16) Liste des utilisateurs locaux" >> /var/log/log_evt.log
+
+
+                 # Fonction qui va mettre dans une liste les services en cours d'execution
+                function list() {
+                cut -d: -f1 /etc/passwd
+                }
+             
+                if [ $? -eq 0 ]
+                then                
+                    # On compte le nombre d'éléments dans le tableau
+                    # Si il n'y en a qu'un on l'affiche
+                    if [ ${#choice[@]} -eq 1 ]
+                    then
+                    # On affiche le résultat de la commande à l'écran.
+                    echo "Voici la liste des utilisateur locaux :"
+                    list
+                                        
+                    fi
+
+                echo -e "\n* 16) Voici la liste des utilisateurs locaux :\n`list`" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+
+                fi
+                ;;
+
+  
             *)
-                echo "Erreur";;
+                echo -e "${RED}Erreur. Le programme va fermer.${NC}"
+                exit 1
+                ;;
         esac
     done
 }
 menu
 
+
+
+
+
+# On enregistre la fin du script dans le fichier log
+echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-********EndScript********" >> /var/log/log_evt.log
 
