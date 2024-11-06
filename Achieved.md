@@ -32,11 +32,11 @@ Liste des fonctionnalités pour chaque script (A intégrer dans les "cases")
 |Information|Utilisateur|Droits/permissions de l’utilisateur sur un dossier|Fait Nico|
 |Information|Utilisateur|Droits/permissions de l’utilisateur sur un fichier|Fait Nico|
 |Information|Ordinateur client|Version de l'OS|Fait Martin|
-|Information|Ordinateur client|Nombre de disque||
-|Information|Ordinateur client|Partition (nombre, nom, FS, taille) par disque||
-|Information|Ordinateur client|Espace disque restant par partition/volume||
-|Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé)||
-|Information|Ordinateur client|Liste des lecteurs monté (disque, CD, etc.)||
+|Information|Ordinateur client|Nombre de disque|En cours Martin|
+|Information|Ordinateur client|Partition (nombre, nom, FS, taille) par disque|En cours Martin|
+|Information|Ordinateur client|Espace disque restant par partition/volume|En cours Martin|
+|Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé)|En cours Martin|
+|Information|Ordinateur client|Liste des lecteurs monté (disque, CD, etc.)|En cours Martin|
 |Information|Ordinateur client|Liste des applications/paquets installées||
 |Information|Ordinateur client|Liste des services en cours d'execution||
 |Information|Ordinateur client|Liste des utilisateurs locaux||
