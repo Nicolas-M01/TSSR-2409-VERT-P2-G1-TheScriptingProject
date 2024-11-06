@@ -19,9 +19,9 @@
   
 |   | Sprint S1 | Sprint S2 |  Sprint S3 | Sprint S4 |  
 | :--: | :-------: | :-------: | :-------: | :-------: |  
-| SCRUM MASTER | Martin | Martin | xxx | xxx |  
-| PRODUCT OWNER | Igor | Nicolas | xxx | xxx |  
-| TECHNICIANS | Elsa & Nicolas | Elsa & Igor | xxx & xxx | xxx & xxx |  
+| SCRUM MASTER | Martin | Martin | Igor  | xxx |  
+| PRODUCT OWNER | Igor | Nicolas | Martin | xxx |  
+| TECHNICIANS | Elsa & Nicolas | Elsa & Igor | Elsa & Nicolas | xxx & xxx |  
 
 ## Choix techniques : quel OS, quelle version, etc.
 
