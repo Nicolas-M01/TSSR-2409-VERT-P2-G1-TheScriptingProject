@@ -84,8 +84,15 @@ __________________________________
 ______________________________________________
 ______________________________________________
 * ## **Semaine 3 :**
-  * ##### Réalisation du script PowerShell.
-  * ##### Anticiper la journalisation
+  1 - Finaliser la partie Bash
+   - Finaliser la partie information
+   - Tracer les activités effectuées dans le fichier log_evt.log
+   - Rassembler en 1 grand scrit Bash
+   - Rendre propre le script Bash
+   - Commencer la documentation
+  
+  2 - Réalisation du script PowerShell
+  
 __________________________________________
 _______________________________________
 * ## **Semaine 4 :**
