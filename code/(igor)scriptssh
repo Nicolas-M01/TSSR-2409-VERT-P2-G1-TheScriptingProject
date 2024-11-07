@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo "Sur quel ordinateur client souhaitez-vous vous connecter ? "
+echo "1) CLILIN01 (Ubuntu)"
+echo "2) CLIWIN01 (Windows)"
+read choix
+
+case $choix in
+     1)
+                
+         scp scriptdistant.sh wilder@172.16.10.30:/tmp
+         ssh wilder@172.16.10.30 'chmod 777 /tmp/scriptdistant.sh'
+         ssh wilder@172.16.10.30
+          ;;
+      
+      2)
+         echo "Connexion à CLIWIN01 n'est pas encore implémentée."
+          ;;
+      *)
+          echo "Choix invalide."
+          ;;
+  esac
+  ;;
