@@ -30,9 +30,17 @@ menu()
     echo -e "6) Droits/permissions de l’utilisateur sur un dossier"
     echo -e "7) Droits/permissions de l’utilisateur sur un fichier"
     echo -e "8) Version de l'OS"
+    echo -e "9) Nombre de disques"
+    echo -e "10) Partition par disque"
+    echo -e "11) Espace disque restant"
+    echo -e "12) Nom et espace disque d'un dossier"
+    echo -e "13) Liste des lecteurs montés"
     echo -e "14) Liste des applications/paquets installés"
     echo -e "15) Liste des services en cours d'execution"
     echo -e "16) Liste des utilisateurs locaux"
+    echo -e "17) Mémoire RAM totale"
+    echo -e "18) Utilisation de la RAM"
+    
 
 
     # Lecture à choix multiple
@@ -292,14 +300,138 @@ menu()
                     ;;
             # Version de l'OS
             8)
+                echo -e "\n8) Version de l'OS"
                 if [ ${#choice[@]} -eq 1 ]
                     then
                     # On affiche le résultat de la commande à l'écran.
                     echo -e "\nLa version de cet OS est : $(cat /etc/os-release | grep -v "NAME" | grep -v "PRETTY_NAME" | grep -v "ID" | grep -v "ID_LIKE" | grep -v "HOME_URL" | grep -v "SUPPORT_URL" | grep -v "BUG_REPORT_URL" | grep -v "PRIVACY_POLICY_URL" | grep -v "UBUNTU_CODENAME")"
                     fi
+                # On enregistre dans fichier info
+                echo -e "\n* 8) La version de cet OS est : $(cat /etc/os-release | grep -v "NAME" | grep -v "PRETTY_NAME" | grep -v "ID" | grep -v "ID_LIKE" | grep -v "HOME_URL" | grep -v "SUPPORT_URL" | grep -v "BUG_REPORT_URL" | grep -v "PRIVACY_POLICY_URL" | grep -v "UBUNTU_CODENAME")" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
+                # On copie dans fichier log
+                echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-8) Version de l'OS" >> /var/log/log_evt.log
+                ;;
+
+            # Nombre de disques"
+            9)
+                echo -e "\n9) Nombre de disques"
+                # On copie dans fichier log
+                echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-9) Nombre de disques" >> /var/log/log_evt.log
                 
-                echo -e "\nLa version de cet OS est : $(cat /etc/os-release | grep -v "NAME" | grep -v "PRETTY_NAME" | grep -v "ID" | grep -v "ID_LIKE" | grep -v "HOME_URL" | grep -v "SUPPORT_URL" | grep -v "BUG_REPORT_URL" | grep -v "PRIVACY_POLICY_URL" | grep -v "UBUNTU_CODENAME")" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
-                echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-Version de l'OS" >> /var/log/log_evt.log
+                # Liste uniquement les disques
+                echo -e "\n* 9) Nombre de disques :\n`lsblk | grep -v "loop" | grep -v "sr0"`" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
+                # Nombre de disques
+                disk_count=$(lsblk -d -o NAME | grep -vE "loop|sr0" | wc -l)
+
+                # Structure if pour ajouter ou enlever un "s" en fonction du nombre de disques
+                if [ $disk_count -gt 1 ]; then
+                    echo "Nombre de disques de `whoami` : $disk_count" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
+                else
+                    echo "Nombre de disque de `whoami` : $disk_count" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
+                fi
+                
+                # Affichage si un seul choix
+                if [ ${#choice[@]} -eq 1 ]
+                then
+                    lsblk | grep -v "loop" | grep -v "sr0"  # Liste uniquement les disques
+                    disk_count=$(lsblk -d -o NAME | grep -vE "loop|sr0" | wc -l)  # Nombre de disques
+                        if [ $disk_count -gt 1 ]; then
+                            echo "Nombre de disques de `whoami` : $disk_count"
+                        else
+                            echo "Nombre de disque de `whoami` : $disk_count"
+                        fi
+                fi
+
+                
+
+
+
+               
+                ;;
+
+            # Partition par disque
+            10)
+                echo -e "\n10) Partition par disque"
+                # On copie dans fichier log
+                echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-10) Partition par disque" >> /var/log/log_evt.log
+
+                # On copie dans fichier info
+                echo -e "\n* 10) Partition par disque :\n $resultat1=$(df -h | grep -v "tmpfs" | grep -v " /dev/sr0")" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
+                
+                if [ ${#choice[@]} -eq 1 ]
+                    then
+                    echo -e "Voici les partitions sur cette machine :\n $resultat1=$(df -h | grep -v "tmpfs" | grep -v " /dev/sr0")" 
+                fi
+                ;;
+
+            # Espace disque restant"
+            11)
+                echo -e "\n11) Espace disque restant"
+                # On copie dans fichier log
+                echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-11) Espace disque restant" >> /var/log/log_evt.log
+                
+                # Enregistrement dans fichir info
+                echo -e "\n* 11) Voici la place disponible sur chaque partition :\n $resultat2=$(df -h | grep -v "tmpfs" | grep -v "/dev/sr0" | awk 'BEGIN {OFS="       "} {print $1,$2, $3, $4}')" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
+
+
+                if [ ${#choice[@]} -eq 1 ]
+                then
+                    echo -e "Voici la place disponible sur chaque partition :\n $resultat2=$(df -h | grep -v "tmpfs" | grep -v "/dev/sr0" | awk 'BEGIN {OFS="       "} {print $1,$2, $3, $4}')"
+                fi                               
+                ;;
+
+            # Nom et espace disque d'un dossier"
+            12)
+                echo -e "\n12) Nom et espace disque d'un dossier"
+                # On copie dans fichier log
+                echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-12) Nom et espace disque d'un dossier" >> /var/log/log_evt.log
+
+                echo "Sur quel dossier souhaitez-vous des indications ?" 
+                read directory
+
+                echo "Veuillez renseigner un chemin :" 
+                read path
+
+
+                # Vérifier si le chemin existe et est un répertoire
+                if [ -d "$path" ]; then
+                    # Chercher le répertoire spécifié dans le chemin
+                    Total=$(find "$path" -type d -name "$directory")
+                    if [ -n "$Total" ]; then
+                        if [ ${#choice[@]} -eq 1 ]
+                        then
+                            echo -e "La taille du répertoire $directory est :\n $resultat3=$(sudo du -sh "$Total")"
+                        fi
+
+                    echo -e "\n* 12) Nom et espace disque d'un dossier\nLa taille du répertoire $directory est :\n $resultat3=$(sudo du -sh "$Total")" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
+
+                    else
+                    echo "Le répertoire '$directory' n'a pas été trouvé dans le chemin spécifié." 
+                    fi
+                else
+                    echo "Le chemin spécifié '$path' n'est pas un répertoire valide." 
+                fi
+                ;;
+
+
+            # Liste des lecteurs montés
+            13)
+                echo -e "\n13) Liste des lecteurs montés"
+                # On copie dans fichier log
+                echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-13) Liste des lecteurs montés" >> /var/log/log_evt.log
+                
+                # On lance les commandes et on les rentre dans une variable
+                resultat4=$(lsblk | grep -v "loop")
+                
+                #Si un seul choix, on affiche le résultat à l'écran
+                if [ ${#choice[@]} -eq 1 ]
+                    then
+                    echo -e "Liste des lecteurs montés :\n$resultat4" 
+                fi
+
+                # On enregistre dans le fichier info
+                echo -e "\n* 13) Liste des lecteurs montés :\n$resultat4" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
+
                 ;;
 
             # Liste des applications/paquets installées
@@ -388,9 +520,29 @@ menu()
                 fi
                 ;;
 
+            # Mémoire RAM totale"
+            17)
+                echo -e "\n17) Mémoire RAM totale"
+
+                # On copie dans fichier log
+                echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-17) Mémoire RAM totale" >> /var/log/log_evt.log
+                ;;
+
+            # Utilisation de la RAM"
+            18)
+                echo -e "\n18) Utilisation de la RAM"
+
+                # On copie dans fichier log
+                echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-18) Utilisation de la RAM" >> /var/log/log_evt.log
+
+                ;;
+
   
+            
+            
+            
             *)
-                echo -e "${RED}Erreur. Le programme va fermer.${NC}"
+                echo -e "${RED}[Erreur] Le programme va fermer.${NC}"
                 exit 1
                 ;;
         esac
@@ -402,6 +554,7 @@ menu()
 while [[ $Continue = "yes" || $Continue = "YES" ]]
 do
     menu
+    echo -e "\n"
     read -p "Tapez [yes] pour continuer : " Continue
 done
 
