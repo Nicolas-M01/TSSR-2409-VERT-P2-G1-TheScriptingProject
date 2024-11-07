@@ -312,7 +312,7 @@ menu()
                 echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-8) Version de l'OS" >> /var/log/log_evt.log
                 ;;
 
-            # Nombre de disques"
+            # Nombre de disques
             9)
                 echo -e "\n9) Nombre de disques"
                 # On copie dans fichier log
@@ -364,7 +364,7 @@ menu()
                 fi
                 ;;
 
-            # Espace disque restant"
+            # Espace disque restant
             11)
                 echo -e "\n11) Espace disque restant"
                 # On copie dans fichier log
@@ -380,7 +380,7 @@ menu()
                 fi                               
                 ;;
 
-            # Nom et espace disque d'un dossier"
+            # Nom et espace disque d'un dossier
             12)
                 echo -e "\n12) Nom et espace disque d'un dossier"
                 # On copie dans fichier log
@@ -526,14 +526,34 @@ menu()
 
                 # On copie dans fichier log
                 echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-17) Mémoire RAM totale" >> /var/log/log_evt.log
+                
+                # On enregistre dans le fichier information
+                echo -e "\n* 17) Votre RAM totale est de $(free -h | grep "Mem:" | awk '{print$2}')" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+
+                # Si un seul choix dans le menu
+                if [ ${#choice[@]} -eq 1 ]
+                then
+                    # Affichage de la RAM totale avec free et découpe avec awk et grep
+                    echo -e "Votre RAM totale est de $(free -h | grep "Mem:" | awk '{print$2}')"
+                fi
                 ;;
 
-            # Utilisation de la RAM"
+            # Utilisation de la RAM
             18)
                 echo -e "\n18) Utilisation de la RAM"
 
                 # On copie dans fichier log
                 echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-18) Utilisation de la RAM" >> /var/log/log_evt.log
+
+                # On enregistre dans le fichier information
+                echo -e "\n* 18) Votre RAM utilisée est de $(free -h | grep "Mem:" | awk '{print$3}')" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+
+                # Si un seul choix dans le menu
+                if [ ${#choice[@]} -eq 1 ]
+                then
+                    # Affichage de la RAM totale avec free et découpe avec awk et grep
+                    echo -e "Votre RAM utilisée est de $(free -h | grep "Mem:" | awk '{print$3}')"
+                fi
 
                 ;;
 
@@ -556,6 +576,7 @@ do
     menu
     echo -e "\n"
     read -p "Tapez [yes] pour continuer : " Continue
+    echo -e "\n"
 done
 
 
