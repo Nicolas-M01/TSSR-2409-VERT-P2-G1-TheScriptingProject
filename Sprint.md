@@ -85,11 +85,21 @@ ______________________________________________
 ______________________________________________
 * ## **Semaine 3 :**
   1 - Finaliser la partie Bash
+   - Parametrer la connection via SSH
+       - Martin
    - Finaliser la partie information
+       - Nicolas : toute la partie UTILISATEUR & la partie gestion des disques
+       - Martin : Version de l'OS
+       - Elsa : la partie RAM
+       - Igor : la partie liste des logiciel & services
    - Tracer les activités effectuées dans le fichier log_evt.log
+       - 
    - Rassembler en 1 grand scrit Bash
+       - Igor
    - Rendre propre le script Bash
+       -
    - Commencer la documentation
+       - Martin
   
   2 - Réalisation du script PowerShell
   
