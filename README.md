@@ -10,7 +10,10 @@
 
 
 ## Introduction : mise en contexte
-Pour ce projet nous 
+Pour ce projet nous devons réaliser un script d'actions et d'informations, sur une machine distante.
+
+En effet ce script est partagé en deux partie actions et informations, la première partie aura pour effet d'influer directement sur l'OS ciblé, tandis que la deuxième recueillera des informations sur ce même OS.
+Le choix à été fait de réaliser le script en 4 partie, une pour chacun des menbres du groupe.
 
 ## Membres du groupe de projet (rôles par sprint)
   
@@ -51,7 +54,21 @@ Pour ce projet nous
     - Adresse IP fixe : 172.16.10.10/24
 
 
-- Difficultés rencontrées : problèmes techniques rencontrés
-- Solutions trouvées : Solutions et alternatives trouvées
-- Améliorations possibles : suggestions d’améliorations futures
+**- Difficultés rencontrées : problèmes techniques rencontrés**
+
+1) Notre première difficultée à été de comprendre les besoins de ce script, et donc les solution que nous allions devoir trouver.
+2)  La recherche et la compréhention des copmmandes pour les actions demandées.
+3)  La compréhention de ce que représente, ainsi que la création de la partie information.
+4) La dernière partie du script sur les fichier log_evt.log
+5) 
+6)
+
+**- Solutions trouvées : Solutions et alternatives trouvées**
+ 1) => Beaucoup de temps passer à se documenter 
+
+**- Améliorations possibles : suggestions d’améliorations futures**
+
+
+
+
 ****
