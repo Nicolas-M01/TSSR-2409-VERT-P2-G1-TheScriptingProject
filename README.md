@@ -10,10 +10,7 @@
 
 
 ## Introduction : mise en contexte
--
--
--
--
+Pour ce projet nous 
 
 ## Membres du groupe de projet (rôles par sprint)
   
