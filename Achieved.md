@@ -51,10 +51,10 @@ Liste des fonctionnalités pour chaque script (A intégrer dans les "cases")
 
 |Type|Cible|Tâche|Etat|
 |:-:|:-:|:-:|:-:|
-|Action|Utilisateur|Création de compte utilisateur local|En cours Igor|
-|Action|Utilisateur|Changement de mot de passe|En cours Igor|
-|Action|Utilisateur|Suppression de compte utilisateur local|En cours Igor|
-|Action|Utilisateur|Désactivation de compte utilisateur local|En cours Igor|
+|Action|Utilisateur|Création de compte utilisateur local||
+|Action|Utilisateur|Changement de mot de passe||
+|Action|Utilisateur|Suppression de compte utilisateur local||
+|Action|Utilisateur|Désactivation de compte utilisateur local||
 |Action|Utilisateur|Ajout à un groupe d'administration||
 |Action|Utilisateur|Ajout à un groupe local||
 |Action|Utilisateur|Sortie d’un groupe local||
