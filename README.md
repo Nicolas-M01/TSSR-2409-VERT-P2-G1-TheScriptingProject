@@ -123,5 +123,69 @@ Le choix à été fait de réaliser le script en 4 partie, une pour chacun des m
 - De l'espace disque et de la RAM suffisants pour exécuter à la fois l'hôte et la machine virtuelle.
 - Accès à Internet pour télécharger des images ISO ou le VirtualBox Extension Pack (optionnel).
 
+# Les Différents OS
+
+Les systèmes d'exploitation (OS, ou « Operating Systems » en anglais) sont des logiciels fondamentaux qui permettent de gérer les ressources matérielles d'un ordinateur et de fournir une interface entre les applications et le matériel. Il existe une grande variété de systèmes d'exploitation, chacun ayant ses propres caractéristiques, avantages et inconvénients. Voici un aperçu des catégories d'OS que nous avons utilisé et de quelques exemples populaires dans chaque catégorie.
+
+## 1. Systèmes d'Exploitation de Bureau
+Ces systèmes sont utilisés sur des ordinateurs personnels (PC, portables) et sont conçus pour offrir une interface utilisateur graphique et une large compatibilité avec des logiciels tiers.
+
+### a. Windows
+- **Propriétaire** : Microsoft
+- **Exemples** : Windows 10, Windows 11
+- **Caractéristiques** : 
+  - Interface graphique conviviale avec le menu Démarrer, la barre des tâches, etc.
+  - Très large compatibilité logicielle et matérielle.
+  - Supporte une grande variété de périphériques et d'applications professionnelles.
+  - Utilisé massivement dans les environnements d'entreprise et domestiques.
+  - Système de mises à jour régulières via Windows Update.
+  - Forte compatibilité avec les jeux vidéo.
+- **Inconvénients** : 
+  - Logiciel propriétaire, coûte généralement cher (licence payante).
+  - Plus vulnérable aux virus et malwares.
+  - Gestion des ressources parfois inefficace.
+
+### b. Linux (et ses distributions)
+- **Open-source** : Communauté de développeurs
+- **Exemples** : Ubuntu, Fedora, Debian, Linux Mint, etc.
+- **Caractéristiques** : 
+  - OS libre et open-source, ce qui permet aux utilisateurs d’y apporter des modifications.
+  - Large éventail de distributions (distro) adaptées à différents types d’utilisateurs (facile d'utilisation avec Ubuntu, plus technique avec Arch, etc.).
+  - Sécurisé et performant, souvent utilisé pour les serveurs et les environnements de développement.
+  - Grande flexibilité (personnalisation, choix des logiciels).
+  - Peut être plus léger que Windows ou macOS et donc adapté aux machines avec des ressources limitées.
+- **Inconvénients** : 
+  - Moins de compatibilité avec certains logiciels commerciaux (comme certains jeux, Microsoft Office, etc.).
+  - Courbe d'apprentissage plus élevée pour les débutants.
+
+## 2. Systèmes d'Exploitation Serveur
+Les systèmes d'exploitation serveurs sont utilisés pour gérer des serveurs et des infrastructures informatiques.
+
+### a. Windows Server
+- **Propriétaire** : Microsoft
+- **Exemples** : Windows Server 2022, Windows Server 2019, Windows Server 2016
+- **Caractéristiques** : 
+  - Conçu pour gérer des environnements serveurs, avec des outils d'administration avancés.
+  - Prise en charge des applications d'entreprise, du réseau, des bases de données, etc.
+  - Intégration avec Active Directory, SQL Server et d'autres technologies Microsoft.
+  - Sécurisé avec des fonctionnalités comme Windows Defender et le chiffrement des données.
+- **Inconvénients** : 
+  - Coût de licence élevé.
+  - Nécessite des ressources matérielles importantes.
+
+### b. Linux Server (ex : Ubuntu Server, Debian)
+- **Open-source** : Communauté de développeurs ou entreprise
+- **Exemples** : Ubuntu Server, CentOS, etc.
+- **Caractéristiques** : 
+  - Très populaire dans le monde des serveurs, notamment pour les serveurs web (Apache, Nginx) et les bases de données (MySQL, PostgreSQL).
+  - Léger, flexible, et hautement personnalisable.
+  - Support de la virtualisation, des containers, et de l'automatisation des tâches avec des outils.
+  - Très sécurisé et stable, avec des mises à jour régulières et une communauté active.
+- **Inconvénients** : 
+  - Courbe d'apprentissage plus prononcée pour les nouveaux utilisateurs.
+  - Nécessite une gestion manuelle (mais des outils comme Webmin peuvent faciliter la tâche).
+
+## Conclusion
+Les systèmes d'exploitation peuvent être classés selon leur domaine d'application, leur accessibilité (open-source vs propriétaire), et leurs caractéristiques spécifiques. Choisir un système d'exploitation dépend de vos besoins spécifiques en termes de matériel, d'applications, de sécurité, et de budget.
 
 
