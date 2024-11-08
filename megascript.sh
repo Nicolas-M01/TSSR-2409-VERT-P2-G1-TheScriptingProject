@@ -39,12 +39,12 @@ case $choix in
 		echo
 		echo "PARTIE INFORMATION"
 		echo -e "[8] ${YELLOW}Date de dernière connexion de l'utilisateur${NC}"
-    	echo -e "[9] ${YELLOW}Date de dernière modification du mot de passe${NC}"
-    	echo -e "[10] ${YELLOW}Liste des sessions ouvertes par l'utilisateur${NC}"
-    	echo -e "[11] ${YELLOW}Groupe d'appartenance d'un utilisateur${NC}"
-    	echo -e "[12] ${YELLOW}Historique des commandes exécutées par l'utilisateur${NC}"
-    	echo -e "[13] ${YELLOW}Droits/permissions de l’utilisateur sur un dossier${NC}"
-    	echo -e "[14] ${YELLOW}Droits/permissions de l’utilisateur sur un fichier${NC}"
+    		echo -e "[9] ${YELLOW}Date de dernière modification du mot de passe${NC}"
+    		echo -e "[10] ${YELLOW}Liste des sessions ouvertes par l'utilisateur${NC}"
+    		echo -e "[11] ${YELLOW}Groupe d'appartenance d'un utilisateur${NC}"
+    		echo -e "[12] ${YELLOW}Historique des commandes exécutées par l'utilisateur${NC}"
+    		echo -e "[13] ${YELLOW}Droits/permissions de l’utilisateur sur un dossier${NC}"
+    		echo -e "[14] ${YELLOW}Droits/permissions de l’utilisateur sur un fichier${NC}"
 		read UserAccount
 
 		case $UserAccount in
