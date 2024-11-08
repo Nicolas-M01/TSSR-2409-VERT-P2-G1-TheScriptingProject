@@ -72,3 +72,44 @@ Le choix à été fait de réaliser le script en 4 partie, une pour chacun des m
 
 
 ****
+
+Pour installer une machine virtuelle (VM) sur VirtualBox, plusieurs prérequis techniques sont nécessaires. Voici les éléments à vérifier avant de procéder à l'installation :
+1. Configuration matérielle de base
+•	Processeur (CPU) : Le processeur de l'ordinateur hôte doit être compatible avec la virtualisation matérielle. Les processeurs modernes Intel (Intel VT-x) et AMD (AMD-V) supportent cette fonctionnalité, mais elle doit être activée dans le BIOS ou l'UEFI de votre machine.
+•	Mémoire vive (RAM) : Il est recommandé d'avoir au moins 4 Go de RAM ou plus sur la machine hôte. La RAM doit être allouée à la VM (généralement 2 à 4 Go pour un système d'exploitation invité moderne). Veillez à ne pas allouer toute la Vérifiez la mémoire RAM disponible :
+	Vérifiez la mémoire RAM disponible : free -h
+	Vérifiez l'espace disque disponible : df -h
+•	Espace de stockage : Un espace libre suffisant sur votre disque dur (SSD ou HDD) est nécessaire pour stocker les fichiers de la machine virtuelle. Prévoyez plusieurs gigaoctets, selon la taille du système d'exploitation invité et des applications que vous souhaitez y installer.
+2. Système d'exploitation hôte
+•	VirtualBox fonctionne sur plusieurs systèmes d'exploitation hôtes :
+o	Windows (7, 8, 10, 11)
+o	Linux (Ubuntu, Fedora, CentOS, etc.)
+o	macOS (macOS 10.12 ou plus récent)
+•	Assurez-vous que votre système d'exploitation hôte est compatible avec la version de VirtualBox que vous souhaitez installer.
+3. Virtualisation matérielle (VT-x/AMD-V)
+•	Intel VT-x (Intel Virtualization Technology) ou AMD-V (AMD Virtualization) : Ces technologies doivent être activées dans le BIOS/UEFI de l'ordinateur. Cela permet à VirtualBox de créer des environnements virtualisés avec des performances optimales.
+o	Pour vérifier si ces fonctionnalités sont activées, vous pouvez entrer dans le BIOS/UEFI au démarrage de l'ordinateur et vérifier les paramètres de virtualisation.
+o	Si cette option n'est pas activée ou non disponible, la VM pourrait ne pas démarrer correctement ou rencontrer des problèmes de performance.
+4. Accès à Internet et téléchargement des ressources
+•	Si vous souhaitez installer un système d'exploitation dans la VM via un fichier ISO téléchargé ou une image disque, il est nécessaire d'avoir une connexion Internet pour récupérer le fichier ISO à partir du site web officiel de l'OS.
+•	VirtualBox Extension Pack : Certains périphériques ou fonctionnalités avancées (comme l’USB 2.0/3.0, le RDP, l’UEFI, etc.) nécessitent l'installation du "VirtualBox Extension Pack", qui peut être téléchargé sur le site officiel de VirtualBox.
+5. Logiciels et ressources supplémentaires
+•	ISO ou CD/DVD de l'OS invité : Vous aurez besoin du fichier ISO ou du support d'installation pour le système d'exploitation que vous voulez installer dans la VM.
+•	VirtualBox (logiciel principal) : Téléchargez la dernière version stable de VirtualBox à partir du site officiel (https://www.virtualbox.org/).
+•	VirtualBox Extension Pack (optionnel) : Il permet d’ajouter des fonctionnalités comme le support des périphériques USB, le démarrage UEFI, etc.
+6. Compatibilité avec l'OS invité
+•	Assurez-vous que le système d'exploitation que vous souhaitez installer est compatible avec VirtualBox. Les versions récentes des systèmes d'exploitation populaires, comme Windows 10/11, Ubuntu, Debian, CentOS, macOS et d'autres, sont généralement supportées sans problème.
+7. Autres exigences selon l'OS invité
+•	Drivers : Certains systèmes d'exploitation invités (comme Windows) nécessitent des drivers spécifiques (par exemple, les additions invitées de VirtualBox, également appelées "Guest Additions") pour améliorer la performance et la gestion des périphériques virtuels.
+Étapes pour l'installation :
+1.	Téléchargez et installez VirtualBox sur votre machine hôte.
+2.	Créez une nouvelle VM en sélectionnant l'OS invité souhaité.
+3.	Ajustez la configuration de la VM (allocation de CPU, RAM, espace disque, etc.).
+4.	Montez l'ISO de l'OS invité dans la VM.
+5.	Lancez la machine virtuelle et procédez à l'installation du système d'exploitation.
+En résumé :
+•	Un processeur avec support de la virtualisation (VT-x ou AMD-V).
+•	Un système d'exploitation hôte compatible avec VirtualBox.
+•	De l'espace disque et de la RAM suffisants pour exécuter à la fois l'hôte et la machine virtuelle.
+•	Accès à Internet pour télécharger des images ISO ou le VirtualBox Extension Pack (optionnel).
+
