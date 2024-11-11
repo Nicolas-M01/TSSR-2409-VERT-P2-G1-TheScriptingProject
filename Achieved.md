@@ -40,10 +40,10 @@ Liste des fonctionnalités pour chaque script (A intégrer dans les "cases")
 |Information|Ordinateur client|Liste des applications/paquets installées||
 |Information|Ordinateur client|Liste des services en cours d'execution||
 |Information|Ordinateur client|Liste des utilisateurs locaux||
-|Information|Ordinateur client|Mémoire RAM totale||
-|Information|Ordinateur client|Utilisation de la RAM||
-|Information|Script|Recherche des evenements dans le fichier log_evt.log pour un utilisateur||
-|Information|Script|Recherche des evenements dans le fichier log_evt.log pour un ordinateur||
+|Information|Ordinateur client|Mémoire RAM totale|Fait Nico|
+|Information|Ordinateur client|Utilisation de la RAM|Fait Nico|
+|Information|Script|Recherche des evenements dans le fichier log_evt.log pour un utilisateur|Fait Nico|
+|Information|Script|Recherche des evenements dans le fichier log_evt.log pour un ordinateur|Fait Nico|
 
 
 
