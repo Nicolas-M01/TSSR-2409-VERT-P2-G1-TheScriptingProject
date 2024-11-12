@@ -43,7 +43,6 @@ function menu
 	case $MainMenu in
 		# Menu UTILISATEUR / Choix entre ACTION ou INFORMATION
 		1)
-
 			
 			echo -e "\n${YELLOW}Quelle action utilisateur souhaitez vous réaliser ?\nRentrez le chiffre correspondant :${NC}\n"
 			echo "PARTIE ACTION"
@@ -71,6 +70,12 @@ function menu
 							
 							# Utilisateur souhaite créer un nouveau compte utilisateur
 							1 )
+								echo -e "[1] ${YELLOW}Créer un compte utilisateur local${NC}"
+
+								# On copie dans fichier log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[1] Créer un compte utilisateur local" >> /var/log/log_evt.log
+
+								
 								echo "Nous allons créer un compte utilisateur"
 								echo "Comment souhaitez vous nommer ce nouveau compte utilisateur ?"
 								read UserAccountName # Nom du nouveau compte utilisateur
@@ -121,7 +126,12 @@ function menu
 
 							# Utilisateur souhaite changer son mot de passe
 							2 )
-								echo "Changement de mot de passe d'un compte utilisateur"
+								echo "[2] Changement de mot de passe d'un compte utilisateur"
+
+								# On copie dans fichier log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[2] Changement de mot de passe d'un compte utilisateur" >> /var/log/log_evt.log
+
+
 								read -p "Vous souhaitez changer le mot de passe de quel compte utilisateur ? " UserAccountName
 								# Confirmation de changer le mot de passe
 								echo -e "Etes-vous sûr de vouloir changer le mot de passe de : ${YELLOW}$UserAccountName ?${NC}"
@@ -162,7 +172,12 @@ function menu
 							
 							# Utilisateur souhaite supprimer compte utilisateur
 							3 )
-								echo "Suppression de compte utilisateur"
+								echo "[3] Suppression de compte utilisateur"
+
+								# On copie dans fichier log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[3] Suppression de compte utilisateur" >> /var/log/log_evt.log
+
+
 								# On rentre le nom du compte à supprimer
 								read -p "Quel compte souhaitez vous supprimer ? " UserAccountName
 								echo -e "Etes-vous sûr de vouloir supprimer ${YELLOW}$UserAccountName${NC} ?"
@@ -208,7 +223,12 @@ function menu
 
 							# Utilisateur souhaite désactiver un compte utilisateur
 							4 )
-								echo "Désactivation de compte utilisateur"
+								echo "[4] Désactivation de compte utilisateur"
+
+								# On copie dans fichier log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[4] Désactivation de compte utilisateur" >> /var/log/log_evt.log
+
+
 								# On rentre le nom de compte à désactiver
 								read -p "Quel est le nom de compte que vous souhaitez désactiver ? " UserAccountName
 								echo -e "Etes-vous sûr de vouloir désactiver le compte ${YELLOW}$UserAccountName${NC} ?"
@@ -253,6 +273,12 @@ function menu
 								fi ;;
 
 							5)
+								echo -e "[5] ${YELLOW}Ajouter un utilisateur à un groupe d'administration${NC}"
+
+								# On copie dans fichier log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[5] Ajouter un utilisateur à un groupe d'administration" >> /var/log/log_evt.log
+
+
 								# Fonction qui va mettre dans une liste les noms d'utilisateurs
 								function list() {
 									ls /home
@@ -284,6 +310,11 @@ function menu
 								;;
 
 							6) 
+								echo -e "[6] ${YELLOW}Ajouter un utilisateur à un groupe local${NC}"
+
+								# On copie dans fichier log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[6] Ajouter un utilisateur à un groupe local" >> /var/log/log_evt.log
+
 								# Fonction qui va mettre dans une liste les noms d'utilisateurs
 								function list() {
 									ls /home
@@ -319,6 +350,12 @@ function menu
 								;;
 
 							7)
+								echo -e "[7] ${YELLOW}Retirer un utilisateur d'un groupe local${NC}"
+
+								# On copie dans fichier log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[7] Retirer un utilisateur d'un groupe local" >> /var/log/log_evt.log
+
+								
 								# Fonction qui va mettre dans une liste les noms d'utilisateurs
 								function list() {
 									ls /home
@@ -353,13 +390,12 @@ function menu
 								;;
 						
 							8) 
-								echo -e "\nDate de dernière connexion de l'utilisateur "
+								echo -e "\n[8] Date de dernière connexion de l'utilisateur "
 								echo "Pour quel utilisateur voudriez vous connaître la dernière connexion ? "
 								read target
 
 								# On copie dans fichier log
-								
-								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-1) Date de dernière connexion de l'utilisateur" >> /var/log/log_evt.log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[8] Date de dernière connexion de l'utilisateur" >> /var/log/log_evt.log
 
 
 								# On vérifie que la cible existe bien
@@ -389,12 +425,12 @@ function menu
 								;;
 							
 							9)
-								echo -e "\nDate de dernière modification du mot de passe"
+								echo -e "\n[9] Date de dernière modification du mot de passe"
 								echo "Pour quel utilisateur voudriez vous connaître la date de dernière modification de mot de passe ? "
 								read target
 
 								# On copie dans fichier log
-								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-2) Date de dernière modification du mot de passe" >> /var/log/log_evt.log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[9] Date de dernière modification du mot de passe" >> /var/log/log_evt.log
 
 								# On vérifie que la cible existe bien
 								cat /etc/passwd | grep -q "^$target:"
@@ -424,10 +460,10 @@ function menu
 								;;
 
 							10)
-								echo -e "\n3) Liste des sessions ouvertes par l'utilisateur"
+								echo -e "\n[10] Liste des sessions ouvertes par l'utilisateur"
 
 								# On copie dans fichier log
-								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-3) Liste des sessions ouvertes par l'utilisateur" >> /var/log/log_evt.log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[10] Liste des sessions ouvertes par l'utilisateur" >> /var/log/log_evt.log
 								target=$(whoami)
 									# On compte le nombre d'éléments dans le tableau
 									# Si il n'y en a qu'un on l'affiche
@@ -442,12 +478,12 @@ function menu
 								;;
 
 							11)
-								echo -e "\nGroupe d'appartenance d'un utilisateur"
+								echo -e "\n[11] Groupe d'appartenance d'un utilisateur"
 								echo "Pour quel utilisateur voudriez vous connaître le groupe ? "
 								read target
 
 								# On copie dans le log
-								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-4) Groupe d'appartenance d'un utilisateur" >> /var/log/log_evt.log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[11] Groupe d'appartenance d'un utilisateur" >> /var/log/log_evt.log
 
 								# On vérifie que la cible existe bien
 								cat /etc/passwd | grep -q "^$target:"
@@ -465,7 +501,7 @@ function menu
 									echo -e "\n${YELLOW}* Voici les groupes d'appartenance de${NC} `groups $target`\n" 
 									fi
 								# On copie dans fichier info    
-								echo -e "\n${YELLOW}* 4) Voici les groupes d'appartenance de${NC} `groups $target`\n" >> ~/Documents/"info_"$target"_"$FORMATTED_DATE".txt"
+								echo -e "\n${YELLOW}* [11] Voici les groupes d'appartenance de${NC} `groups $target`\n" >> ~/Documents/"info_"$target"_"$FORMATTED_DATE".txt"
 								# Si elle n'existe pas on avertit et on quitte le programme
 								else
 									echo -e "${RED}La cible n'existe pas le programme va s'arrêter${NC}"
@@ -474,10 +510,10 @@ function menu
 								;;
 
 							12)
-								echo -e "\nHistorique des commandes exécutées par l'utilisateur"
+								echo -e "\n[12] Historique des commandes exécutées par l'utilisateur"
 
 								# On copie dans le log
-								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-5) Historique des commandes exécutées par l'utilisateur" >> /var/log/log_evt.log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[12] Historique des commandes exécutées par l'utilisateur" >> /var/log/log_evt.log
 
 								# On redéfinit la cible pour pouvoir l'afficher dans le résultat avec plus de clarté
 								target=$(whoami)
@@ -493,18 +529,18 @@ function menu
 									
 									fi
 								# On copie dans fichier info
-								echo -e "\n${YELLOW}* 5) Historique des 10 dernières commandes exécutées par l'utilisateur $target :${NC}\n`history 10`" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+								echo -e "\n${YELLOW}* [12] Historique des 10 dernières commandes exécutées par l'utilisateur $target :${NC}\n`history 10`" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
 								;;
 
 							13)
-								echo -e "\nDroits/permissions de l’utilisateur sur un dossier"
+								echo -e "\n[13] Droits/permissions de l’utilisateur sur un dossier"
 								echo "Pour quel dossier voudriez vous connaître les droits ? "
 								read directory
 								echo "Indiquez le chemin du dossier que vous recherchez :"
 								read path
 
 								# On copie dans le log
-								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-6) Droits/permissions de l’utilisateur sur un dossier" >> /var/log/log_evt.log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[13] Droits/permissions de l’utilisateur sur un dossier" >> /var/log/log_evt.log
 
 									# On execute la commande find pour les dossiers et on renvoie avec un -ls.
 									# On stock dans une variable et on envoie le résultat en sauvegarde.
@@ -514,7 +550,7 @@ function menu
 									if [ $? -eq 0 ]
 									then
 									# On envoie le résultat dans le fichier
-									echo -e "\n${YELLOW}* 6) Voici les droits de `whoami` pour le dossier $directory :\n${NC} $DirectoryRight" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+									echo -e "\n${YELLOW}* [13] Voici les droits de `whoami` pour le dossier $directory :\n${NC} $DirectoryRight" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
 
 									# Si un seul choix dans le menu, on affiche le résultat
 										if [ ${#choice[@]} -eq 1 ]
@@ -540,14 +576,14 @@ function menu
 									;;
 							14)
 
-								echo -e "\n7) Droits/permissions de l’utilisateur sur un fichier"
+								echo -e "\n[14] Droits/permissions de l’utilisateur sur un fichier"
 								echo "Pour quel fichier voudriez vous connaître les droits ? "
 								read file
 								echo "Indiquez le chemin du fichier que vous recherchez :"
 								read path
 
 								# On copie dans le log
-								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-7) Droits/permissions de l’utilisateur sur un fichier" >> /var/log/log_evt.log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[14] Droits/permissions de l’utilisateur sur un fichier" >> /var/log/log_evt.log
 
 
 									# On execute la commande find pour les fichiers et on renvoie avec un -ls.
@@ -559,7 +595,7 @@ function menu
 									if [ $? -eq 0 ]
 									then
 									# On envoie le résultat dans le fichier
-									echo -e "\n${YELLOW}* 7) Droits/permissions de `whoami` pour le fichier $file :\n${NC} $FileRight" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+									echo -e "\n${YELLOW}* [14] Droits/permissions de `whoami` pour le fichier $file :\n${NC} $FileRight" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
 									
 										# Si un seul choix dans le menu on affiche le résultat
 										if [ ${#choice[@]} -eq 1 ]
@@ -622,6 +658,11 @@ function menu
 				do
 					case $j in
 							1)
+								echo -e "[1] ${YELLOW}Marche/Arret${NC}"
+
+								# On copie dans fichier log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[2] Gestion des repertoires" >> /var/log/log_evt.log
+
 								while true
 								do
 									echo "Menu Marche/Arret:"
@@ -653,6 +694,10 @@ function menu
 								;;
 
 							2)
+								echo -e "[2] ${YELLOW}Mise à jour${NC}"
+
+								# On copie dans fichier log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[2] Gestion des repertoires" >> /var/log/log_evt.log
 
 								while true;
 								do
@@ -686,6 +731,12 @@ function menu
 								;;
 							
 							3)
+								echo -e "[3] ${YELLOW}Gestion des répertoires${NC}"
+								
+								# On copie dans fichier log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[3] Gestion des repertoires" >> /var/log/log_evt.log
+
+
 								while true;
 								do
 									clear
@@ -759,6 +810,11 @@ function menu
 								;;
 
 							4)
+								echo -e "[4] ${YELLOW}Gestion Pare-feu${NC}"
+
+								# On copie dans fichier log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[4] Gestion Parefeu" >> /var/log/log_evt.log
+								
 								echo -e "${YELLOW}**MENU**\n\n${NC}"
 								echo -e "${GREEN}[1] Activer le pare feu\n${NC}"     
 								echo -e "${GREEN}[2] Autoriser une adresse IP\n${NC}"    
@@ -798,7 +854,10 @@ function menu
 								;;
 							
 							5)
-								echo -e "[2] Gestion logiciel\n\n"
+								echo -e "[5] Gestion logiciel\n\n"
+
+								# On copie dans fichier log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[5] Gestion logiciel" >> /var/log/log_evt.log
 						
 								echo -e "${GREEN}[1] Instaler un logiciel\n${NC}"
 								echo -e "${RED}[2] Désintaler un Logiciel\n${NC}"
@@ -851,25 +910,25 @@ function menu
 					
 							
 							6)
-								echo -e "\n8) Version de l'OS"
+								echo -e "\n[6] Version de l'OS"
 								if [ ${#choice[@]} -eq 1 ]
 								then
 									# On affiche le résultat de la commande à l'écran.
 									echo -e "\nLa version de cet OS est : $(cat /etc/os-release | grep -v "NAME" | grep -v "PRETTY_NAME" | grep -v "ID" | grep -v "ID_LIKE" | grep -v "HOME_URL" | grep -v "SUPPORT_URL" | grep -v "BUG_REPORT_URL" | grep -v "PRIVACY_POLICY_URL" | grep -v "UBUNTU_CODENAME")"
 								fi
 									# On enregistre dans fichier info
-									echo -e "\n* 8) La version de cet OS est : $(cat /etc/os-release | grep -v "NAME" | grep -v "PRETTY_NAME" | grep -v "ID" | grep -v "ID_LIKE" | grep -v "HOME_URL" | grep -v "SUPPORT_URL" | grep -v "BUG_REPORT_URL" | grep -v "PRIVACY_POLICY_URL" | grep -v "UBUNTU_CODENAME")" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
+									echo -e "\n* [6] La version de cet OS est : $(cat /etc/os-release | grep -v "NAME" | grep -v "PRETTY_NAME" | grep -v "ID" | grep -v "ID_LIKE" | grep -v "HOME_URL" | grep -v "SUPPORT_URL" | grep -v "BUG_REPORT_URL" | grep -v "PRIVACY_POLICY_URL" | grep -v "UBUNTU_CODENAME")" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
 									# On copie dans fichier log
-									echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-8) Version de l'OS" >> /var/log/log_evt.log
+									echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[6] Version de l'OS" >> /var/log/log_evt.log
 									;;  
 
 							7)
-								echo -e "\n9) Nombre de disques"
+								echo -e "\n[7] Nombre de disques"
 								# On copie dans fichier log
-								echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-9) Nombre de disques" >> /var/log/log_evt.log
+								echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[7] Nombre de disques" >> /var/log/log_evt.log
 							
 								# Liste uniquement les disques
-								echo -e "\n* 9) Nombre de disques :\n`lsblk | grep -v "loop" | grep -v "sr0"`" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
+								echo -e "\n* [7] Nombre de disques :\n`lsblk | grep -v "loop" | grep -v "sr0"`" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
 								# Nombre de disques
 								disk_count=$(lsblk -d -o NAME | grep -vE "loop|sr0" | wc -l)
 
@@ -894,12 +953,12 @@ function menu
 								;;
 							
 							8)
-								echo -e "\n10) Partition par disque"
+								echo -e "\n[8] Partition par disque"
 								# On copie dans fichier log
-								echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-10) Partition par disque" >> /var/log/log_evt.log
+								echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[8] Partition par disque" >> /var/log/log_evt.log
 
 								# On copie dans fichier info
-								echo -e "\n* 10) Partition par disque :\n $resultat1=$(df -h | grep -v "tmpfs" | grep -v " /dev/sr0")" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
+								echo -e "\n* [8] Partition par disque :\n $resultat1=$(df -h | grep -v "tmpfs" | grep -v " /dev/sr0")" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
 								
 								if [ ${#choice[@]} -eq 1 ]
 									then
@@ -908,12 +967,12 @@ function menu
 								;;
 							
 							9)
-								echo -e "\n11) Espace disque restant"
+								echo -e "\n[9] Espace disque restant"
 								# On copie dans fichier log
-								echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-11) Espace disque restant" >> /var/log/log_evt.log
+								echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[9] Espace disque restant" >> /var/log/log_evt.log
 								
 								# Enregistrement dans fichir info
-								echo -e "\n* 11) Voici la place disponible sur chaque partition :\n $resultat2=$(df -h | grep -v "tmpfs" | grep -v "/dev/sr0" | awk 'BEGIN {OFS="       "} {print $1,$2, $3, $4}')" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
+								echo -e "\n* [9] Voici la place disponible sur chaque partition :\n $resultat2=$(df -h | grep -v "tmpfs" | grep -v "/dev/sr0" | awk 'BEGIN {OFS="       "} {print $1,$2, $3, $4}')" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
 
 
 								if [ ${#choice[@]} -eq 1 ]
@@ -923,9 +982,9 @@ function menu
 								;;
 
 							10)
-								echo -e "\n12) Nom et espace disque d'un dossier"
+								echo -e "\n[10] Nom et espace disque d'un dossier"
 								# On copie dans fichier log
-								echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-12) Nom et espace disque d'un dossier" >> /var/log/log_evt.log
+								echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[10] Nom et espace disque d'un dossier" >> /var/log/log_evt.log
 
 								echo "Sur quel dossier souhaitez-vous des indications ?" 
 								read directory
@@ -944,7 +1003,7 @@ function menu
 											echo -e "La taille du répertoire $directory est :\n $resultat3=$(sudo du -sh "$Total")"
 										fi
 
-									echo -e "\n* 12) Nom et espace disque d'un dossier\nLa taille du répertoire $directory est :\n $resultat3=$(sudo du -sh "$Total")" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
+									echo -e "\n* [10] Nom et espace disque d'un dossier\nLa taille du répertoire $directory est :\n $resultat3=$(sudo du -sh "$Total")" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
 
 									else
 									echo "Le répertoire '$directory' n'a pas été trouvé dans le chemin spécifié." 
@@ -955,9 +1014,9 @@ function menu
 								;;
 
 							11)
-								echo -e "\n13) Liste des lecteurs montés"
+								echo -e "\n[11] Liste des lecteurs montés"
 								# On copie dans fichier log
-								echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-13) Liste des lecteurs montés" >> /var/log/log_evt.log
+								echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[11] Liste des lecteurs montés" >> /var/log/log_evt.log
 								
 								# On lance les commandes et on les rentre dans une variable
 								resultat4=$(lsblk | grep -v "loop")
@@ -969,14 +1028,14 @@ function menu
 								fi
 
 								# On enregistre dans le fichier info
-								echo -e "\n* 13) Liste des lecteurs montés :\n$resultat4" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
+								echo -e "\n* [11] Liste des lecteurs montés :\n$resultat4" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
 								;;
 
 							12)
-								echo -e "\n14) Liste des applications paquets/installés"
+								echo -e "\n[12] Liste des applications paquets/installés"
 
 								# On copie dans fichier log
-								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-14) Liste des applications/paquets installées" >> /var/log/log_evt.log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[12] Liste des applications/paquets installées" >> /var/log/log_evt.log
 
 								# Fonction qui va mettre dans une liste les applications/paquets installées
 								function list() {
@@ -994,16 +1053,16 @@ function menu
 									echo -e "Voici les applications/paquets installées :"
 									list
 									fi
-								echo -e "\n* 14) Voici les applications/paquets installés :\n `list`" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+								echo -e "\n* [12] Voici les applications/paquets installés :\n `list`" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
 
 								fi
 								;;
 
 							13)
-								echo -e "\n15) Liste des services en cours d'execution"
+								echo -e "\n[13] Liste des services en cours d'execution"
 
 								# On copie dans fichier log
-								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-15) Liste des services en cours d'execution" >> /var/log/log_evt.log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[13] Liste des services en cours d'execution" >> /var/log/log_evt.log
 
 								# Fonction qui va mettre dans une liste les services en cours d'execution
 								function list() {
@@ -1023,15 +1082,15 @@ function menu
 									list
 
 									fi
-									echo -e "\n* 15) Services en cours d'execution :\n `list`" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+									echo -e "\n* [13] Services en cours d'execution :\n `list`" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
 								fi
 								;;
 
 							14)
-								echo -e "\n16) Liste des utilisateurs locaux"
+								echo -e "\n[14] Liste des utilisateurs locaux"
 
 								# On copie dans fichier log
-								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-16) Liste des utilisateurs locaux" >> /var/log/log_evt.log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[14] Liste des utilisateurs locaux" >> /var/log/log_evt.log
 
 
 								# Fonction qui va mettre dans une liste les services en cours d'execution
@@ -1051,19 +1110,19 @@ function menu
 														
 									fi
 
-								echo -e "\n* 16) Voici la liste des utilisateurs locaux :\n`list`" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+								echo -e "\n* [14] Voici la liste des utilisateurs locaux :\n`list`" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
 
 								fi
 								;;
 
 							15)
-								echo -e "\n17) Mémoire RAM totale"
+								echo -e "\n[15] Mémoire RAM totale"
 
 								# On copie dans fichier log
-								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-17) Mémoire RAM totale" >> /var/log/log_evt.log
+								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[15] Mémoire RAM totale" >> /var/log/log_evt.log
 								
 								# On enregistre dans le fichier information
-								echo -e "\n* 17) Votre RAM totale est de $(free -h | grep "Mem:" | awk '{print$2}')" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+								echo -e "\n* [15] Votre RAM totale est de $(free -h | grep "Mem:" | awk '{print$2}')" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
 
 								# Si un seul choix dans le menu
 								if [ ${#choice[@]} -eq 1 ]
