@@ -33,7 +33,7 @@ Il suffit de rentrer l'utilisateur pour obtenir sa dernière connection.
 
 
   
-#### :arrow_forward: Affichage et enregistrement des résultats
+#### :arrow_forward: Affichage et enregistrement des résultats dans fichier info
 
 Pour la partie Information, il y a deux possibilités d'affichage.<br>Dans le cas d'une sélection unique, le script permet d'afficher directement la commande sélectionnée ainsi que le résultat à l'écran
 
@@ -57,6 +57,20 @@ Chaque sélection, que ce soit une Action ou une Information est enregistrée da
 
 >**`/var/log/log_evt.log`**
 
-Ce fichier permet de conserver une trace de tout ce qui a été effectué sur le script. Il affiche les résultat
+Ce fichier permet de conserver une trace de tout ce qui a été effectué sur le script. Il affiche les commandes et leur numéro dans l'ordre d'exécution.  
+Il affiche également les débuts et fin de script. L'affichage se présente sous la forme :  
 
-![Logs]
+>**`<date>-<heure>-<user>-<[n°commande]commande>`**
+
+![Logs](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/Logs.png)
+
+
+#### :arrow_forward: Arrêt du script
+
+Le script est programmé pour tourner en boucle sauf en cas de grosse erreur. Après l'affichage des commandes, il propose de continuer ou de quitter le script. Il suffit de rentrer le choix correspondant. (les démarrages et arrêts du script sont enregistrés dans le fichier des logs)
+
+[PHOTO FIN DE SCRIPT]
+
+
+
+
