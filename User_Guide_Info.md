@@ -33,14 +33,30 @@ Il suffit de rentrer l'utilisateur pour obtenir sa dernière connection.
 
 
   
-#### Affichage et enregistrement des résultats
+#### :arrow_forward: Affichage et enregistrement des résultats
 
 Pour la partie Information, il y a deux possibilités d'affichage.<br>Dans le cas d'une sélection unique, le script permet d'afficher directement la commande sélectionnée ainsi que le résultat à l'écran
 
-[Photo Information Unique affichée Ecran]
+[PHOTO Information Unique affichée Ecran]
 
 
 Dans le cas d'une sélection multiple, le script va afficher les commandes sélectionnées mais les résultats seront directement sauvegardés dans un fichier texte.<br>
-Ce fichier se trouve dans le répertoire de l'utilisateur actuel puis dans documents : `~/Documents/info_<cible>_<date>.txt`<br>
+Ce fichier se trouve dans le répertoire de l'utilisateur actuel puis dans documents : 
+>**`~/Documents/info_<cible>_<date>.txt`**<br>
+
 La partie <cible> sera la cible renseignée après le choix de la commande, ou l'utilisateur actuel, si pas de cible spécifique.
-La date est formatée sous laforme : YYYYMMDD
+La date est formatée sous la forme : YYYYMMDD  
+
+[PHOTO FICHIER INFO]
+
+
+
+#### :arrow_forward: Fichier Log
+
+Chaque sélection, que ce soit une Action ou une Information est enregistrée dans un fichier de Logs nommé **`log_evt.log`**, situé dans :
+
+>**`/var/log/log_evt.log`**
+
+Ce fichier permet de conserver une trace de tout ce qui a été effectué sur le script. Il affiche les résultat
+
+
