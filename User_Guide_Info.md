@@ -6,7 +6,7 @@
 
 
 La partie Information concerne la deuxième partie des choix du menu principal. Liste des informations disponibles pour la partie:  
-* **[1] Utilisateur**  
+#### **[1] Utilisateur**  
 
 ![Menu Utilisateur1](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/menu1.png)  
   
@@ -14,7 +14,7 @@ La partie Information concerne la deuxième partie des choix du menu principal. 
 
 
 Liste des informations disponibles pour la partie:
-* **[2] Ordinateur client**
+#### **[2] Ordinateur client**
 
 ![Menu Utilisateur2](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/menu2.png)
 
@@ -23,7 +23,7 @@ La partie information permet d'obtenir une ou plusieurs informations. En effet l
 
 ![choix multiple](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/choix%20multiple.png)
 
-Le résultat de la sélection ou les sélections s'affiche en dessous dans l'ordre de la sélection. Le script peut demander des informations complémentaires en fonction de la commande souhaitée, notamment un nom d'utilisateur.  
+Le résultat de la sélection ou les sélections s'affiche en dessous dans l'ordre de la sélection. Le script peut demander des informations complémentaires en fonction de la commande souhaitée, notamment un nom d'utilisateur ou une confirmation pour une action sensible.
 Exemple : `Menu principal` :arrow_right: `[2] Utilisateur` :arrow_right: `[8] Date de dernière connection de l'utilisateur`.  
 Il suffit de rentrer l'utilisateur pour obtenir sa dernière connection.  
 
@@ -33,7 +33,7 @@ Il suffit de rentrer l'utilisateur pour obtenir sa dernière connection.
 
 
   
-#### :arrow_forward: Affichage et enregistrement des résultats dans fichier info
+### :arrow_forward: Affichage et enregistrement des résultats dans fichier info
 
 Pour la partie Information, il y a deux possibilités d'affichage.<br>Dans le cas d'une sélection unique, le script permet d'afficher directement la commande sélectionnée ainsi que le résultat à l'écran
 
@@ -44,14 +44,14 @@ Dans le cas d'une sélection multiple, le script va afficher les commandes séle
 Ce fichier se trouve dans le répertoire de l'utilisateur actuel puis dans documents : 
 >**`~/Documents/info_<cible>_<date>.txt`**<br>
 
-La partie <cible> sera la cible renseignée après le choix de la commande, ou l'utilisateur actuel, si pas de cible spécifique.
+La partie "cible" sera la cible renseignée après le choix de la commande, ou l'utilisateur actuel, si pas de cible spécifique.
 La date est formatée sous la forme : YYYYMMDD  
 
 [PHOTO FICHIER INFO]
 
 
 
-#### :arrow_forward: Fichier Log
+### :arrow_forward: Fichier Log
 
 Chaque sélection, que ce soit une Action ou une Information est enregistrée dans un fichier de Logs nommé **`log_evt.log`**, situé dans :
 
@@ -65,12 +65,14 @@ Il affiche également les débuts et fin de script. L'affichage se présente sou
 ![Logs](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/Logs.png)
 
 
-#### :arrow_forward: Arrêt du script
+### :arrow_forward: Arrêt du script
 
-Le script est programmé pour tourner en boucle sauf en cas de grosse erreur. Après l'affichage des commandes, il propose de continuer ou de quitter le script. Il suffit de rentrer le choix correspondant. (les démarrages et arrêts du script sont enregistrés dans le fichier des logs)
+Le script est programmé pour tourner en boucle sauf en cas de grosse erreur. Après l'affichage des commandes, il propose de continuer ou de quitter le script. Il suffit de rentrer le choix correspondant. (Pour rappel, les démarrages et arrêts du script sont enregistrés dans le fichier des logs)
 
-[PHOTO FIN DE SCRIPT]
+![Fin de script](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/Fin%20de%20script.png)
 
 
+### :interrobang: FAQ
 
+L'historique des commandes tapées avec `history` est par défaut désactivé dans les scripts. Il faut le réactiver. Cette réactivation est prévue dans le script mais seulement au lancement de la commande `history` et elle va donc afficher les commandes avant le lancement du script. Une fois la commande `history` réactivée, elle va afficher les dernières lignes exécutées par le script, qui sont donc des commandes bash, sans grand intérêt. Pour éviter un spam de l'historique, il est limité aux 10 dernières actions.
 
