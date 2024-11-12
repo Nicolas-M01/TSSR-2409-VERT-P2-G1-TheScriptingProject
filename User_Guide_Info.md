@@ -59,4 +59,4 @@ Chaque sélection, que ce soit une Action ou une Information est enregistrée da
 
 Ce fichier permet de conserver une trace de tout ce qui a été effectué sur le script. Il affiche les résultat
 
-
+![Logs]
