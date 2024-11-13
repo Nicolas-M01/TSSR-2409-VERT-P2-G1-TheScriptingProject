@@ -1,15 +1,15 @@
 
-## Guide utilisateur
+## ▶️ Guide utilisateur
 ---
 #### Sommaire
-#### :one: [Fonctionnalités de base et avancées](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/edit/main/USER_GUIDE.md#arrow_forward-fonctionnalit%C3%A9s-de-base-et-avanc%C3%A9es)  
+#### :one: [Présentation du menu](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/edit/main/USER_GUIDE.md#arrow_forward-fonctionnalit%C3%A9s-de-base-et-avanc%C3%A9es)  
 #### :two: [Affichage et enregistrement des résultats](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/edit/main/USER_GUIDE.md#arrow_forward-affichage-et-enregistrement-des-r%C3%A9sultats-dans-fichier-info)
 #### :three: [Fichier Log](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/edit/main/USER_GUIDE.md#arrow_forward-fichier-log)
 #### :four: [Arrêt du script](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/edit/main/USER_GUIDE.md#arrow_forward-arr%C3%AAt-du-script)
 #### :five: [FAQ](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/edit/main/USER_GUIDE.md#interrobang-faq)
 
 ---
-### :arrow_forward: :one: Fonctionnalités de base et avancées
+### :one: Présentation du menu
 
 Le menu principal nous permet de choisir entre **`Utilisateur`** ou **`Ordinateur client`**  
 #### **[1] Utilisateur**  
@@ -41,7 +41,7 @@ Il suffit de rentrer l'utilisateur pour obtenir sa dernière connection :
 
 ---
   
-### :arrow_forward: Affichage et enregistrement des résultats dans fichier info
+### :two: Affichage et enregistrement des résultats dans fichier info
 
 Pour la partie Information, il y a deux possibilités d'affichage.<br>Dans le cas d'une sélection unique, le script permet d'afficher directement la commande sélectionnée ainsi que le résultat à l'écran
 
@@ -59,7 +59,7 @@ La date est formatée sous la forme : YYYYMMDD
 
 ---
 
-### :arrow_forward: Fichier Log
+### :three: Fichier Log
 
 Chaque sélection, que ce soit une Action ou une Information est enregistrée dans un fichier de Logs nommé **`log_evt.log`**, situé dans :
 
@@ -73,14 +73,14 @@ Il affiche également les débuts et fin de script. L'affichage se présente sou
 ![Logs](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/Logs.png)
 
 ---
-### :arrow_forward: Arrêt du script
+### :four: Arrêt du script
 
 Le script est programmé pour tourner en boucle sauf en cas de grosse erreur. Après l'affichage des commandes, il propose de continuer ou de quitter le script. Il suffit de rentrer le choix correspondant. (Pour rappel, les démarrages et arrêts du script sont enregistrés dans le fichier des logs)
 
 ![Fin de script](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/Fin%20de%20script.png)
 
 ---
-### :interrobang: FAQ
+### :five: :interrobang: FAQ
 
 L'historique des commandes tapées avec `history` est par défaut désactivé dans les scripts. Il faut le réactiver. Cette réactivation est prévue dans le script mais seulement au lancement de la commande `history` et elle va donc afficher les commandes avant le lancement du script. Une fois la commande `history` réactivée, elle va afficher les dernières lignes exécutées par le script, qui sont donc des commandes bash, sans grand intérêt. Pour éviter un spam de l'historique, il est limité aux 10 dernières actions.
 
