@@ -1,20 +1,24 @@
 ### Présentation technique du projet :
 **********************************************
 **SOMMAIRE**
-##### * 1  Prérequis techniques :
-* #####  2  Installations des ISO :
-  * #####  2.1 Ubuntu 24.
-  * #####  2.2 Debian 12.
-  * #####  2.3 Windows 10.
-  * ##### 2.4 Windows 2022.
-* ##### 3 Configuration des ISO
-  * ##### 3.1 Cartes Réseaux
-  * ##### 3.2 IP statiques 
-  * ##### 3.3 Ping
-  * ##### 3.4 SSH
-     * ##### 3.4.1 Instalation
-     * ##### 3.4.2 Clé SSH + Test
-* ##### 4 FAQ 
+##### * 1  [Prérequis techniques :](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#1-pr%C3%A9requis-techniques-)
+* #####  2  [Installations des ISO :](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#2--installations-des-iso--1)
+  * #####  2.1 [Ubuntu 24.](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#21-ubuntu-24-1)
+  * #####  2.2 [Debian 12.](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#22-debian-12-1)
+  * #####  2.3 [Windows 10.](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#23-windows-10-1)
+  * ##### 2.4 [Windows 2022.](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#24-windows-2022-1)
+* ##### 3 [Configuration des ISO](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#3-configuration-des-iso-1)
+  * ##### 3.1 [Cartes Réseaux](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#31-cartes-r%C3%A9seaux-1)
+  * ##### 3.2 [IP statiques](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#32-ip-statiques-et-autorisation-port-22) 
+    * ##### 3.2.1 [Ubuntu.](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#321-ubuntu)
+    * ##### 3.2.2 [Debian 12.](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#322-debian)
+    * ##### 3.2.3 [Windows 10.](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#323-windows-10)
+    * ##### 3.2.4 [windows 2022.](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#324-windows-2022)
+ * ##### 3.3 [Ping](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#33-ping-1)
+  * ##### 3.4 [SSH]()
+     * ##### 3.4.1 [Instalation]()
+     * ##### 3.4.2 [Clé SSH + Test]()
+* ##### 4 [FAQ]() 
    
 
 
