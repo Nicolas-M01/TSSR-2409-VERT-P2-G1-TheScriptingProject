@@ -24,14 +24,15 @@ La sélection fonctionne dans l'ordre croissant, décroissant et également en o
 
 Le résultat de la sélection ou les sélections s'affiche en dessous dans l'ordre de la sélection. Le script peut demander des informations complémentaires en fonction de la commande souhaitée, notamment un nom d'utilisateur ou une confirmation pour une action sensible.  
 
-Exemple : `Menu principal` :arrow_right: `[2] Utilisateur` :arrow_right: `[8] Date de dernière connection de l'utilisateur`.  
-Il suffit de rentrer l'utilisateur pour obtenir sa dernière connection.  
+- Exemple : `Menu principal` :arrow_right: `[1] Utilisateur` :arrow_right: `[8] Date de dernière connection de l'utilisateur`.
+
+Il suffit de rentrer l'utilisateur pour obtenir sa dernière connection :  
 
 
 
 ![COMMANDE 8](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/Commande%208.png)
 
-
+---
   
 ### :arrow_forward: Affichage et enregistrement des résultats dans fichier info
 
@@ -49,7 +50,7 @@ La date est formatée sous la forme : YYYYMMDD
 
 [PHOTO FICHIER INFO]
 
-
+---
 
 ### :arrow_forward: Fichier Log
 
@@ -64,14 +65,14 @@ Il affiche également les débuts et fin de script. L'affichage se présente sou
 
 ![Logs](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/Logs.png)
 
-
+---
 ### :arrow_forward: Arrêt du script
 
 Le script est programmé pour tourner en boucle sauf en cas de grosse erreur. Après l'affichage des commandes, il propose de continuer ou de quitter le script. Il suffit de rentrer le choix correspondant. (Pour rappel, les démarrages et arrêts du script sont enregistrés dans le fichier des logs)
 
 ![Fin de script](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/Fin%20de%20script.png)
 
-
+---
 ### :interrobang: FAQ
 
 L'historique des commandes tapées avec `history` est par défaut désactivé dans les scripts. Il faut le réactiver. Cette réactivation est prévue dans le script mais seulement au lancement de la commande `history` et elle va donc afficher les commandes avant le lancement du script. Une fois la commande `history` réactivée, elle va afficher les dernières lignes exécutées par le script, qui sont donc des commandes bash, sans grand intérêt. Pour éviter un spam de l'historique, il est limité aux 10 dernières actions.
