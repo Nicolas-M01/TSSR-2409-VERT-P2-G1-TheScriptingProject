@@ -17,11 +17,13 @@ Le menu principal nous permet de choisir entre **`Utilisateur`** ou **`Ordinateu
 ![Menu Utilisateur2](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/menu2.png)
 
 
-Les parties Actions et Informations permettent d'obtenir une ou plusieurs informations et/ou d'effectuer une ou plusieurs actions. En effet la sélection peut être multiple. Il suffit de rentrer les numéros de commandes souhaitées en espaçant chaque numéro et taper [Entrée]. La sélection fonctionne dans l'ordre croissant, décroissant et également en ordre aléatoire des chiffres :
+Les parties Actions et Informations permettent d'obtenir une ou plusieurs informations et/ou d'effectuer une ou plusieurs actions. En effet la sélection peut être multiple.  Il suffit de rentrer les numéros de commandes souhaitées en espaçant chaque numéro et taper [Entrée]. Il est également possible de sélectionner des actions et des informations en même temps.  
+La sélection fonctionne dans l'ordre croissant, décroissant et également en ordre aléatoire des chiffres :
 
 ![choix multiple](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/choix%20multiple.png)
 
-Le résultat de la sélection ou les sélections s'affiche en dessous dans l'ordre de la sélection. Le script peut demander des informations complémentaires en fonction de la commande souhaitée, notamment un nom d'utilisateur ou une confirmation pour une action sensible.
+Le résultat de la sélection ou les sélections s'affiche en dessous dans l'ordre de la sélection. Le script peut demander des informations complémentaires en fonction de la commande souhaitée, notamment un nom d'utilisateur ou une confirmation pour une action sensible.  
+
 Exemple : `Menu principal` :arrow_right: `[2] Utilisateur` :arrow_right: `[8] Date de dernière connection de l'utilisateur`.  
 Il suffit de rentrer l'utilisateur pour obtenir sa dernière connection.  
 
