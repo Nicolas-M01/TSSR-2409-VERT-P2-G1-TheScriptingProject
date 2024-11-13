@@ -1,25 +1,23 @@
 
-## Partie Information
+## Guide utilisateur
 ---
 
 ### :arrow_forward: Fonctionnalités de base et avancées
 
-
-La partie Information concerne la deuxième partie des choix du menu principal. Liste des informations disponibles pour la partie:  
+Le menu principal nous permet de choisir entre **`Utilisateur`** ou **`Ordinateur client`**  
 #### **[1] Utilisateur**  
 
 ![Menu Utilisateur1](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/menu1.png)  
-  
 
 
 
-Liste des informations disponibles pour la partie:
+
 #### **[2] Ordinateur client**
 
 ![Menu Utilisateur2](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/menu2.png)
 
 
-La partie information permet d'obtenir une ou plusieurs informations. En effet la sélection peut être multiple. Il suffit de rentrer les numéros de commandes souhaités en espaçant chaque numéro et taper [Entrée]. La sélection fonctionne dans l'ordre croissant, décroissant et également en ordre aléatoire des chiffres :
+Les parties Actions et Informations permettent d'obtenir une ou plusieurs informations et/ou d'effectuer une ou plusieurs actions. En effet la sélection peut être multiple. Il suffit de rentrer les numéros de commandes souhaitées en espaçant chaque numéro et taper [Entrée]. La sélection fonctionne dans l'ordre croissant, décroissant et également en ordre aléatoire des chiffres :
 
 ![choix multiple](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/choix%20multiple.png)
 
