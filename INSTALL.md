@@ -132,20 +132,108 @@
 
 * #### 3 Configuration des ISO
   * #### 3.1 Cartes Réseaux
-  ##### Toutes le machines sont configurées avec deux cartes réseaux, afin de pouvoir avoir internet et povoir être sur le même réseau.
+  ##### Toutes le machines sont configurées avec deux cartes réseaux, afin de pouvoir avoir internet et être sur le même réseau.
   * #### 3.2 IP statiques et autorisation port 22
-  * ##### 3.2.1 Ubuntu
-  ##### 
+  * #### 3.2.1 Ubuntu
+  ##### Renseigner l'IP statique :
+![vm1](https://github.com/user-attachments/assets/0c469269-c878-45fe-bdd7-b9f5cec86f34)
+##### Autoriser le port 22 
+![vm ](https://github.com/user-attachments/assets/ef75425a-1325-4e09-974d-0ef6b6529d8c)
+  * #### 3.2.2 Debian
+ ##### Renseigner l'IP statique :
+![VM 1](https://github.com/user-attachments/assets/2c813cb5-51b4-43aa-9996-7277411929a9)
+
+![VM 1](https://github.com/user-attachments/assets/070aec25-5875-4407-b758-f093b5d890cd)
+##### Le pare-feu de debian 12 est par defaut ouvert, pas besoin de configurer le port 22.
+   * #### 3.2.3 Windows 10
+ ##### Renseigner l'IP statique :
+![VM 1](https://github.com/user-attachments/assets/f64fce23-ad0e-410b-9425-edd4e70a318e)
+
+##### En premier "Change adapter options" (rouge), puis Ethernet (Bleu) :
+![VM 1](https://github.com/user-attachments/assets/4d2d1447-f5cd-4bf0-989b-2bf63aa4e279)
+##### Properties :
+ ![VM 1](https://github.com/user-attachments/assets/0cf7c534-8fdb-499c-8c26-5020628c5541)
+##### Internet Protocol Version 4 :
+![VM 1](https://github.com/user-attachments/assets/3670c410-c304-4ba9-bab8-000642e7aa8d)
+##### Renseigner les champs IP et Subnet mask :
+![VM 1](https://github.com/user-attachments/assets/ebb84f03-2526-4d5b-8f09-292a8904e579)
+##### Gestion du port 22 
+![VM 1](https://github.com/user-attachments/assets/c6906150-ee0c-42c5-926d-f05dcefc32f6)
+##### Windows Firewall
+![VM 1](https://github.com/user-attachments/assets/0e69bbee-a53a-48ce-936d-2865741151ba)
+##### Advanced settings : 
+![VM 1](https://github.com/user-attachments/assets/0804691b-985b-41c9-a4db-e652a2a22448)
+##### Pour "Inbound et Outbound Rules"(Rouge) => "New Rule.."(Bleu)
+![VM 1](https://github.com/user-attachments/assets/2a87b86c-7c26-4527-90d1-5405eb871dbd)
+##### Renseigner port 22 :
+![VM 1](https://github.com/user-attachments/assets/f1ba4455-f86e-45fd-b5d3-52847c2c5b14)
+##### next => Allow connection => Remplir le champs "Name" next => Finish.
+
+  
+  
+  * #### 3.2.4 Windows 2022
+##### Renseigner l'IP statique :
+![VM 1](https://github.com/user-attachments/assets/c6906150-ee0c-42c5-926d-f05dcefc32f6)
+##### En premier "Change adapter options" (rouge), puis Ethernet (Bleu) :
+![VM 1](https://github.com/user-attachments/assets/4d2d1447-f5cd-4bf0-989b-2bf63aa4e279)
+##### Properties :
+ ![VM 1](https://github.com/user-attachments/assets/0cf7c534-8fdb-499c-8c26-5020628c5541)
+##### Internet Protocol Version 4 :
+![VM 1](https://github.com/user-attachments/assets/3670c410-c304-4ba9-bab8-000642e7aa8d)
+##### Renseigner les champs IP et Subnet mask :
+![VM 1](https://github.com/user-attachments/assets/ebb84f03-2526-4d5b-8f09-292a8904e579)
+##### Gestion du port 22 
+![VM 1](https://github.com/user-attachments/assets/c6906150-ee0c-42c5-926d-f05dcefc32f6)
+##### Windows Firewall
+![VM 1](https://github.com/user-attachments/assets/0e69bbee-a53a-48ce-936d-2865741151ba)
+##### Advanced settings : 
+![VM 1](https://github.com/user-attachments/assets/0804691b-985b-41c9-a4db-e652a2a22448)
+##### Pour "Inbound et Outbound Rules"(Rouge) => "New Rule.."(Bleu)
+![VM 1](https://github.com/user-attachments/assets/2a87b86c-7c26-4527-90d1-5405eb871dbd)
+##### Renseigner port 22 :
+![VM 1](https://github.com/user-attachments/assets/f1ba4455-f86e-45fd-b5d3-52847c2c5b14)
+##### next => Allow connection => Remplir le champs "Name" next => Finish.
 
 
-  * ##### 3.2.2 Debian
-  * ##### 3.2.3 Windows 10
-  * ##### 3.2.4 Windows 2022
+****************************************** 
+* #### 3.3 Ping
+Suite à la configuration IP Tableau de test de ping
+||Ubuntu|Win10|Win22|Debian|
+|:-:|:-:|:-:|:-:|:-:|
+|Ubuntu|X|OK|OK|OK|
+|Win10|OK|X|OK|OK|
+|Win22|OK|OK|X|OK|
+|Dbian|OK|OK|OK|X|
 
 
-  * #### 3.3 Ping
-  * #### 3.4 SSH
-     * #### 3.4.1 Instalation
+**********************************************
+* #### 3.4 SSH
+   * #### 3.4.1 Instalation
+      * #### Ubuntu
+      * ##### Installer ssh server :
+![VM 1](https://github.com/user-attachments/assets/f4a662b1-7c56-4857-8912-6638bbd139d6)
+    
+   * ##### Check ssh et sshd
+  
+  ![ssh clients ubuntu](https://github.com/user-attachments/assets/e091e228-089c-4bb4-961c-fa1d313b49c8)
+
+  ![sshd](https://github.com/user-attachments/assets/ad7a7387-a80c-4a04-a51b-6aa16b40a97b)
+
+  * #### Débian
+  * ##### Installer ssh server :
+  ![VM 1](https://github.com/user-attachments/assets/f8379a09-a83f-4890-9ec7-42d42bba2f39)
+  
+  * ##### Check ssh et sshd
+   ![ssh debian](https://github.com/user-attachments/assets/50e777c1-ee91-492a-802c-f0ad6a5fc013)
+
+   
+* #### Windows 10
+* #### Windows 2022 
+     
+
+
+
+
      * #### 3.4.2 Clé SSH + Test
 * #### 4 FAQ 
    
