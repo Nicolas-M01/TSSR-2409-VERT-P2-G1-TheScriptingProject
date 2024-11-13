@@ -162,7 +162,8 @@
 ##### Renseigner les champs IP et Subnet mask :
 ![VM 1](https://github.com/user-attachments/assets/ebb84f03-2526-4d5b-8f09-292a8904e579)
 ##### Gestion du port 22 
-![VM 1](https://github.com/user-attachments/assets/c6906150-ee0c-42c5-926d-f05dcefc32f6)
+![image](https://github.com/user-attachments/assets/dc3f7234-18e9-4341-a1b0-5730a6ea06f7)
+
 ##### Windows Firewall
 ![VM 1](https://github.com/user-attachments/assets/0e69bbee-a53a-48ce-936d-2865741151ba)
 ##### Advanced settings : 
