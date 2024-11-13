@@ -33,7 +33,7 @@
 ##### :large_blue_diamond: Processeur capable de prendre en charge la virtualisation
 ************************************************************************************
 * ##### 2  Installations des ISO :
-  * ##### 2.1 Ubuntu 24.
+  * ### 2.1 Ubuntu 24.
    * ##### Nom utilisateur et ISO : 
 ![VM1](https://github.com/user-attachments/assets/6e3b51a9-8991-40c7-a240-904cccbaad87)
 ![vm 2](https://github.com/user-attachments/assets/1cbe399b-1cc5-448f-86a3-d9bb9d43fcc5)
@@ -53,7 +53,7 @@
 ![vm 9](https://github.com/user-attachments/assets/3eb8e0bd-24dd-4b97-86ae-ec628ced03b4)
 ##### Redémarrer
 *********************************************
-* ##### 2.2 Debian 12.
+* ### 2.2 Debian 12.
 * ##### Nom utilisateur et ISO 
   ![VM 1](https://github.com/user-attachments/assets/c72bffd8-5888-4c73-a34f-fd0bce6d387c)
 ![vm 2](https://github.com/user-attachments/assets/8d2a5319-2cd0-4564-bda9-418e3b9ae8ea)
@@ -85,7 +85,7 @@
 ![VM1](https://github.com/user-attachments/assets/956735fa-4969-4d38-9c87-d4efdde0c298)
 ##### Reboot  
 ****************************************************
- * ##### 2.3 Windows 10.
+ * ### 2.3 Windows 10.
  * ##### Désactiver la connection internet pour l'activation
   * ##### Nom utilisateur et ISO
   ![vm 2](https://github.com/user-attachments/assets/8bfb3fae-893a-4043-85b8-c7513b95fe64)
@@ -106,7 +106,7 @@
 * ##### Créer un mot de passe utilisateur.
 * ##### Répondre à la suite en fontion de vos envies. 
 ***************************************
-* ##### 2.4 Windows 2022.
+* ### 2.4 Windows 2022.
 * ##### Nom utilisateur et ISO
 ![VM 1](https://github.com/user-attachments/assets/8ddefdae-ff14-48ee-ad35-054772f1e0c6)
 ![VM 1](https://github.com/user-attachments/assets/61773d93-1734-4caf-b53f-e029e7ac9827)
@@ -138,18 +138,18 @@
   * #### 3.1 Cartes Réseaux
   ##### Toutes le machines sont configurées avec deux cartes réseaux, afin de pouvoir avoir internet et être sur le même réseau.
   * #### 3.2 IP statiques et autorisation port 22
-  * #### 3.2.1 Ubuntu
+  * ### 3.2.1 Ubuntu
   ##### Renseigner l'IP statique :
 ![vm1](https://github.com/user-attachments/assets/0c469269-c878-45fe-bdd7-b9f5cec86f34)
 ##### Autoriser le port 22 
 ![vm ](https://github.com/user-attachments/assets/ef75425a-1325-4e09-974d-0ef6b6529d8c)
-  * #### 3.2.2 Debian
+  * ### 3.2.2 Debian
  ##### Renseigner l'IP statique :
 ![VM 1](https://github.com/user-attachments/assets/2c813cb5-51b4-43aa-9996-7277411929a9)
 
 ![VM 1](https://github.com/user-attachments/assets/070aec25-5875-4407-b758-f093b5d890cd)
 ##### Le pare-feu de debian 12 est par defaut ouvert, pas besoin de configurer le port 22.
-   * #### 3.2.3 Windows 10
+   * ### 3.2.3 Windows 10
  ##### Renseigner l'IP statique :
 ![VM 1](https://github.com/user-attachments/assets/f64fce23-ad0e-410b-9425-edd4e70a318e)
 
@@ -176,7 +176,7 @@
 
   
   
-  * #### 3.2.4 Windows 2022
+  * ### 3.2.4 Windows 2022
 ##### Renseigner l'IP statique :
 ![VM 1](https://github.com/user-attachments/assets/c6906150-ee0c-42c5-926d-f05dcefc32f6)
 ##### En premier "Change adapter options" (rouge), puis Ethernet (Bleu) :
@@ -214,7 +214,7 @@ Suite à la configuration IP Tableau de test de ping
 **********************************************
 * #### 3.4 SSH
    * #### 3.4.1 Instalation
-      * #### Ubuntu
+      * ### Ubuntu
       * ##### Installer ssh server :
 ![VM 1](https://github.com/user-attachments/assets/f4a662b1-7c56-4857-8912-6638bbd139d6)
     
@@ -224,7 +224,7 @@ Suite à la configuration IP Tableau de test de ping
 
   ![sshd](https://github.com/user-attachments/assets/ad7a7387-a80c-4a04-a51b-6aa16b40a97b)
 
-  * #### Débian
+  * ### Débian
   * ##### Installer ssh server :
   ![VM 1](https://github.com/user-attachments/assets/f8379a09-a83f-4890-9ec7-42d42bba2f39)
   
