@@ -396,8 +396,9 @@ function menu
 								;;
 						
 							8) 
-								echo -e "\n[8] Date de dernière connexion de l'utilisateur "
-								echo "Pour quel utilisateur voudriez vous connaître la dernière connexion ? "
+								echo -e "\n[8] ${GREEN}Date de dernière connexion de l'utilisateur ${NC}"
+                                echo
+								echo -e "${BLUE}Pour quel utilisateur voudriez vous connaître la dernière connexion ? ${NC}"
 								read target
 
 								# On copie dans fichier log
@@ -417,7 +418,7 @@ function menu
 									then
 									# On affiche le résultat de la commande à l'écran.
 									# Les backticks servent à executer la commande, pendant que les "" l'affichent.
-									echo -e "\n* Date de dernière connexion de $target :\n`last $target`"
+									echo -e "\n* ${GREEN}Date de dernière connexion de $target :\n`last $target`${NC}"
 									fi
 								# On copie dans le fichier info
 								echo -e "\n* Date de dernière connexion de l'utilisateur $target\n`last $target`" >> ~/Documents/"info_"$target"_"$FORMATTED_DATE".txt"
@@ -425,14 +426,15 @@ function menu
 
 								# Si elle n'existe pas on avertit et on quitte le programme
 								else
-									echo "La cible n'existe pas le programme va s'arrêter"
+									echo "${RED}La cible n'existe pas le programme va s'arrêter${NC}"
 									exit 1
 								fi
 								;;
 							
 							9)
-								echo -e "\n[9] Date de dernière modification du mot de passe"
-								echo "Pour quel utilisateur voudriez vous connaître la date de dernière modification de mot de passe ? "
+								echo -e "\n[9] ${GREEN}Date de dernière modification du mot de passe${NC}"
+                                echo 
+								echo -n "$(echo -e '\033[34mPour quel utilisateur voudriez vous connaître la date de dernière modification de mot de passe ? \033[0m')"
 								read target
 
 								# On copie dans fichier log
@@ -452,21 +454,21 @@ function menu
 									if [ ${#choice[@]} -eq 1 ]
 									then
 									# On affiche le résultat de la commande à l'écran.
-									echo -e "\n* La date de dernière modification du mot de passe de $target était le $PassWordDate\n"
+									echo -e "${GREEN}\n* La date de dernière modification du mot de passe de $target était le $PassWordDate\n${NC}"
 									fi
 									echo -e "\n* La date de dernière modification du mot de passe de $target était le $PassWordDate\n" >> ~/Documents/"info_"$target"_"$FORMATTED_DATE".txt"
 
 
 								# Si la cible n'existe pas, on prévient et on ferme
 								else
-									echo "La cible n'existe pas, le programme va s'arrêter"
+									echo "${RED}La cible n'existe pas, le programme va s'arrêter${NC}"
 									exit 1
 												
 								fi
 								;;
 
 							10)
-								echo -e "\n[10] Liste des sessions ouvertes par l'utilisateur"
+								echo -e "\n[10] ${GREEN}Liste des sessions ouvertes par l'utilisateur${NC}"
 
 								# On copie dans fichier log
 								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[10] Liste des sessions ouvertes par l'utilisateur" >> /var/log/log_evt.log
@@ -476,7 +478,7 @@ function menu
 									if [ ${#choice[@]} -eq 1 ]
 									then
 									# Affichage commande "w"
-									echo -e "\n* Liste des sessions ouvertes par $target :\n`w`"
+									echo -e "\n* ${GREEN}Liste des sessions ouvertes par $target :\n`w`${NC}"
 									fi
 								# Si plusieurs choix dans le tableau, on enregistre directement
 								
@@ -484,8 +486,9 @@ function menu
 								;;
 
 							11)
-								echo -e "\n[11] Groupe d'appartenance d'un utilisateur"
-								echo "Pour quel utilisateur voudriez vous connaître le groupe ? "
+								echo -e "\n[11] ${GREEN}Groupe d'appartenance d'un utilisateur${NC}"
+                                echo
+								echo -e "${BLUE}Pour quel utilisateur voudriez vous connaître le groupe ? ${NC}"
 								read target
 
 								# On copie dans le log
@@ -504,10 +507,10 @@ function menu
 									then
 									# On affiche le résultat de la commande à l'écran.
 									# Les backticks servent à executer la commande, pendant que les "" l'affichent.
-									echo -e "\n${YELLOW}* Voici les groupes d'appartenance de${NC} `groups $target`\n" 
+									echo -e "\n${GREEN}* Voici les groupes d'appartenance de `groups $target`${NC}\n" 
 									fi
 								# On copie dans fichier info    
-								echo -e "\n${YELLOW}* [11] Voici les groupes d'appartenance de${NC} `groups $target`\n" >> ~/Documents/"info_"$target"_"$FORMATTED_DATE".txt"
+								echo -e "\* [11] Voici les groupes d'appartenance de `groups $target`\n" >> ~/Documents/"info_"$target"_"$FORMATTED_DATE".txt"
 								# Si elle n'existe pas on avertit et on quitte le programme
 								else
 									echo -e "${RED}La cible n'existe pas le programme va s'arrêter${NC}"
@@ -516,7 +519,7 @@ function menu
 								;;
 
 							12)
-								echo -e "\n[12] Historique des commandes exécutées par l'utilisateur"
+								echo -e "\n[12] ${GREEN}Historique des commandes exécutées par l'utilisateur${NC}"
 
 								# On copie dans le log
 								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[12] Historique des commandes exécutées par l'utilisateur" >> /var/log/log_evt.log
@@ -531,18 +534,19 @@ function menu
 									# On affiche les 10 dernières commandes de l'utilisateur courant
 									HISTFILE=~/.bash_history
 									set -o history
-									echo -e "\n${YELLOW}* Historique des 10 dernières commandes exécutées par $target :${NC}\n`history 10`"
+									echo -e "\n${YELLOW}* Historique des 10 dernières commandes exécutées par $target :\n`history 10`${NC}"
 									
 									fi
 								# On copie dans fichier info
-								echo -e "\n${YELLOW}* [12] Historique des 10 dernières commandes exécutées par l'utilisateur $target :${NC}\n`history 10`" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+								echo -e "\n* [12] Historique des 10 dernières commandes exécutées par l'utilisateur $target :\n`history 10`" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
 								;;
 
 							13)
-								echo -e "\n[13] Droits/permissions de l’utilisateur sur un dossier"
-								echo "Pour quel dossier voudriez vous connaître les droits ? "
+								echo -e "\n[13] ${GREEN}Droits/permissions de l’utilisateur sur un dossier${NC}"
+                                echo
+								echo -n "$(echo -e '\033[034mPour quel dossier voudriez vous connaître les droits ? \033[0m')"
 								read directory
-								echo "Indiquez le chemin du dossier que vous recherchez :"
+								echo -n "$(echo -e '\033[034mIndiquez le chemin du dossier que vous recherchez :\033[0m')"
 								read path
 
 								# On copie dans le log
@@ -556,7 +560,7 @@ function menu
 									if [ $? -eq 0 ]
 									then
 									# On envoie le résultat dans le fichier
-									echo -e "\n${YELLOW}* [13] Voici les droits de `whoami` pour le dossier $directory :\n${NC} $DirectoryRight" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+									echo -e "\n* [13] Voici les droits de `whoami` pour le dossier $directory :\n $DirectoryRight" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
 
 									# Si un seul choix dans le menu, on affiche le résultat
 										if [ ${#choice[@]} -eq 1 ]
@@ -572,7 +576,7 @@ function menu
 										# On affiche en console et on enregistre dans le fichier.
 										if [ -z "$DirectoryRight" ]
 										then
-										echo -e "${RED}Il n'y a pas de dossier de ce nom${NC}" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+										echo -e "Il n'y a pas de dossier de ce nom" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
 										fi    
 
 									else
@@ -582,10 +586,11 @@ function menu
 									;;
 							14)
 
-								echo -e "\n[14] Droits/permissions de l’utilisateur sur un fichier"
-								echo "Pour quel fichier voudriez vous connaître les droits ? "
+								echo -e "\n[14] ${GREEN}Droits/permissions de l’utilisateur sur un fichier${NC}"
+                                echo
+								echo -n "$(echo -e '\033[34mPour quel fichier voudriez vous connaître les droits ? \033[0m')"
 								read file
-								echo "Indiquez le chemin du fichier que vous recherchez :"
+								echo -n "$(echo -e '\033[34mIndiquez le chemin du fichier que vous recherchez :\033[0m')"
 								read path
 
 								# On copie dans le log
@@ -601,7 +606,7 @@ function menu
 									if [ $? -eq 0 ]
 									then
 									# On envoie le résultat dans le fichier
-									echo -e "\n${YELLOW}* [14] Droits/permissions de `whoami` pour le fichier $file :\n${NC} $FileRight" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
+									echo -e "\n* [14] Droits/permissions de `whoami` pour le fichier $file :\n $FileRight" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
 									
 										# Si un seul choix dans le menu on affiche le résultat
 										if [ ${#choice[@]} -eq 1 ]
@@ -609,7 +614,7 @@ function menu
 										echo -e "\n${YELLOW}* Voici les droits de `whoami` pour le fichier $file :\n${NC} $FileRight" 
 											if [ -z "$FileRight" ]
 											then
-											echo "Il n'y a pas de fichier de ce nom"
+											echo "${RED}Il n'y a pas de fichier de ce nom${NC}"
 											fi
 										
 										fi
@@ -916,11 +921,12 @@ function menu
 					
 							
 							6)
-								echo -e "\n[6] Version de l'OS"
+								echo -e "\n[6] ${GREEN}Version de l'OS${NC}"
+                                echo
 								if [ ${#choice[@]} -eq 1 ]
 								then
 									# On affiche le résultat de la commande à l'écran.
-									echo -e "\nLa version de cet OS est : $(cat /etc/os-release | grep -v "NAME" | grep -v "PRETTY_NAME" | grep -v "ID" | grep -v "ID_LIKE" | grep -v "HOME_URL" | grep -v "SUPPORT_URL" | grep -v "BUG_REPORT_URL" | grep -v "PRIVACY_POLICY_URL" | grep -v "UBUNTU_CODENAME")"
+									echo -e "\n${YELLOW}La version de cet OS est :${NC} ${GREEN}$(cat /etc/os-release | grep -v "NAME" | grep -v "PRETTY_NAME" | grep -v "ID" | grep -v "ID_LIKE" | grep -v "HOME_URL" | grep -v "SUPPORT_URL" | grep -v "BUG_REPORT_URL" | grep -v "PRIVACY_POLICY_URL" | grep -v "UBUNTU_CODENAME")${NC}"
 								fi
 									# On enregistre dans fichier info
 									echo -e "\n* [6] La version de cet OS est : $(cat /etc/os-release | grep -v "NAME" | grep -v "PRETTY_NAME" | grep -v "ID" | grep -v "ID_LIKE" | grep -v "HOME_URL" | grep -v "SUPPORT_URL" | grep -v "BUG_REPORT_URL" | grep -v "PRIVACY_POLICY_URL" | grep -v "UBUNTU_CODENAME")" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
@@ -929,7 +935,8 @@ function menu
 									;;  
 
 							7)
-								echo -e "\n[7] Nombre de disques"
+								echo -e "\n[7] ${GREEN}Nombre de disques${NC}"
+                                echo
 								# On copie dans fichier log
 								echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[7] Nombre de disques" >> /var/log/log_evt.log
 							
@@ -951,15 +958,16 @@ function menu
 									lsblk | grep -v "loop" | grep -v "sr0"  # Liste uniquement les disques
 									disk_count=$(lsblk -d -o NAME | grep -vE "loop|sr0" | wc -l)  # Nombre de disques
 										if [ $disk_count -gt 1 ]; then
-											echo "Nombre de disques de `whoami` : $disk_count"
+											echo -e "${YELLOW}Nombre de disques de `whoami` :${NC} ${GREEN}$disk_count${NC}"
 										else
-											echo "Nombre de disque de `whoami` : $disk_count"
+											echo -e "${YELLOW}Nombre de disque de `whoami` :${NC} ${GREEN}$disk_count${NC}"
 										fi
 								fi
 								;;
 							
 							8)
-								echo -e "\n[8] Partition par disque"
+								echo -e "\n[8] ${GREEN}Partition par disque${NC}"
+                                echo
 								# On copie dans fichier log
 								echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[8] Partition par disque" >> /var/log/log_evt.log
 
@@ -968,12 +976,13 @@ function menu
 								
 								if [ ${#choice[@]} -eq 1 ]
 									then
-									echo -e "Voici les partitions sur cette machine :\n $resultat1=$(df -h | grep -v "tmpfs" | grep -v " /dev/sr0")" 
+									echo -e "${YELLOW}Voici les partitions sur cette machine :${NC}\n ${GREEN}$resultat1=$(df -h | grep -v "tmpfs" | grep -v " /dev/sr0")${NC}" 
 								fi
 								;;
 							
 							9)
-								echo -e "\n[9] Espace disque restant"
+								echo -e "\n[9] ${GREEN}Espace disque restant${NC}"
+                                echo
 								# On copie dans fichier log
 								echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[9] Espace disque restant" >> /var/log/log_evt.log
 								
@@ -983,19 +992,20 @@ function menu
 
 								if [ ${#choice[@]} -eq 1 ]
 								then
-									echo -e "Voici la place disponible sur chaque partition :\n $resultat2=$(df -h | grep -v "tmpfs" | grep -v "/dev/sr0" | awk 'BEGIN {OFS="       "} {print $1,$2, $3, $4}')"
+									echo -e "${YELLOW}Voici la place disponible sur chaque partition ${NC}:\n ${GREEN}$resultat2=$(df -h | grep -v "tmpfs" | grep -v "/dev/sr0" | awk 'BEGIN {OFS="       "} {print $1,$2, $3, $4}')${NC}"
 								fi                               
 								;;
 
 							10)
-								echo -e "\n[10] Nom et espace disque d'un dossier"
+								echo -e "\n[10] ${GREEN}Nom et espace disque d'un dossier${NC}"
+                                echo
 								# On copie dans fichier log
 								echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[10] Nom et espace disque d'un dossier" >> /var/log/log_evt.log
 
-								echo "Sur quel dossier souhaitez-vous des indications ?" 
+								echo -n "$(echo -e '\033[34mSur quel dossier souhaitez-vous des indications ?\033[0m')" 
 								read directory
 
-								echo "Veuillez renseigner un chemin :" 
+								echo -n "$(echo -e '\033[34mVeuillez renseigner un chemin :\033[0m')" 
 								read path
 
 
@@ -1006,7 +1016,7 @@ function menu
 									if [ -n "$Total" ]; then
 										if [ ${#choice[@]} -eq 1 ]
 										then
-											echo -e "La taille du répertoire $directory est :\n $resultat3=$(sudo du -sh "$Total")"
+											echo -e "${GREEN}La taille du répertoire $directory est :\n $resultat3=$(sudo du -sh "$Total")${NC}"
 										fi
 
 									echo -e "\n* [10] Nom et espace disque d'un dossier\nLa taille du répertoire $directory est :\n $resultat3=$(sudo du -sh "$Total")" >> ~/Documents/"info_`whoami`_$FORMATTED_DATE.txt"
@@ -1015,12 +1025,13 @@ function menu
 									echo "Le répertoire '$directory' n'a pas été trouvé dans le chemin spécifié." 
 									fi
 								else
-									echo "Le chemin spécifié '$path' n'est pas un répertoire valide." 
+									echo -e "${RED}Le chemin spécifié '$path' n'est pas un répertoire valide.${NC}" 
 								fi
 								;;
 
 							11)
-								echo -e "\n[11] Liste des lecteurs montés"
+								echo -e "\n[11] ${GREEN}Liste des lecteurs montés${NC}"
+                                echo
 								# On copie dans fichier log
 								echo -e "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[11] Liste des lecteurs montés" >> /var/log/log_evt.log
 								
@@ -1030,7 +1041,7 @@ function menu
 								#Si un seul choix, on affiche le résultat à l'écran
 								if [ ${#choice[@]} -eq 1 ]
 									then
-									echo -e "Liste des lecteurs montés :\n$resultat4" 
+									echo -e "${GREEN}Liste des lecteurs montés :\n$resultat4${NC}" 
 								fi
 
 								# On enregistre dans le fichier info
@@ -1038,7 +1049,8 @@ function menu
 								;;
 
 							12)
-								echo -e "\n[12] Liste des applications paquets/installés"
+								echo -e "\n[12] ${GREEN}Liste des applications paquets/installés${NC}"
+                                echo
 
 								# On copie dans fichier log
 								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[12] Liste des applications/paquets installées" >> /var/log/log_evt.log
@@ -1056,7 +1068,7 @@ function menu
 									if [ ${#choice[@]} -eq 1 ]
 									then
 									# On affiche le résultat de la commande à l'écran.
-									echo -e "Voici les applications/paquets installées :"
+									echo -e "${YELLOW}Voici les applications/paquets installées :${NC}"
 									list
 									fi
 								echo -e "\n* [12] Voici les applications/paquets installés :\n `list`" >> ~/Documents/"info_`whoami`""_"$FORMATTED_DATE".txt"
@@ -1065,7 +1077,7 @@ function menu
 								;;
 
 							13)
-								echo -e "\n[13] Liste des services en cours d'execution"
+								echo -e "\n[13] ${GREEN}Liste des services en cours d'execution${NC}"
 
 								# On copie dans fichier log
 								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[13] Liste des services en cours d'execution" >> /var/log/log_evt.log
@@ -1084,7 +1096,7 @@ function menu
 									if [ ${#choice[@]} -eq 1 ]
 									then
 									# On affiche le résultat de la commande à l'écran.
-									echo -e "Voici les services en cours d'execution :"
+									echo -e "${YELLOW}Voici les services en cours d'execution :${NC}"
 									list
 
 									fi
@@ -1093,7 +1105,8 @@ function menu
 								;;
 
 							14)
-								echo -e "\n[14] Liste des utilisateurs locaux"
+								echo -e "\n[14] ${GREEN}Liste des utilisateurs locaux${NC}"
+                                echo
 
 								# On copie dans fichier log
 								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[14] Liste des utilisateurs locaux" >> /var/log/log_evt.log
@@ -1111,7 +1124,7 @@ function menu
 									if [ ${#choice[@]} -eq 1 ]
 									then
 									# On affiche le résultat de la commande à l'écran.
-									echo "Voici la liste des utilisateur locaux :"
+									echo -e "${YELLOW}Voici la liste des utilisateur locaux :${NC}"
 									list
 														
 									fi
@@ -1122,7 +1135,7 @@ function menu
 								;;
 
 							15)
-								echo -e "\n[15] Mémoire RAM totale"
+								echo -e "\n[15] ${GREEN}Mémoire RAM totale${NC}"
 
 								# On copie dans fichier log
 								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[15] Mémoire RAM totale" >> /var/log/log_evt.log
@@ -1134,12 +1147,13 @@ function menu
 								if [ ${#choice[@]} -eq 1 ]
 								then
 									# Affichage de la RAM totale avec free et découpe avec awk et grep
-									echo -e "Votre RAM totale est de $(free -h | grep "Mem:" | awk '{print$2}')"
+									echo -e "${YELLOW}Votre RAM totale est de${NC} ${GREEN}$(free -h | grep "Mem:" | awk '{print$2}')${NC}"
 								fi
 								;;
 
 							16)
-								echo -e "\n[16] Utilisation de la RAM"
+								echo -e "\n[16] ${GREEN}Utilisation de la RAM${NC}"
+                                echo
 
 								# On copie dans fichier log
 								echo "$FORMATTED_DATE-$FORMATTED_TIME-`whoami`-[16] Utilisation de la RAM" >> /var/log/log_evt.log
@@ -1151,7 +1165,7 @@ function menu
 								if [ ${#choice[@]} -eq 1 ]
 								then
 									# Affichage de la RAM totale avec free et découpe avec awk et grep
-									echo -e "Votre RAM utilisée est de $(free -h | grep "Mem:" | awk '{print$3}')"
+									echo -e "${YELLOW}Votre RAM utilisée est de${NC} ${GREEN}$(free -h | grep "Mem:" | awk '{print$3}')${NC}"
 								fi
 								;;
 
