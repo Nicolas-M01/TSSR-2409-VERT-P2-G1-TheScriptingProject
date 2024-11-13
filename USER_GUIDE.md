@@ -55,7 +55,7 @@ Ce fichier se trouve dans le répertoire de l'utilisateur actuel puis dans docum
 La partie "cible" sera la cible renseignée après le choix de la commande, ou l'utilisateur actuel, si pas de cible spécifique.
 La date est formatée sous la forme : YYYYMMDD  
 
-[PHOTO FICHIER INFO]
+![FICHIER INFO](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/Fichier%20info.png)
 
 ---
 
