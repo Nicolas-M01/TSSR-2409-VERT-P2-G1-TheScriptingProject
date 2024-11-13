@@ -51,7 +51,7 @@ Pour la partie Information, il y a deux possibilités d'affichage.<br>
 
 * Dans le cas d'une sélection multiple, le script va afficher les commandes sélectionnées mais les résultats seront directement sauvegardés dans un fichier texte.<br>
 
-![Affichage multiple]()
+![Affichage multiple](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/Affichage%20multiple.png)
 
 Ce fichier se trouve dans le répertoire de l'utilisateur actuel puis dans documents : 
 >**`~/Documents/info_<cible>_<date>.txt`**<br>
