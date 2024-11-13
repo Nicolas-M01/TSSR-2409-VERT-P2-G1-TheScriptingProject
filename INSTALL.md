@@ -230,7 +230,8 @@ Suite à la configuration IP Tableau de test de ping
 ![vm 1](https://github.com/user-attachments/assets/31fe5df9-350e-4f5f-93ac-cac84e5406f8)
 #### Copier la clé 
  ssh-copy-id -i /home/wilder/.ssh/id_ecdsa.pub 
- 
+#### Entrer le mot de passe de la machine distante, et voilà.C'est facile linux.
+#### Windows10\Windows2022
 
 
 
