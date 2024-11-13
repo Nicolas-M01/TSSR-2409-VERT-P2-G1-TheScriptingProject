@@ -19,16 +19,9 @@
  * ##### 3.3 [Ping](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#33-ping-1)
   * ##### 3.4 [SSH]()
      * ##### 3.4.1 [Instalation]()
-     * ##### 3.4.2 [Clé SSH + Test]()
+     * ##### 3.4.2 [Clé SSH ]()
 * ##### 4 [FAQ]() 
-   
-
-
-
-
-
-
-* #### 1 Prérequis techniques :
+   * #### 1 Prérequis techniques :
 ##### :large_blue_diamond: Diposer d'un ordinateur suffisament puissant pour acceuillir plusieurs VM:
 ##### :large_blue_diamond: Disque (SSD mini, nvme recommandé) 200Go.
 ##### :large_blue_diamond: Ram 16 Go minimun, 32 Go recomandé.
@@ -121,24 +114,6 @@
 ![VM 1](https://github.com/user-attachments/assets/2dcf1e43-a1a2-4365-8b58-b3911fafdbd6)
 * #### Custom puis choix disque : 
 ![VM 1](https://github.com/user-attachments/assets/5271dc88-e472-4031-a68d-f21aa913f973)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * ## 3 Configuration des ISO
   * #### 3.1 Cartes Réseaux
   ##### Toutes le machines sont configurées avec deux cartes réseaux, afin de pouvoir avoir internet et être sur le même réseau.
@@ -222,29 +197,47 @@ Suite à la configuration IP Tableau de test de ping
       * ## Ubuntu
       * #### Installer ssh server :
 ![VM 1](https://github.com/user-attachments/assets/f4a662b1-7c56-4857-8912-6638bbd139d6)
-    
-   * #### Check ssh et sshd
-  
-  ![ssh clients ubuntu](https://github.com/user-attachments/assets/e091e228-089c-4bb4-961c-fa1d313b49c8)
-
-  ![sshd](https://github.com/user-attachments/assets/ad7a7387-a80c-4a04-a51b-6aa16b40a97b)
-
-  * ## Débian
+    * #### Check ssh et sshd
+ ![ssh clients ubuntu](https://github.com/user-attachments/assets/e091e228-089c-4bb4-961c-fa1d313b49c8)
+ ![sshd](https://github.com/user-attachments/assets/ad7a7387-a80c-4a04-a51b-6aa16b40a97b)
+ * ## Débian
   * #### Installer ssh server :
   ![VM 1](https://github.com/user-attachments/assets/f8379a09-a83f-4890-9ec7-42d42bba2f39)
-  
-  * #### Check ssh et sshd
+   * #### Check ssh et sshd
    ![ssh debian](https://github.com/user-attachments/assets/50e777c1-ee91-492a-802c-f0ad6a5fc013)
 
    
-* ## Windows 10
-* ## Windows 2022 
-     
+* ## Windows 10 et Windows 2022 (même procédure)
+#### Dans Windows setting
+![vm 1](https://github.com/user-attachments/assets/fcb0d23a-1415-41c7-a79f-a28ea25a9959)
+#### Optional features
+![vm1](https://github.com/user-attachments/assets/2f55ae2c-b5e4-4a2e-9dbe-3b01637f47eb)
+#### Editer les régles au démarage :
+![vm 2](https://github.com/user-attachments/assets/acb80868-0b54-44a6-be29-9362c269993e)
+![vm 1](https://github.com/user-attachments/assets/7d1d38a9-59c1-4013-bdaa-f4d0c8c7ed20)
+#### Rechercher Open ssh server
+![vm1](https://github.com/user-attachments/assets/92066d5b-43af-42be-ba20-7bc04d97493b)
+#### Le démarrer
+![vm 1](https://github.com/user-attachments/assets/8592b937-3da3-4c8c-9d88-dba56bca8278)
+#### L'activer au démarage => dans le même menu => Properties
+#### Selectionner => Atomatic (Delayed Start)
+![vm 1](https://github.com/user-attachments/assets/820ad474-e52d-46f1-841e-831102c639a8)
+* ## 3.4.2 Clé SSH 
+## Ubuntu\Debian:(les screen proviennent de l'OS ubuntu, les commandes sont exactement les même sur Debian)
+#### Taper la commande : 
+ ssh-keygen -t ecdsa
+#### Indiquez le dossier ou copier la clé et validé
+![vm 1](https://github.com/user-attachments/assets/31fe5df9-350e-4f5f-93ac-cac84e5406f8)
+#### Copier la clé 
+ ssh-copy-id -i /home/wilder/.ssh/id_ecdsa.pub 
+ 
 
 
 
 
-     * #### 3.4.2 Clé SSH + Test
+
+
+
 * #### 4 FAQ 
    
 
