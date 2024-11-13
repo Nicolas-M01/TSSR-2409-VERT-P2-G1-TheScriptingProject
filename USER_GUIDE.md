@@ -43,12 +43,16 @@ Il suffit de rentrer l'utilisateur pour obtenir sa dernière connection :
   
 ### :two: Affichage et enregistrement des résultats dans fichier info
 
-Pour la partie Information, il y a deux possibilités d'affichage.<br>Dans le cas d'une sélection unique, le script permet d'afficher directement la commande sélectionnée ainsi que le résultat à l'écran
+Pour la partie Information, il y a deux possibilités d'affichage.<br>
+* Dans le cas d'une sélection unique, le script permet d'afficher directement la commande sélectionnée ainsi que le résultat à l'écran :
 
 ![Information Unique affichée Ecran](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/Affichage%20simple.png)
 
 
-Dans le cas d'une sélection multiple, le script va afficher les commandes sélectionnées mais les résultats seront directement sauvegardés dans un fichier texte.<br>
+* Dans le cas d'une sélection multiple, le script va afficher les commandes sélectionnées mais les résultats seront directement sauvegardés dans un fichier texte.<br>
+
+![Affichage multiple]()
+
 Ce fichier se trouve dans le répertoire de l'utilisateur actuel puis dans documents : 
 >**`~/Documents/info_<cible>_<date>.txt`**<br>
 
