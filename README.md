@@ -20,8 +20,8 @@ Le choix à été fait de réaliser le script en 4 partie, une pour chacun des m
 |   | Sprint S1 | Sprint S2 |  Sprint S3 | Sprint S4 |  
 | :--: | :-------: | :-------: | :-------: | :-------: |  
 | SCRUM MASTER | Martin | Martin | Igor  | Nicolas |  
-| PRODUCT OWNER | Igor | Nicolas | Martin | Igor |  
-| TECHNICIANS | Elsa & Nicolas | Elsa & Igor | Elsa & Nicolas | Elsa & Martin |  
+| PRODUCT OWNER | Igor | Nicolas | Martin | Elsa |  
+| TECHNICIANS | Elsa & Nicolas | Elsa & Igor | Elsa & Nicolas | Igor & Martin |  
 
 ## Choix techniques : quel OS, quelle version, etc.
 
