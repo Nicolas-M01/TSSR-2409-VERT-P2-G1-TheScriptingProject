@@ -13,7 +13,7 @@
     * ##### 3.2.1 [Ubuntu.](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#321-ubuntu)
     * ##### 3.2.2 [Debian 12.](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#322-debian)
     * ##### 3.2.3 [Windows 10.](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#323-windows-10)
-    * ##### 3.2.4 [windows 2022.](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#324-windows-2022)
+    * ##### 3.2.4 [windows 2022.](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#324-windows-2022-1)
  * ##### 3.3 [Ping](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/INSTALL.md#33-ping-1)
   * ##### 3.4 [SSH]()
      * ##### 3.4.1 [Instalation]()
