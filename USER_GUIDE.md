@@ -1,7 +1,14 @@
 
 ## Guide utilisateur
 ---
+#### Sommaire
+#### [Fonctionnalités de base et avancées](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/edit/main/USER_GUIDE.md#arrow_forward-fonctionnalit%C3%A9s-de-base-et-avanc%C3%A9es)  
+#### [Affichage et enregistrement des résultats](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/edit/main/USER_GUIDE.md#arrow_forward-affichage-et-enregistrement-des-r%C3%A9sultats-dans-fichier-info)
+#### [Fichier Log](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/edit/main/USER_GUIDE.md#arrow_forward-fichier-log)
+#### [Arrêt du script](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/edit/main/USER_GUIDE.md#arrow_forward-arr%C3%AAt-du-script)
+#### [FAQ](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/edit/main/USER_GUIDE.md#interrobang-faq)
 
+---
 ### :arrow_forward: Fonctionnalités de base et avancées
 
 Le menu principal nous permet de choisir entre **`Utilisateur`** ou **`Ordinateur client`**  
