@@ -78,12 +78,18 @@ Il affiche également les débuts et fin de script. L'affichage se présente sou
 ![Logs](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/Logs.png)
 
 ---
-
 ### :four: Connection SSH
 
-Le script permet de se connecter en SSH sur les parties `Information`. En effet, lorsque l'on clique sur une demande d'Information, le script nous propose de rester sur la machine locale ou de nous connecter en SSH sur un machine cliente du même réseau afin d'en collecter les informations souhaitées.
+Le script permet de se connecter en SSH sur les parties `Information`. En effet, lorsque l'on clique sur une demande d'Information, le script nous propose de rester sur la machine locale ou de nous connecter en SSH sur un machine cliente du même réseau afin d'en collecter les informations souhaitées.  
+*Exemple :
+  ##### [Menu Principal] :arrow_right: [2] Ordinateur Client :arrow_right: [6] Version de l'OS :arrow_right: [2] Machine distante :  
+  Le script nous invite à renseigner l'adresse IP cible, puis l'utilisateur et la connection se fait automatiquement sans renseigner de mot de passe car les machines sont connectées en SSH avec une paire de clés SSH.
+  
+![Connection SSH](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/Information%20SSH.png)  
 
+Les enregistrements dans le fichier des logs et le fichier des informations fonctionne de manière similaire aux commandes effectuées localement, à l'exeption que nous avons l'information de l'adresse IP et nom d'utilisateur de la machine distante dans le fichier Info.
 
+---
 ### :five: Arrêt du script
 
 Le script est programmé pour tourner en boucle sauf en cas de grosse erreur. Après l'affichage des commandes, il propose de continuer ou de quitter le script. Il suffit de rentrer le choix correspondant. (Pour rappel, les démarrages et arrêts du script sont enregistrés dans le fichier des logs)
