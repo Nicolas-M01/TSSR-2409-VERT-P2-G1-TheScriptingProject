@@ -58,9 +58,9 @@ Liste des fonctionnalités pour chaque script (A intégrer dans les "cases")
 |Action|Utilisateur|Ajout à un groupe d'administration||
 |Action|Utilisateur|Ajout à un groupe local||
 |Action|Utilisateur|Sortie d’un groupe local||
-|Action|Ordinateur client|Arrêt||
-|Action|Ordinateur client|Redémarrage||
-|Action|Ordinateur client|Verrouillage||
+|Action|Ordinateur client|Arrêt|En cours martin|
+|Action|Ordinateur client|Redémarrage|En cours martin|
+|Action|Ordinateur client|Verrouillage|En cours martin|
 |Action|Ordinateur client|Mise-à-jour du système||
 |Action|Ordinateur client|Création de répertoire||
 |Action|Ordinateur client|Modification de répertoire||
