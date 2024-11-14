@@ -12,8 +12,8 @@
 ## Introduction : mise en contexte
 Pour ce projet nous devons réaliser un script d'actions et d'informations, sur une machine distante.
 
-En effet ce script est partagé en deux partie actions et informations, la première partie aura pour effet d'influer directement sur l'OS ciblé, tandis que la deuxième recueillera des informations sur ce même OS.
-Le choix à été fait de réaliser le script en 4 partie, une pour chacun des menbres du groupe.
+En effet ce script est partagé en deux parties actions et informations, la première partie aura pour effet d'influer directement sur l'OS ciblé, tandis que la deuxième recueillera des informations sur ce même OS.
+Le choix à été fait de réaliser le script en 4 parties, une pour chacun des membres du groupe.
 
 ## Membres du groupe de projet (rôles par sprint)
   
@@ -56,16 +56,16 @@ Le choix à été fait de réaliser le script en 4 partie, une pour chacun des m
 
 **- Difficultés rencontrées : problèmes techniques rencontrés**
 
-1) Notre première difficultée à été de comprendre les besoins de ce script, et donc les solution que nous allions devoir trouver.
-2)  La recherche et la compréhention des copmmandes pour les actions demandées.
-3)  La compréhention de ce que représente, ainsi que la création de la partie information.
-4) La dernière partie du script sur les fichier log_evt.log
+1) Notre première difficulté à été de comprendre les besoins de ce script, et donc les solutions que nous allions devoir trouver.
+2) La recherche et la compréhention des commandes pour les actions demandées.
+3) La compréhention de ce que représente, ainsi que la création de la partie information.
+4) La dernière partie du script sur les fichiers log_evt.log
 5) Organisation dans le groupe, notament un agenda commun des tache type Myro
 
 **- Solutions trouvées : Solutions et alternatives trouvées**
- 1)  Beaucoup de temps passer à se documenter
+ 1)  Beaucoup de temps passé à se documenter
  
 
 **- Améliorations possibles : suggestions d’améliorations futures**
-1) Passer les commandes en ssh sans copier le/les script(s).
+1) Passer les commandes en ssh sans copier le/les script(s)
 2) 
