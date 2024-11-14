@@ -61,10 +61,10 @@ Liste des fonctionnalités pour chaque script (A intégrer dans les "cases")
 |Action|Ordinateur client|Arrêt|En cours martin|
 |Action|Ordinateur client|Redémarrage|En cours martin|
 |Action|Ordinateur client|Verrouillage|En cours martin|
-|Action|Ordinateur client|Mise-à-jour du système||
-|Action|Ordinateur client|Création de répertoire||
-|Action|Ordinateur client|Modification de répertoire||
-|Action|Ordinateur client|Suppression de répertoire||
+|Action|Ordinateur client|Mise-à-jour du système|en cours martin|
+|Action|Ordinateur client|Création de répertoire|en cours martin|
+|Action|Ordinateur client|Modification de répertoire|en cours martin|
+|Action|Ordinateur client|Suppression de répertoire|en cours martin|
 |Action|Ordinateur client|Prise de main à distance (CLI)||
 |Action|Ordinateur client|Activation du pare-feu||
 |Action|Ordinateur client|Désactivation du pare-feu||
