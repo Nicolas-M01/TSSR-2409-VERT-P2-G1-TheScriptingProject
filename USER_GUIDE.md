@@ -13,14 +13,14 @@
 ### :one: Présentation du menu
 
 Le menu principal nous permet de choisir entre **`Utilisateur`** ou **`Ordinateur client`**  
-#### **[1] Utilisateur**  
+#### `[1] Utilisateur`
 
 ![Menu Utilisateur1](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/menu1.png)  
 
 
 
 
-#### **[2] Ordinateur client**
+#### `[2] Ordinateur client`
 
 ![Menu Utilisateur2](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/menu2.png)
 
@@ -80,9 +80,9 @@ Il affiche également les débuts et fin de script. L'affichage se présente sou
 ---
 ### :four: Connection SSH
 
-Le script permet de se connecter en SSH sur les parties `Information`. En effet, lorsque l'on clique sur une demande d'Information, le script nous propose de rester sur la machine locale ou de nous connecter en SSH sur un machine cliente du même réseau afin d'en collecter les informations souhaitées.  
-*Exemple :
-  ##### [Menu Principal] :arrow_right: [2] Ordinateur Client :arrow_right: [6] Version de l'OS :arrow_right: [2] Machine distante :  
+Le script permet de se connecter en SSH sur les parties `Information`. En effet, lorsque l'on clique sur une demande d'Information, le script nous propose de rester sur la machine locale ou de nous connecter en SSH sur une machine cliente du même réseau afin d'en collecter les informations souhaitées.  
+* Exemple :
+ >##### [Menu Principal] :arrow_right: [2] Ordinateur Client :arrow_right: [6] Version de l'OS :arrow_right: [2] Machine distante :  
   Le script nous invite à renseigner l'adresse IP cible, puis l'utilisateur et la connection se fait automatiquement sans renseigner de mot de passe car les machines sont connectées en SSH avec une paire de clés SSH.
   
 ![Connection SSH](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/Information%20SSH.png)  
