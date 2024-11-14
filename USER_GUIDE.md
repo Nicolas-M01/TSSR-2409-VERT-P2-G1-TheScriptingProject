@@ -88,7 +88,7 @@ Le script permet de se connecter en SSH sur les parties `Information`. En effet,
 ![Connection SSH](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/Information%20SSH.png)  
 
 Les enregistrements dans le fichier des logs et le fichier des informations fonctionne de manière similaire aux commandes effectuées localement, à l'exeption que nous avons l'information de l'adresse IP et nom d'utilisateur de la machine distante dans le fichier Info.
-
+![Fichir Infos SSH](https://github.com/WildCodeSchool/TSSR-2409-VERT-P2-G1-TheScriptingProject/blob/main/Images/fichier%20Info%20machine%20cliente%20SSH.png)
 ---
 ### :five: Arrêt du script
 
