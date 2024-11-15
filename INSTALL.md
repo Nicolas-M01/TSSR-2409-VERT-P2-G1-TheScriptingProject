@@ -60,7 +60,8 @@
 * #### Keyboard 
   ![VM 1](https://github.com/user-attachments/assets/cf576eb6-2df5-4050-9ae1-8422f4f54d6c)
   * #### Laisser les champs par défauts : 
-  ![image](https://github.com/user-attachments/assets/caf811f2-d826-4296-a7eb-af99b59ac55d)
+  ![debien](https://github.com/user-attachments/assets/3088bdcf-ca02-4db8-87cd-ee275846cc00)
+
   ![image](https://github.com/user-attachments/assets/019e42fd-7232-40a0-8823-ef308e0e1014)
 * #### Choisissez un mot de passe root
 ![image](https://github.com/user-attachments/assets/b8ab1690-378b-49b7-a1c1-96ab8a0a8b14)
