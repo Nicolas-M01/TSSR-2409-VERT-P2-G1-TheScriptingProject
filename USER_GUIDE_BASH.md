@@ -107,11 +107,13 @@ Le script est programmé pour tourner en boucle sauf en cas de grosse erreur. Ap
 ### :six: :interrobang: FAQ
 L'historique des commandes tapées avec `history` est par défaut désactivé dans les scripts. Il faut le réactiver. Cette réactivation est prévue dans le script mais seulement au lancement de la commande `history` et elle va donc afficher les commandes avant le lancement du script. Une fois la commande `history` réactivée, elle va afficher les dernières lignes exécutées par le script, qui sont donc des commandes bash, sans grand intérêt. Pour éviter un spam de l'historique, il est limité aux 10 dernières actions.
 
+---
 ### :b: POWERSHELL
   #### :one: Présentation des menus
   #### `[1] Principal`  
   Le menu Principal se compose d'un titre et de 5 Parties :
   ![vm 1](https://github.com/user-attachments/assets/c6065bce-0037-4a3b-b820-51130c83c27d)
+  
   #### `[2]Actions`
   La partie action permet la réalisation de manipulation sur la machine distante, via le protocole SSH.
   * #### Menu Marche\Arrêt
@@ -123,6 +125,8 @@ L'historique des commandes tapées avec `history` est par défaut désactivé da
    Ici les choix 2 et 3 sont en construction.
   * #### Version de l'OS
   ![image](https://github.com/user-attachments/assets/7618adb2-de5e-4b15-b04a-ab354d769f6c)
+ 
+  ---
   #### :two: Connection SSH
  * #### Configurer l'envoie de script via SSH avec Powershell :
    Dans Program Data
@@ -138,11 +142,14 @@ Reboot le service sshd
 Les commandes ssh sont maintenant disponible sous le format :
 ssh USER@IP "powershell COMMANDE"
 Une fois cette manipulation effectué les commmandes sont effectuez en ssh sans copie de script à distance.  
-  
-  #### :five: Arrêt du script
+ 
+  ---
+  #### 3️⃣: Arrêt du script
   Ecran de sortie :
   ![vm 1](https://github.com/user-attachments/assets/bbb88366-6a9a-42e4-a4bf-453caf2717ed)
-#### :six: FAQ
+ 
+ ---
+ #### 4️⃣: FAQ
 configuration du lancement de commande ssh su Powershell détaillé plus haut.
 
 
