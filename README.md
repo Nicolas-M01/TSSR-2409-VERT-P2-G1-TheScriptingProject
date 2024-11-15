@@ -108,15 +108,19 @@ Taux de réalisation en pourcentage des commandes :
 |Information|Ordinateur client|Espace disque restant par partition/volume (local)|:white_check_mark:||
 |Information|Ordinateur client|Espace disque restant par partition/volume (SSH)|:white_check_mark:||
 |Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé) (local)|:white_check_mark:||
-|Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé) (SSH)|:white_check_mark:||
+|Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé) (SSH)|||
 |Information|Ordinateur client|Liste des lecteurs monté (disque, CD, etc.) (local)|:white_check_mark:||
 |Information|Ordinateur client|Liste des lecteurs monté (disque, CD, etc.) (SSH)|:white_check_mark:||
 |Information|Ordinateur client|Liste des applications/paquets installées (local)|:white_check_mark:||
 |Information|Ordinateur client|Liste des applications/paquets installées (SSH)|:white_check_mark:||
-|Information|Ordinateur client|Liste des services en cours d'execution|:white_check_mark:||
-|Information|Ordinateur client|Liste des utilisateurs locaux|:white_check_mark:||
-|Information|Ordinateur client|Mémoire RAM totale|:white_check_mark:||
-|Information|Ordinateur client|Utilisation de la RAM|:white_check_mark:||
+|Information|Ordinateur client|Liste des services en cours d'execution (local)|:white_check_mark:||
+|Information|Ordinateur client|Liste des services en cours d'execution (SSH)|:white_check_mark:||
+|Information|Ordinateur client|Liste des utilisateurs locaux (local)|:white_check_mark:||
+|Information|Ordinateur client|Liste des utilisateurs locaux (SSH)|:white_check_mark:||
+|Information|Ordinateur client|Mémoire RAM totale (local)|:white_check_mark:||
+|Information|Ordinateur client|Mémoire RAM totale (SSH)|:white_check_mark:||
+|Information|Ordinateur client|Utilisation de la RAM (local)|:white_check_mark:||
+|Information|Ordinateur client|Utilisation de la RAM (SSH)|:white_check_mark:||
 |Information|Script|Recherche des evenements dans le fichier log_evt.log pour un utilisateur|:white_check_mark:||
 |Information|Script|Recherche des evenements dans le fichier log_evt.log pour un ordinateur|:white_check_mark:||
 
