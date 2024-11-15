@@ -70,32 +70,32 @@ Taux de réalisation en pourcentage des commandes :
 |Action|Utilisateur|Ajout à un groupe d'administration|||
 |Action|Utilisateur|Ajout à un groupe local|||
 |Action|Utilisateur|Sortie d’un groupe local|||
-|Action|Ordinateur client local|Arrêt|||
-|Action|Ordinateur client SSH|Arrêt|||
-|Action|Ordinateur client local|Redémarrage|||
-|Action|Ordinateur client SSH|Redémarrage|||
-|Action|Ordinateur client|Verrouillage local|||
-|Action|Ordinateur client|Verrouillage SSH|||
-|Action|Ordinateur client|Mise-à-jour du système local|||
-|Action|Ordinateur client|Mise-à-jour du système SSH|||
-|Action|Ordinateur client|Mise-à-jour du système local|||
-|Action|Ordinateur client|Mise-à-jour du système SSH|||
-|Action|Ordinateur client|Création de répertoire local|||
-|Action|Ordinateur client|Création de répertoire SSH|||
-|Action|Ordinateur client|Modification de répertoire local|||
-|Action|Ordinateur client|Modification de répertoire SSH|||
-|Action|Ordinateur client|Suppression de répertoire local|||
-|Action|Ordinateur client|Suppression de répertoire SSH|||
-|Action|Ordinateur client|Activation du pare-feu local|||
-|Action|Ordinateur client|Activation du pare-feu SSH|||
-|Action|Ordinateur client|Désactivation du pare-feu local|||
-|Action|Ordinateur client|Désactivation du pare-feu SSH|||
-|Action|Ordinateur client|Installation de logiciel local|||
-|Action|Ordinateur client|Installation de logiciel SSH|||
-|Action|Ordinateur client|Désinstallation de logiciel local|||
-|Action|Ordinateur client|Désinstallation de logiciel SSH|||
-|Action|Ordinateur client|Exécution de script sur la machine distante local|||
-|Action|Ordinateur client|Exécution de script sur la machine distante SSH|||
+|Action|Ordinateur client|Arrêt (local)|||
+|Action|Ordinateur client |Arrêt (SSH)|||
+|Action|Ordinateur client|Redémarrage (local)|||
+|Action|Ordinateur client|Redémarrage (SSH)|||
+|Action|Ordinateur client|Verrouillage (local)|||
+|Action|Ordinateur client|Verrouillage (SSH)|||
+|Action|Ordinateur client|Mise-à-jour du système (local)|||
+|Action|Ordinateur client|Mise-à-jour du système (SSH)|||
+|Action|Ordinateur client|Mise-à-jour du système (local)|||
+|Action|Ordinateur client|Mise-à-jour du système (SSH)|||
+|Action|Ordinateur client|Création de répertoire (local)|||
+|Action|Ordinateur client|Création de répertoire (SSH)|||
+|Action|Ordinateur client|Modification de répertoire (local)|||
+|Action|Ordinateur client|Modification de répertoire (SSH)|||
+|Action|Ordinateur client|Suppression de répertoire (local)|||
+|Action|Ordinateur client|Suppression de répertoire (SSH)|||
+|Action|Ordinateur client|Activation du pare-feu (local)|||
+|Action|Ordinateur client|Activation du pare-feu (SSH)|||
+|Action|Ordinateur client|Désactivation du pare-feu (local)|||
+|Action|Ordinateur client|Désactivation du pare-feu (SSH)|||
+|Action|Ordinateur client|Installation de logiciel (local)|||
+|Action|Ordinateur client|Installation de logiciel (SSH)|||
+|Action|Ordinateur client|Désinstallation de logiciel (local)|||
+|Action|Ordinateur client|Désinstallation de logiciel (SSH)|||
+|Action|Ordinateur client|Exécution de script sur la machine distante (local)|||
+|Action|Ordinateur client|Exécution de script sur la machine distante (SSH)|||
 |Information|Utilisateur|Date de dernière connexion d’un utilisateur|||
 |Information|Utilisateur|Date de dernière modification du mot de passe|||
 |Information|Utilisateur|Liste des sessions ouvertes par l'utilisateur|||
