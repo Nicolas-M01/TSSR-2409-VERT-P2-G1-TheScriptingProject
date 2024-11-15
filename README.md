@@ -99,8 +99,8 @@ Taux de réalisation en pourcentage des commandes :
 |Information|Utilisateur|Historique des commandes exécutées par l'utilisateur|:white_check_mark:||
 |Information|Utilisateur|Droits/permissions de l’utilisateur sur un dossier|:white_check_mark:||
 |Information|Utilisateur|Droits/permissions de l’utilisateur sur un fichier|:white_check_mark:||
-|Information|Ordinateur client|Version de l'OS|:white_check_mark:||
-|Information|Ordinateur client|Version de l'OS|:white_check_mark:||
+|Information|Ordinateur client|Version de l'OS (local)|:white_check_mark:||
+|Information|Ordinateur client|Version de l'OS (SSH)|:white_check_mark:|:white_check_mark:|
 |Information|Ordinateur client|Nombre de disque|:white_check_mark:||
 |Information|Ordinateur client|Partition (nombre, nom, FS, taille) par disque|:white_check_mark:||
 |Information|Ordinateur client|Espace disque restant par partition/volume|:white_check_mark:||
@@ -111,7 +111,7 @@ Taux de réalisation en pourcentage des commandes :
 |Information|Ordinateur client|Liste des utilisateurs locaux|:white_check_mark:||
 |Information|Ordinateur client|Mémoire RAM totale|:white_check_mark:||
 |Information|Ordinateur client|Utilisation de la RAM|:white_check_mark:||
-|Information|Script|Recherche des evenements dans le fichier log_evt.log pour un utilisateur|||
+|Information|Script|Recherche des evenements dans le fichier log_evt.log pour un utilisateur|:white_check_mark:||
 |Information|Script|Recherche des evenements dans le fichier log_evt.log pour un ordinateur|:white_check_mark:||
 
 
