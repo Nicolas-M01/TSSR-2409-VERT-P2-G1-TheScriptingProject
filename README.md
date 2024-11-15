@@ -63,57 +63,57 @@ Taux de réalisation en pourcentage des commandes :
 
 |Type|Cible|Tâche|Bash|PowerShell|
 |:-:|:-:|:-:|:-:|:-:|
-|Action|Utilisateur|Création de compte utilisateur local|||
-|Action|Utilisateur|Changement de mot de passe|||
-|Action|Utilisateur|Suppression de compte utilisateur local|||
-|Action|Utilisateur|Désactivation de compte utilisateur local|||
-|Action|Utilisateur|Ajout à un groupe d'administration|||
-|Action|Utilisateur|Ajout à un groupe local|||
-|Action|Utilisateur|Sortie d’un groupe local|||
-|Action|Ordinateur client|Arrêt (local)|||
+|Action|Utilisateur|Création de compte utilisateur local|:white_check_mark:||
+|Action|Utilisateur|Changement de mot de passe|:white_check_mark:||
+|Action|Utilisateur|Suppression de compte utilisateur local|:white_check_mark:||
+|Action|Utilisateur|Désactivation de compte utilisateur local|:white_check_mark:||
+|Action|Utilisateur|Ajout à un groupe d'administration|:white_check_mark:||
+|Action|Utilisateur|Ajout à un groupe local|:white_check_mark:||
+|Action|Utilisateur|Sortie d’un groupe local|:white_check_mark:||
+|Action|Ordinateur client|Arrêt (local)|:white_check_mark:||
 |Action|Ordinateur client |Arrêt (SSH)|||
-|Action|Ordinateur client|Redémarrage (local)|||
+|Action|Ordinateur client|Redémarrage (local)|:white_check_mark:||
 |Action|Ordinateur client|Redémarrage (SSH)|||
-|Action|Ordinateur client|Verrouillage (local)|||
+|Action|Ordinateur client|Verrouillage (local)|:white_check_mark:||
 |Action|Ordinateur client|Verrouillage (SSH)|||
-|Action|Ordinateur client|Mise-à-jour du système (local)|||
+|Action|Ordinateur client|Mise-à-jour du système (local)|:white_check_mark:||
 |Action|Ordinateur client|Mise-à-jour du système (SSH)|||
-|Action|Ordinateur client|Mise-à-jour du système (local)|||
+|Action|Ordinateur client|Mise-à-jour du système (local)|:white_check_mark:||
 |Action|Ordinateur client|Mise-à-jour du système (SSH)|||
-|Action|Ordinateur client|Création de répertoire (local)|||
+|Action|Ordinateur client|Création de répertoire (local)|:white_check_mark:||
 |Action|Ordinateur client|Création de répertoire (SSH)|||
-|Action|Ordinateur client|Modification de répertoire (local)|||
+|Action|Ordinateur client|Modification de répertoire (local)|:white_check_mark:||
 |Action|Ordinateur client|Modification de répertoire (SSH)|||
-|Action|Ordinateur client|Suppression de répertoire (local)|||
+|Action|Ordinateur client|Suppression de répertoire (local)|:white_check_mark:||
 |Action|Ordinateur client|Suppression de répertoire (SSH)|||
-|Action|Ordinateur client|Activation du pare-feu (local)|||
+|Action|Ordinateur client|Activation du pare-feu (local)|:white_check_mark:||
 |Action|Ordinateur client|Activation du pare-feu (SSH)|||
-|Action|Ordinateur client|Désactivation du pare-feu (local)|||
+|Action|Ordinateur client|Désactivation du pare-feu (local)|:white_check_mark:||
 |Action|Ordinateur client|Désactivation du pare-feu (SSH)|||
-|Action|Ordinateur client|Installation de logiciel (local)|||
+|Action|Ordinateur client|Installation de logiciel (local)|:white_check_mark:||
 |Action|Ordinateur client|Installation de logiciel (SSH)|||
-|Action|Ordinateur client|Désinstallation de logiciel (local)|||
+|Action|Ordinateur client|Désinstallation de logiciel (local)|:white_check_mark:||
 |Action|Ordinateur client|Désinstallation de logiciel (SSH)|||
-|Information|Utilisateur|Date de dernière connexion d’un utilisateur|||
-|Information|Utilisateur|Date de dernière modification du mot de passe|||
-|Information|Utilisateur|Liste des sessions ouvertes par l'utilisateur|||
-|Information|Utilisateur|Groupe d’appartenance d’un utilisateur||
-|Information|Utilisateur|Historique des commandes exécutées par l'utilisateur|||
-|Information|Utilisateur|Droits/permissions de l’utilisateur sur un dossier|||
-|Information|Utilisateur|Droits/permissions de l’utilisateur sur un fichier|||
-|Information|Ordinateur client|Version de l'OS|||
-|Information|Ordinateur client|Nombre de disque|||
-|Information|Ordinateur client|Partition (nombre, nom, FS, taille) par disque|||
-|Information|Ordinateur client|Espace disque restant par partition/volume|||
-|Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé)|||
-|Information|Ordinateur client|Liste des lecteurs monté (disque, CD, etc.)|||
-|Information|Ordinateur client|Liste des applications/paquets installées|||
-|Information|Ordinateur client|Liste des services en cours d'execution|||
-|Information|Ordinateur client|Liste des utilisateurs locaux|||
-|Information|Ordinateur client|Mémoire RAM totale|||
-|Information|Ordinateur client|Utilisation de la RAM|||
+|Information|Utilisateur|Date de dernière connexion d’un utilisateur|:white_check_mark:||
+|Information|Utilisateur|Date de dernière modification du mot de passe|:white_check_mark:||
+|Information|Utilisateur|Liste des sessions ouvertes par l'utilisateur|:white_check_mark:||
+|Information|Utilisateur|Groupe d’appartenance d’un utilisateur|:white_check_mark:||
+|Information|Utilisateur|Historique des commandes exécutées par l'utilisateur|:white_check_mark:||
+|Information|Utilisateur|Droits/permissions de l’utilisateur sur un dossier|:white_check_mark:||
+|Information|Utilisateur|Droits/permissions de l’utilisateur sur un fichier|:white_check_mark:||
+|Information|Ordinateur client|Version de l'OS|:white_check_mark:||
+|Information|Ordinateur client|Nombre de disque|:white_check_mark:||
+|Information|Ordinateur client|Partition (nombre, nom, FS, taille) par disque|:white_check_mark:||
+|Information|Ordinateur client|Espace disque restant par partition/volume|:white_check_mark:||
+|Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé)|:white_check_mark:||
+|Information|Ordinateur client|Liste des lecteurs monté (disque, CD, etc.)|:white_check_mark:||
+|Information|Ordinateur client|Liste des applications/paquets installées|:white_check_mark:||
+|Information|Ordinateur client|Liste des services en cours d'execution|:white_check_mark:||
+|Information|Ordinateur client|Liste des utilisateurs locaux|:white_check_mark:||
+|Information|Ordinateur client|Mémoire RAM totale|:white_check_mark:||
+|Information|Ordinateur client|Utilisation de la RAM|:white_check_mark:||
 |Information|Script|Recherche des evenements dans le fichier log_evt.log pour un utilisateur|||
-|Information|Script|Recherche des evenements dans le fichier log_evt.log pour un ordinateur|||
+|Information|Script|Recherche des evenements dans le fichier log_evt.log pour un ordinateur|:white_check_mark:||
 
 
 
