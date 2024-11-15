@@ -110,42 +110,40 @@ L'historique des commandes tapées avec `history` est par défaut désactivé da
 ### :b: POWERSHELL
   #### :one: Présentation des menus
   #### `[1] Principal`  
-  #### Le menu Principal se compose d'un titre et de 5 Parties :
+  Le menu Principal se compose d'un titre et de 5 Parties :
   ![vm 1](https://github.com/user-attachments/assets/c6065bce-0037-4a3b-b820-51130c83c27d)
   #### `[2]Actions`
-  #### La partie action permet la réalisation de manipulation sur la machine distante, via le protocole SSH.
+  La partie action permet la réalisation de manipulation sur la machine distante, via le protocole SSH.
   * #### Menu Marche\Arrêt
   ![vm1](https://github.com/user-attachments/assets/4c1a8552-d914-4c97-989d-409e8d385527)
  * #### MAJ
   ![vm 1](https://github.com/user-attachments/assets/4c72442a-128c-4a2b-9c19-5f925e65ad62)
  * #### Menu répertoire
   ![image](https://github.com/user-attachments/assets/344ac286-2d71-4c22-a781-9bda0cc867e2)
-  #### Ici les choix 2 et 3 sont en construction.
+   Ici les choix 2 et 3 sont en construction.
   * #### Version de l'OS
   ![image](https://github.com/user-attachments/assets/7618adb2-de5e-4b15-b04a-ab354d769f6c)
   #### :two: Connection SSH
  * #### Configurer l'envoie de script via SSH avec Powershell :
-  #### Dans Program Data
+   Dans Program Data
   ![vm 1](https://github.com/user-attachments/assets/6bc77c20-4ddd-492c-80f3-fc6baf86e4f1)
-  #### Ouvrir le répertoire ssh :arrow_right: ssh_config en Administrator
-  #### Pour ce faire : copiez le chemin du fichier dans Powershell : 
+Ouvrir le répertoire ssh :arrow_right: ssh_config en Administrator
+Pour ce faire : copiez le chemin du fichier dans Powershell : 
 ![vm 1](https://github.com/user-attachments/assets/c018abf1-5ca0-40a1-a2b7-a72257bd720a)
-  #### Il faut maintenant rajouter deux lignes à ce fichier de configuration :
+Il faut maintenant rajouter deux lignes à ce fichier de configuration :
 ![vm 1](https://github.com/user-attachments/assets/22e7e82e-53c9-4f5c-a371-7d9b846f2942)
-#### Elles vont permettre de pouvoir utiliser toutes les commandes PS.
-#### Reboot le service sshd
+Elles vont permettre de pouvoir utiliser toutes les commandes PS.
+Reboot le service sshd
   Restart-Service sshd
-#### Les commandes ssh sont maintenant disponible sous le format :
-#### ssh USER@IP "powershell COMMANDE"
-#### Une fois cette manipulation effectué les commmandes sont effectuez en ssh sans copie de script à distance.  
+Les commandes ssh sont maintenant disponible sous le format :
+ssh USER@IP "powershell COMMANDE"
+Une fois cette manipulation effectué les commmandes sont effectuez en ssh sans copie de script à distance.  
   
   #### :five: Arrêt du script
-  
-  
-  
-  
-  
-  #### :six: FAQ
+  Ecran de sortie :
+  ![vm 1](https://github.com/user-attachments/assets/bbb88366-6a9a-42e4-a4bf-453caf2717ed)
+#### :six: FAQ
+configuration du lancement de commande ssh su Powershell détaillé plus haut.
 
 
 
