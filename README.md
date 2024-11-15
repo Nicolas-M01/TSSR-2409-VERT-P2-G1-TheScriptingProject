@@ -133,7 +133,7 @@ Taux de réalisation en pourcentage des commandes :
 2) La recherche et la compréhension des commandes pour les actions demandées.
 3) Temps passé à coder des parties en local et en SSH qui ne devaient être qu'en SSH.
 4) La compréhention de ce que représente, ainsi que la création de la partie information.
-5) Organisation dans le groupe, notament un agenda commun des tache type Myro
+5) Organisation dans le groupe, notament un agenda commun des tache type Myro.
 
 
 **- Solutions trouvées : Solutions et alternatives trouvées**
@@ -141,5 +141,4 @@ Taux de réalisation en pourcentage des commandes :
  
 
 **- Améliorations possibles : suggestions d’améliorations futures**
-1) Passer les commandes en ssh sans copier le/les script(s)
-2) 
+1) Finir les commandes
