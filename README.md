@@ -92,37 +92,37 @@ Taux de réalisation en pourcentage des commandes :
 |Action|Ordinateur client|Installation de logiciel (SSH)|:x:|:x:|
 |Action|Ordinateur client|Désinstallation de logiciel (local)|:white_check_mark:|:x:|
 |Action|Ordinateur client|Désinstallation de logiciel (SSH)|:x:|:x:|
-|Information|Utilisateur|Date de dernière connexion d’un utilisateur|:white_check_mark:||
-|Information|Utilisateur|Date de dernière modification du mot de passe|:white_check_mark:||
-|Information|Utilisateur|Liste des sessions ouvertes par l'utilisateur|:white_check_mark:||
-|Information|Utilisateur|Groupe d’appartenance d’un utilisateur|:white_check_mark:||
-|Information|Utilisateur|Historique des commandes exécutées par l'utilisateur|:white_check_mark:||
-|Information|Utilisateur|Droits/permissions de l’utilisateur sur un dossier|:white_check_mark:||
-|Information|Utilisateur|Droits/permissions de l’utilisateur sur un fichier|:white_check_mark:||
-|Information|Ordinateur client|Version de l'OS (local)|:white_check_mark:||
+|Information|Utilisateur|Date de dernière connexion d’un utilisateur|:white_check_mark:|:x:|
+|Information|Utilisateur|Date de dernière modification du mot de passe|:white_check_mark:|:x:|
+|Information|Utilisateur|Liste des sessions ouvertes par l'utilisateur|:white_check_mark:|:x:|
+|Information|Utilisateur|Groupe d’appartenance d’un utilisateur|:white_check_mark:|:x:|
+|Information|Utilisateur|Historique des commandes exécutées par l'utilisateur|:white_check_mark:|:x:|
+|Information|Utilisateur|Droits/permissions de l’utilisateur sur un dossier|:white_check_mark:|:x:|
+|Information|Utilisateur|Droits/permissions de l’utilisateur sur un fichier|:white_check_mark:|:x:|
+|Information|Ordinateur client|Version de l'OS (local)|:white_check_mark:|:x:|
 |Information|Ordinateur client|Version de l'OS (SSH)|:white_check_mark:|:white_check_mark:|
-|Information|Ordinateur client|Nombre de disque (local)|:white_check_mark:||
-|Information|Ordinateur client|Nombre de disque (SSH)|:white_check_mark:||
-|Information|Ordinateur client|Partition (nombre, nom, FS, taille) par disque (local)|:white_check_mark:||
-|Information|Ordinateur client|Partition (nombre, nom, FS, taille) par disque (SSH)|:white_check_mark:||
-|Information|Ordinateur client|Espace disque restant par partition/volume (local)|:white_check_mark:||
-|Information|Ordinateur client|Espace disque restant par partition/volume (SSH)|:white_check_mark:||
-|Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé) (local)|:white_check_mark:||
-|Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé) (SSH)|||
-|Information|Ordinateur client|Liste des lecteurs monté (disque, CD, etc.) (local)|:white_check_mark:||
-|Information|Ordinateur client|Liste des lecteurs monté (disque, CD, etc.) (SSH)|:white_check_mark:||
-|Information|Ordinateur client|Liste des applications/paquets installées (local)|:white_check_mark:||
-|Information|Ordinateur client|Liste des applications/paquets installées (SSH)|:white_check_mark:||
-|Information|Ordinateur client|Liste des services en cours d'execution (local)|:white_check_mark:||
-|Information|Ordinateur client|Liste des services en cours d'execution (SSH)|:white_check_mark:||
-|Information|Ordinateur client|Liste des utilisateurs locaux (local)|:white_check_mark:||
-|Information|Ordinateur client|Liste des utilisateurs locaux (SSH)|:white_check_mark:||
-|Information|Ordinateur client|Mémoire RAM totale (local)|:white_check_mark:||
-|Information|Ordinateur client|Mémoire RAM totale (SSH)|:white_check_mark:||
-|Information|Ordinateur client|Utilisation de la RAM (local)|:white_check_mark:||
-|Information|Ordinateur client|Utilisation de la RAM (SSH)|:white_check_mark:||
-|Information|Script|Recherche des evenements dans le fichier log_evt.log pour un utilisateur|:white_check_mark:||
-|Information|Script|Recherche des evenements dans le fichier log_evt.log pour un ordinateur|:white_check_mark:||
+|Information|Ordinateur client|Nombre de disque (local)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Nombre de disque (SSH)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Partition (nombre, nom, FS, taille) par disque (local)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Partition (nombre, nom, FS, taille) par disque (SSH)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Espace disque restant par partition/volume (local)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Espace disque restant par partition/volume (SSH)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé) (local)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé) (SSH)|:x:|:x:|
+|Information|Ordinateur client|Liste des lecteurs monté (disque, CD, etc.) (local)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Liste des lecteurs monté (disque, CD, etc.) (SSH)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Liste des applications/paquets installées (local)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Liste des applications/paquets installées (SSH)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Liste des services en cours d'execution (local)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Liste des services en cours d'execution (SSH)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Liste des utilisateurs locaux (local)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Liste des utilisateurs locaux (SSH)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Mémoire RAM totale (local)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Mémoire RAM totale (SSH)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Utilisation de la RAM (local)|:white_check_mark:|:x:|
+|Information|Ordinateur client|Utilisation de la RAM (SSH)|:white_check_mark:|:x:|
+|Information|Script|Recherche des evenements dans le fichier log_evt.log pour un utilisateur|:white_check_mark:|:x:|
+|Information|Script|Recherche des evenements dans le fichier log_evt.log pour un ordinateur|:white_check_mark:|:x:|
 
 
 
