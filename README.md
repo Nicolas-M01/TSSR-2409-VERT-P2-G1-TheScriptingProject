@@ -57,8 +57,8 @@ Le choix à été fait de réaliser le script en 4 parties, une pour chacun des 
 Il y avait 58 commandes à réaliser au total par langage :
 36 commandes en local + 22 commandes à distance en SSH.
 Taux de réalisation en pourcentage des commandes :
-#### * BASH : 81%
-#### * POWERSHELL : 10%
+#### `- BASH : 81%`
+#### `- POWERSHELL : 10%`
 
 
 |`Type`|`Cible`|`Tâche`|`Bash`|`PowerShell`|
