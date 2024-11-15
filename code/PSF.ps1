@@ -34,15 +34,15 @@ while ($true) {
                 switch ($choixMarcheArrêt) {
                     '1' {
                         Write-Host "Arrêt en cours..." -ForegroundColor Green
-                        ssh Administrator@172.16.10.5 "powershell Stop-Computer -Force" # La commande éteint le client distant
+                        ssh Administrator@172.16.10.20 "powershell Stop-Computer -Force" # La commande éteint le client distant
                     }
                     '2' {
                         Write-Host "Redémarrage en cours..." -ForegroundColor Green
-                        ssh Administrator@172.16.10.5 "powershell Restart-Computer -Force" # La commande redémarre le client distant
+                        ssh Administrator@172.16.10.20 "powershell Restart-Computer -Force" # La commande redémarre le client distant
                     }
                     '3' {
                         Write-Host "Verrouillage en cours..." -ForegroundColor Green # La commande verrouille le client distant
-                        ssh Administrator@172.16.10.5 "powershell rundll32.exe user32.dll,LockWorkStation"
+                        ssh Administrator@172.16.10.20 "powershell rundll32.exe user32.dll,LockWorkStation"
                     }
                     '4' {
                         $MarcheArret = $false # Retour au menu précédent
@@ -70,7 +70,7 @@ while ($true) {
                         # Si la/les MAJ effectuée(s) message de réussite sinon, échec.    
                         Write-Host "Mise à jour du système en cours..." -ForegroundColor Cyan
                         try {
-                            ssh Administrator@172.16.10.5 "powershell Get-WindowsUpdate" # La commande met à jour le client distant
+                            ssh Administrator@172.16.10.20 "powershell Get-WindowsUpdate" # La commande met à jour le client distant
                             Write-Host "Mise à jour effectuée avec succès." -ForegroundColor Green
                         } catch {
                             Write-Host "Erreur lors de la mise à jour" -ForegroundColor Red
@@ -108,10 +108,10 @@ while ($true) {
 
                         # Vérifier si le répertoire existe
                         if (Test-Path -Path $folder) {
-                            ssh Administrator@172.16.10.5 "powershell Write-Host 'Le répertoire ''$folder'' existe déjà.'" -ForegroundColor Red
+                            ssh Administrator@172.16.10.20 "powershell Write-Host 'Le répertoire ''$folder'' existe déjà.'" -ForegroundColor Red
                         } else {
                             # Créer le répertoire
-                            ssh Administrator@172.16.10.5 "powershell New-Item -ItemType Directory -Path '$folder'"
+                            ssh Administrator@172.16.10.20 "powershell New-Item -ItemType Directory -Path '$folder'"
                             Write-Host "Répertoire '$folder' créé avec succès." -ForegroundColor Green
                         }
                     }
@@ -154,7 +154,7 @@ while ($true) {
                     '1' {
                         
                         Write-Host "La version de l'OS est :" -ForegroundColor Cyan
-                        ssh Administrator@172.16.10.5 "powershell (Get-WmiObject -class Win32_OperatingSystem).Caption"
+                        ssh Administrator@172.16.10.20 "powershell (Get-WmiObject -class Win32_OperatingSystem).Caption"
                         }
                     
                     '2' {
