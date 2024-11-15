@@ -53,7 +53,7 @@ Le choix à été fait de réaliser le script en 4 parties, une pour chacun des 
     - Mot de passe : Azerty1*
     - Adresse IP fixe : 172.16.10.10/24
 
-### Taux de réalisation des tâches
+### 3 Taux de réalisation des tâches
 Il y avait 58 commandes à réaliser au total par langage :
 36 commandes en local + 22 commandes à distance en SSH.
 Taux de réalisation en pourcentage des commandes :
@@ -125,7 +125,7 @@ Taux de réalisation en pourcentage des commandes :
 |Information|Script|Recherche des evenements dans le fichier log_evt.log pour un ordinateur|:white_check_mark:|:x:|
 
 
-
+### 4 Difficultés / Solutions / Améliorations
 
 **- Difficultés rencontrées : problèmes techniques rencontrés**
 
