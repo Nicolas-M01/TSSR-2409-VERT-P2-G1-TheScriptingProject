@@ -53,6 +53,73 @@ Le choix à été fait de réaliser le script en 4 parties, une pour chacun des 
     - Mot de passe : Azerty1*
     - Adresse IP fixe : 172.16.10.10/24
 
+### Taux de réalisation des tâches
+Il y avait 60 commandes à réaliser au total par langage :
+37 commandes en local + 23 commandes à distance en SSH.
+Taux de réalisation en pourcentage des commandes :
+* BASH : 78%
+* POWERSHELL : 10%
+
+
+|Type|Cible|Tâche|Bash|PowerShell|
+|:-:|:-:|:-:|:-:|:-:|
+|Action|Utilisateur|Création de compte utilisateur local|||
+|Action|Utilisateur|Changement de mot de passe|||
+|Action|Utilisateur|Suppression de compte utilisateur local|||
+|Action|Utilisateur|Désactivation de compte utilisateur local|||
+|Action|Utilisateur|Ajout à un groupe d'administration|||
+|Action|Utilisateur|Ajout à un groupe local|||
+|Action|Utilisateur|Sortie d’un groupe local|||
+|Action|Ordinateur client local|Arrêt|||
+|Action|Ordinateur client SSH|Arrêt|||
+|Action|Ordinateur client local|Redémarrage|||
+|Action|Ordinateur client SSH|Redémarrage|||
+|Action|Ordinateur client|Verrouillage local|||
+|Action|Ordinateur client|Verrouillage SSH|||
+|Action|Ordinateur client|Mise-à-jour du système local|||
+|Action|Ordinateur client|Mise-à-jour du système SSH|||
+|Action|Ordinateur client|Mise-à-jour du système local|||
+|Action|Ordinateur client|Mise-à-jour du système SSH|||
+|Action|Ordinateur client|Création de répertoire local|||
+|Action|Ordinateur client|Création de répertoire SSH|||
+|Action|Ordinateur client|Modification de répertoire local|||
+|Action|Ordinateur client|Modification de répertoire SSH|||
+|Action|Ordinateur client|Suppression de répertoire local|||
+|Action|Ordinateur client|Suppression de répertoire SSH|||
+|Action|Ordinateur client|Activation du pare-feu local|||
+|Action|Ordinateur client|Activation du pare-feu SSH|||
+|Action|Ordinateur client|Désactivation du pare-feu local|||
+|Action|Ordinateur client|Désactivation du pare-feu SSH|||
+|Action|Ordinateur client|Installation de logiciel local|||
+|Action|Ordinateur client|Installation de logiciel SSH|||
+|Action|Ordinateur client|Désinstallation de logiciel local|||
+|Action|Ordinateur client|Désinstallation de logiciel SSH|||
+|Action|Ordinateur client|Exécution de script sur la machine distante local|||
+|Action|Ordinateur client|Exécution de script sur la machine distante SSH|||
+|Information|Utilisateur|Date de dernière connexion d’un utilisateur|||
+|Information|Utilisateur|Date de dernière modification du mot de passe|||
+|Information|Utilisateur|Liste des sessions ouvertes par l'utilisateur|||
+|Information|Utilisateur|Groupe d’appartenance d’un utilisateur||
+|Information|Utilisateur|Historique des commandes exécutées par l'utilisateur|||
+|Information|Utilisateur|Droits/permissions de l’utilisateur sur un dossier|||
+|Information|Utilisateur|Droits/permissions de l’utilisateur sur un fichier|||
+|Information|Ordinateur client|Version de l'OS|||
+|Information|Ordinateur client|Nombre de disque|||
+|Information|Ordinateur client|Partition (nombre, nom, FS, taille) par disque|||
+|Information|Ordinateur client|Espace disque restant par partition/volume|||
+|Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé)|||
+|Information|Ordinateur client|Liste des lecteurs monté (disque, CD, etc.)|||
+|Information|Ordinateur client|Liste des applications/paquets installées|||
+|Information|Ordinateur client|Liste des services en cours d'execution|||
+|Information|Ordinateur client|Liste des utilisateurs locaux|||
+|Information|Ordinateur client|Mémoire RAM totale|||
+|Information|Ordinateur client|Utilisation de la RAM|||
+|Information|Script|Recherche des evenements dans le fichier log_evt.log pour un utilisateur|||
+|Information|Script|Recherche des evenements dans le fichier log_evt.log pour un ordinateur|||
+
+
+
+
 
 **- Difficultés rencontrées : problèmes techniques rencontrés**
 
