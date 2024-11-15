@@ -101,12 +101,18 @@ Taux de réalisation en pourcentage des commandes :
 |Information|Utilisateur|Droits/permissions de l’utilisateur sur un fichier|:white_check_mark:||
 |Information|Ordinateur client|Version de l'OS (local)|:white_check_mark:||
 |Information|Ordinateur client|Version de l'OS (SSH)|:white_check_mark:|:white_check_mark:|
-|Information|Ordinateur client|Nombre de disque|:white_check_mark:||
-|Information|Ordinateur client|Partition (nombre, nom, FS, taille) par disque|:white_check_mark:||
-|Information|Ordinateur client|Espace disque restant par partition/volume|:white_check_mark:||
-|Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé)|:white_check_mark:||
-|Information|Ordinateur client|Liste des lecteurs monté (disque, CD, etc.)|:white_check_mark:||
-|Information|Ordinateur client|Liste des applications/paquets installées|:white_check_mark:||
+|Information|Ordinateur client|Nombre de disque (local)|:white_check_mark:||
+|Information|Ordinateur client|Nombre de disque (SSH)|:white_check_mark:||
+|Information|Ordinateur client|Partition (nombre, nom, FS, taille) par disque (local)|:white_check_mark:||
+|Information|Ordinateur client|Partition (nombre, nom, FS, taille) par disque (SSH)|:white_check_mark:||
+|Information|Ordinateur client|Espace disque restant par partition/volume (local)|:white_check_mark:||
+|Information|Ordinateur client|Espace disque restant par partition/volume (SSH)|:white_check_mark:||
+|Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé) (local)|:white_check_mark:||
+|Information|Ordinateur client|Nom et espace disque d'un dossier (nom de dossier demandé) (SSH)|:white_check_mark:||
+|Information|Ordinateur client|Liste des lecteurs monté (disque, CD, etc.) (local)|:white_check_mark:||
+|Information|Ordinateur client|Liste des lecteurs monté (disque, CD, etc.) (SSH)|:white_check_mark:||
+|Information|Ordinateur client|Liste des applications/paquets installées (local)|:white_check_mark:||
+|Information|Ordinateur client|Liste des applications/paquets installées (SSH)|:white_check_mark:||
 |Information|Ordinateur client|Liste des services en cours d'execution|:white_check_mark:||
 |Information|Ordinateur client|Liste des utilisateurs locaux|:white_check_mark:||
 |Information|Ordinateur client|Mémoire RAM totale|:white_check_mark:||
