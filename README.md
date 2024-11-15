@@ -142,3 +142,4 @@ Taux de réalisation en pourcentage des commandes :
 
 **- Améliorations possibles : suggestions d’améliorations futures**
 1) Finir les commandes
+2) Implémenter les adresses IP dans le fichier des Logs
