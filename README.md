@@ -94,8 +94,6 @@ Taux de réalisation en pourcentage des commandes :
 |Action|Ordinateur client|Installation de logiciel (SSH)|||
 |Action|Ordinateur client|Désinstallation de logiciel (local)|||
 |Action|Ordinateur client|Désinstallation de logiciel (SSH)|||
-|Action|Ordinateur client|Exécution de script sur la machine distante (local)|||
-|Action|Ordinateur client|Exécution de script sur la machine distante (SSH)|||
 |Information|Utilisateur|Date de dernière connexion d’un utilisateur|||
 |Information|Utilisateur|Date de dernière modification du mot de passe|||
 |Information|Utilisateur|Liste des sessions ouvertes par l'utilisateur|||
