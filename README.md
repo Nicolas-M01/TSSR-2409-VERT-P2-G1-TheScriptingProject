@@ -63,35 +63,35 @@ Taux de réalisation en pourcentage des commandes :
 
 |Type|Cible|Tâche|Bash|PowerShell|
 |:-:|:-:|:-:|:-:|:-:|
-|Action|Utilisateur|Création de compte utilisateur local|:white_check_mark:||
-|Action|Utilisateur|Changement de mot de passe|:white_check_mark:||
-|Action|Utilisateur|Suppression de compte utilisateur local|:white_check_mark:||
-|Action|Utilisateur|Désactivation de compte utilisateur local|:white_check_mark:||
-|Action|Utilisateur|Ajout à un groupe d'administration|:white_check_mark:||
-|Action|Utilisateur|Ajout à un groupe local|:white_check_mark:||
-|Action|Utilisateur|Sortie d’un groupe local|:white_check_mark:||
-|Action|Ordinateur client|Arrêt (local)|:white_check_mark:||
-|Action|Ordinateur client |Arrêt (SSH)||:white_check_mark:|
-|Action|Ordinateur client|Redémarrage (local)|:white_check_mark:||
-|Action|Ordinateur client|Redémarrage (SSH)||:white_check_mark:|
-|Action|Ordinateur client|Verrouillage (local)|:white_check_mark:||
-|Action|Ordinateur client|Verrouillage (SSH)||:white_check_mark:|
-|Action|Ordinateur client|Mise-à-jour du système (local)|:white_check_mark:||
-|Action|Ordinateur client|Mise-à-jour du système (SSH)||:white_check_mark:|
-|Action|Ordinateur client|Création de répertoire (local)|:white_check_mark:||
-|Action|Ordinateur client|Création de répertoire (SSH)||:white_check_mark:|
-|Action|Ordinateur client|Modification de répertoire (local)|:white_check_mark:||
-|Action|Ordinateur client|Modification de répertoire (SSH)|||
-|Action|Ordinateur client|Suppression de répertoire (local)|:white_check_mark:||
-|Action|Ordinateur client|Suppression de répertoire (SSH)|||
-|Action|Ordinateur client|Activation du pare-feu (local)|:white_check_mark:||
-|Action|Ordinateur client|Activation du pare-feu (SSH)|||
-|Action|Ordinateur client|Désactivation du pare-feu (local)|:white_check_mark:||
-|Action|Ordinateur client|Désactivation du pare-feu (SSH)|||
-|Action|Ordinateur client|Installation de logiciel (local)|:white_check_mark:||
-|Action|Ordinateur client|Installation de logiciel (SSH)|||
-|Action|Ordinateur client|Désinstallation de logiciel (local)|:white_check_mark:||
-|Action|Ordinateur client|Désinstallation de logiciel (SSH)|||
+|Action|Utilisateur|Création de compte utilisateur local|:white_check_mark:|:x:|
+|Action|Utilisateur|Changement de mot de passe|:white_check_mark:|:x:|
+|Action|Utilisateur|Suppression de compte utilisateur local|:white_check_mark:|:x:|
+|Action|Utilisateur|Désactivation de compte utilisateur local|:white_check_mark:|:x:|
+|Action|Utilisateur|Ajout à un groupe d'administration|:white_check_mark:|:x:|
+|Action|Utilisateur|Ajout à un groupe local|:white_check_mark:|:x:|
+|Action|Utilisateur|Sortie d’un groupe local|:white_check_mark:|:x:|
+|Action|Ordinateur client|Arrêt (local)|:white_check_mark:|:x:|
+|Action|Ordinateur client |Arrêt (SSH)|:x:|:white_check_mark:|
+|Action|Ordinateur client|Redémarrage (local)|:white_check_mark:|:x:|
+|Action|Ordinateur client|Redémarrage (SSH)|:x:|:white_check_mark:|
+|Action|Ordinateur client|Verrouillage (local)|:white_check_mark:|:x:|
+|Action|Ordinateur client|Verrouillage (SSH)|:x:|:white_check_mark:|
+|Action|Ordinateur client|Mise-à-jour du système (local)|:white_check_mark:|:x:|
+|Action|Ordinateur client|Mise-à-jour du système (SSH)|:x:|:white_check_mark:|
+|Action|Ordinateur client|Création de répertoire (local)|:white_check_mark:|:x:|
+|Action|Ordinateur client|Création de répertoire (SSH)|:x:|:white_check_mark:|
+|Action|Ordinateur client|Modification de répertoire (local)|:white_check_mark:|:x:|
+|Action|Ordinateur client|Modification de répertoire (SSH)|:x:|:x:|
+|Action|Ordinateur client|Suppression de répertoire (local)|:white_check_mark:|:x:|
+|Action|Ordinateur client|Suppression de répertoire (SSH)|:x:|:x:|
+|Action|Ordinateur client|Activation du pare-feu (local)|:white_check_mark:|:x:|
+|Action|Ordinateur client|Activation du pare-feu (SSH)|:x:|:x:|
+|Action|Ordinateur client|Désactivation du pare-feu (local)|:white_check_mark:|:x:|
+|Action|Ordinateur client|Désactivation du pare-feu (SSH)|:x:|:x:|
+|Action|Ordinateur client|Installation de logiciel (local)|:white_check_mark:|:x:|
+|Action|Ordinateur client|Installation de logiciel (SSH)|:x:|:x:|
+|Action|Ordinateur client|Désinstallation de logiciel (local)|:white_check_mark:|:x:|
+|Action|Ordinateur client|Désinstallation de logiciel (SSH)|:x:|:x:|
 |Information|Utilisateur|Date de dernière connexion d’un utilisateur|:white_check_mark:||
 |Information|Utilisateur|Date de dernière modification du mot de passe|:white_check_mark:||
 |Information|Utilisateur|Liste des sessions ouvertes par l'utilisateur|:white_check_mark:||
