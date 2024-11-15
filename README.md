@@ -54,10 +54,10 @@ Le choix à été fait de réaliser le script en 4 parties, une pour chacun des 
     - Adresse IP fixe : 172.16.10.10/24
 
 ### Taux de réalisation des tâches
-Il y avait 60 commandes à réaliser au total par langage :
-37 commandes en local + 23 commandes à distance en SSH.
+Il y avait 58 commandes à réaliser au total par langage :
+36 commandes en local + 22 commandes à distance en SSH.
 Taux de réalisation en pourcentage des commandes :
-* BASH : 78%
+* BASH : 81%
 * POWERSHELL : 10%
 
 
