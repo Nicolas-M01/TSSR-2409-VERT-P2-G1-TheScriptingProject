@@ -71,17 +71,15 @@ Taux de réalisation en pourcentage des commandes :
 |Action|Utilisateur|Ajout à un groupe local|:white_check_mark:||
 |Action|Utilisateur|Sortie d’un groupe local|:white_check_mark:||
 |Action|Ordinateur client|Arrêt (local)|:white_check_mark:||
-|Action|Ordinateur client |Arrêt (SSH)|||
+|Action|Ordinateur client |Arrêt (SSH)||:white_check_mark:|
 |Action|Ordinateur client|Redémarrage (local)|:white_check_mark:||
-|Action|Ordinateur client|Redémarrage (SSH)|||
+|Action|Ordinateur client|Redémarrage (SSH)||:white_check_mark:|
 |Action|Ordinateur client|Verrouillage (local)|:white_check_mark:||
-|Action|Ordinateur client|Verrouillage (SSH)|||
+|Action|Ordinateur client|Verrouillage (SSH)||:white_check_mark:|
 |Action|Ordinateur client|Mise-à-jour du système (local)|:white_check_mark:||
-|Action|Ordinateur client|Mise-à-jour du système (SSH)|||
-|Action|Ordinateur client|Mise-à-jour du système (local)|:white_check_mark:||
-|Action|Ordinateur client|Mise-à-jour du système (SSH)|||
+|Action|Ordinateur client|Mise-à-jour du système (SSH)||:white_check_mark:|
 |Action|Ordinateur client|Création de répertoire (local)|:white_check_mark:||
-|Action|Ordinateur client|Création de répertoire (SSH)|||
+|Action|Ordinateur client|Création de répertoire (SSH)||:white_check_mark:|
 |Action|Ordinateur client|Modification de répertoire (local)|:white_check_mark:||
 |Action|Ordinateur client|Modification de répertoire (SSH)|||
 |Action|Ordinateur client|Suppression de répertoire (local)|:white_check_mark:||
@@ -101,6 +99,7 @@ Taux de réalisation en pourcentage des commandes :
 |Information|Utilisateur|Historique des commandes exécutées par l'utilisateur|:white_check_mark:||
 |Information|Utilisateur|Droits/permissions de l’utilisateur sur un dossier|:white_check_mark:||
 |Information|Utilisateur|Droits/permissions de l’utilisateur sur un fichier|:white_check_mark:||
+|Information|Ordinateur client|Version de l'OS|:white_check_mark:||
 |Information|Ordinateur client|Version de l'OS|:white_check_mark:||
 |Information|Ordinateur client|Nombre de disque|:white_check_mark:||
 |Information|Ordinateur client|Partition (nombre, nom, FS, taille) par disque|:white_check_mark:||
