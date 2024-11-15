@@ -57,11 +57,11 @@ Le choix à été fait de réaliser le script en 4 parties, une pour chacun des 
 Il y avait 58 commandes à réaliser au total par langage :
 36 commandes en local + 22 commandes à distance en SSH.
 Taux de réalisation en pourcentage des commandes :
-* BASH : 81%
-* POWERSHELL : 10%
+#### * BASH : 81%
+#### * POWERSHELL : 10%
 
 
-|Type|Cible|Tâche|Bash|PowerShell|
+|`Type`|`Cible`|`Tâche`|`Bash`|`PowerShell`|
 |:-:|:-:|:-:|:-:|:-:|
 |Action|Utilisateur|Création de compte utilisateur local|:white_check_mark:|:x:|
 |Action|Utilisateur|Changement de mot de passe|:white_check_mark:|:x:|
@@ -123,7 +123,6 @@ Taux de réalisation en pourcentage des commandes :
 |Information|Ordinateur client|Utilisation de la RAM (SSH)|:white_check_mark:|:x:|
 |Information|Script|Recherche des evenements dans le fichier log_evt.log pour un utilisateur|:white_check_mark:|:x:|
 |Information|Script|Recherche des evenements dans le fichier log_evt.log pour un ordinateur|:white_check_mark:|:x:|
-
 
 
 
